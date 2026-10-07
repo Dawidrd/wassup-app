@@ -1,5 +1,5 @@
 // Wassup service worker: strona zawsze najpierw z sieci (szybkie aktualizacje), offline z pamięci podręcznej.
-const CACHE = "wassup-0.2.0";
+const CACHE = "wassup-0.3.0";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icons/icon-180.png", "icons/icon-192.png", "icons/icon-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL))); self.skipWaiting(); });
 self.addEventListener("activate", e => {

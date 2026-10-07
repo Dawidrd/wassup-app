@@ -163,6 +163,26 @@ body.locked{overflow:hidden}
 .crow .unit{font-size:14px;color:var(--muted);min-width:22px}
 .crow select[data-k="u"]{width:auto}
 .done{display:flex;align-items:center;gap:14px}
+
+.info{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;border:1.5px solid var(--faint);color:var(--muted);font:700 11px/1 var(--f-round);font-style:italic;vertical-align:1px;margin-left:4px;flex-shrink:0}
+.danger{position:absolute;right:0;top:8px;height:10px;border-radius:0 5px 5px 0;background:repeating-linear-gradient(135deg,var(--bad-bg) 0 4px,color-mix(in srgb,var(--bad) 35%,var(--bad-bg)) 4px 6px)}
+.fillbar.over{background:var(--bad)}
+.mark.goal{background:var(--brand);opacity:1;width:3px}
+.mlabel.ul{color:var(--bad);font-weight:600}
+.mlabel.goal{color:var(--brand);font-weight:700}
+.cmp .ulrow span:first-child b{color:var(--bad)}
+.howto{display:flex;align-items:center;gap:14px;text-align:left;width:100%}
+.ruler{display:flex;align-items:flex-end;gap:3px;height:34px;flex-shrink:0}
+.ruler i{display:block;width:7px;border-radius:2px;background:var(--bar);opacity:.55}
+.ruler i:nth-child(1){height:8px}.ruler i:nth-child(2){height:14px}.ruler i:nth-child(3){height:20px}.ruler i:nth-child(4){height:26px}.ruler i.u{height:34px;background:var(--bad);opacity:1}
+.chev svg{width:16px;height:16px;color:var(--faint)}
+.claims.small{font-size:13.5px;margin:0}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:8px;counter-reset:st}
+.steps li{position:relative;background:var(--card);border-radius:12px;padding:12px 12px 12px 44px;counter-increment:st}
+.steps li::before{content:counter(st);position:absolute;left:12px;top:12px;width:22px;height:22px;border-radius:50%;background:var(--fill);display:grid;place-items:center;font:700 12px var(--f-round);color:var(--muted)}
+.steps li.ul{border:1.5px solid var(--bad)}
+.steps li.ul::before{background:var(--bad);color:#fff}
+.steps li.on{outline:2px solid var(--brand);outline-offset:-2px}
 </style>
 </head>
 <body>
@@ -175,8 +195,8 @@ body.locked{overflow:hidden}
 /* ============ Dane referencyjne (źródła: baza regulacyjna Wassup) ============
    RWS: rozp. 1169/2011 zał. XIII · normy i UL: Normy żywienia dla populacji Polski 2024 (NIZP PZH–PIB)
    limity GIS: uchwały Zespołu ds. Suplementów Diety · oświadczenia: rozp. 432/2012 */
-const APP_VERSION = "0.2.0";
-const CLAIMS = {"mg": ["Magnez przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Magnez pomaga w utrzymaniu równowagi elektrolitowej", "Magnez przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Magnez pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Magnez pomaga w prawidłowym funkcjonowaniu mięśni", "Magnez pomaga w prawidłowej syntezie białka", "Magnez pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Magnez pomaga w utrzymaniu zdrowych kości", "Magnez pomaga w utrzymaniu zdrowych zębów", "Magnez odgrywa rolę w procesie podziału komórek"], "d": ["Witamina D pomaga w prawidłowym wchłanianiu/wykorzystywaniu wapnia i fosforu", "Witamina D pomaga w utrzymaniu prawidłowego poziomu wapnia we krwi", "Witamina D pomaga w utrzymaniu zdrowych kości", "Witamina D pomaga w prawidłowym funkcjonowaniu mięśni", "Witamina D pomaga w utrzymaniu zdrowych zębów", "Witamina D pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina D bierze udział w procesie podziału komórek"], "b6": ["Witamina B6 pomaga w prawidłowej syntezie cysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B6 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu białka i glikogenu", "Witamina B6 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B6 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B6 przyczynia się zmniejszenia uczucia zmęczenia i znużenia", "Witamina B6 przyczynia się do regulacji aktywności hormonalnej"], "c": ["Witamina C pomaga w utrzymaniu prawidłowego funkcjonowania układu odpornościowego w trakcie intensywnych ćwiczeń fizycznych i po nich", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania naczyń krwionośnych", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania kości", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania chrząstki", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania dziąseł", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania skóry", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania zębów", "Witamina C przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina C pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina C pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina C pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina C pomaga w ochronie komórek przed stresem oksydacyjnym", "Witamina C przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina C pomaga w regeneracji zredukowanej formy witaminy E", "Witamina C zwiększa przyswajanie żelaza"], "zn": ["Cynk pomaga w utrzymaniu prawidłowej równowagi kwasowo- zasadowej", "Cynk pomaga w utrzymaniu prawidłowego metabolizmu węglowodanów", "Cynk pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Cynk pomaga w prawidłowej syntezie DNA", "Cynk pomaga w utrzymaniu prawidłowej płodności i prawidłowych funkcji rozrodczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu kwasów tłuszczowych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu witaminy A", "Cynk pomaga w prawidłowej syntezie białka", "Cynk pomaga w utrzymaniu zdrowych kości", "Cynk pomaga zachować zdrowe włosy", "Cynk pomaga zachować zdrowe paznokcie", "Cynk pomaga zachować zdrową skórę", "Cynk pomaga w utrzymaniu prawidłowego poziomu testosteronu we krwi", "Cynk pomaga w utrzymaniu prawidłowego widzenia", "Cynk pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Cynk pomaga w ochronie komórek przed stresem oksydacyjnym", "Cynk bierze udział w procesie podziału komórek"], "b12": ["Witamina B12 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B12 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B12 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B12 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B12 przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina B12 odgrywa rolę w procesie podziału komórek"], "fe": ["Żelazo pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Żelazo przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Żelazo pomaga w prawidłowej produkcji czerwonych krwinek i hemoglobiny", "Żelazo pomaga w prawidłowym transporcie tlenu w organizmie", "Żelazo pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Żelazo przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Żelazo odgrywa rolę w procesie podziału komórek"], "fol": ["Foliany przyczyniają się do wzrostu tkanek matczynych w czasie ciąży", "Foliany pomagają w prawidłowej syntezie aminokwasów", "Foliany pomagają w prawidłowej produkcji krwi", "Foliany pomagają w utrzymaniu prawidłowego metabolizmu homocysteiny", "Foliany pomagają w utrzymaniu prawidłowych funkcji psychologicznych", "Foliany pomagają w prawidłowym funkcjonowaniu układu odpornościowego", "Foliany przyczyniają się do zmniejszenia uczucia zmęczenia i znużenia", "Foliany biorą udział w procesie podziału komórek"], "ca": ["Wapń przyczynia się do prawidłowego krzepnięcia krwi", "Wapń przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Wapń pomaga w prawidłowym funkcjonowaniu mięśni", "Wapń pomaga w utrzymaniu prawidłowego przekaźnictwa nerwowego", "Wapń pomaga w prawidłowym funkcjonowaniu enzymów trawiennych", "Wapń bierze udział w procesie podziału i specjalizacji komórek", "Wapń jest potrzebny do utrzymania zdrowych kości", "Wapń jest potrzebny do utrzymania zdrowych zębów"], "k": ["Witamina K przyczynia się do prawidłowego krzepnięcia krwi", "Witamina K pomaga w utrzymaniu zdrowych kości"], "se": ["Selen przyczynia się do prawidłowego przebiegu spermatogenezy", "Selen pomaga zachować zdrowe włosy", "Selen pomaga zachować zdrowe paznokcie", "Selen pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Selen pomaga w prawidłowym funkcjonowaniu tarczycy", "Selen pomaga w ochronie komórek przed stresem oksydacyjnym"], "i": ["Jod pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Jod przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Jod pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Jod pomaga zachować zdrową skórę", "Jod pomaga w prawidłowej produkcji hormonów tarczycy i w prawidłowym funkcjonowaniu tarczycy"], "om3": ["Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego funkcjonowania mózgu (warunek: 250 mg DHA dziennie)", "Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego widzenia (warunek: 250 mg DHA dziennie)", "DHA pomaga w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego ciśnienia krwi (warunek: 3 g EPA i DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g EPA i DHA dziennie)", "Kwas eikozapentaenowy (EPA) i kwas dokozaheksaenowy (DHA) przyczyniają się do prawidłowego funkcjonowania serca (warunek: 250 mg EPA i DHA dziennie)"]};
+const APP_VERSION = "0.3.0";
+const CLAIMS = {"mg": ["Magnez przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Magnez pomaga w utrzymaniu równowagi elektrolitowej", "Magnez przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Magnez pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Magnez pomaga w prawidłowym funkcjonowaniu mięśni", "Magnez pomaga w prawidłowej syntezie białka", "Magnez pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Magnez pomaga w utrzymaniu zdrowych kości", "Magnez pomaga w utrzymaniu zdrowych zębów", "Magnez odgrywa rolę w procesie podziału komórek"], "d": ["Witamina D pomaga w prawidłowym wchłanianiu/wykorzystywaniu wapnia i fosforu", "Witamina D pomaga w utrzymaniu prawidłowego poziomu wapnia we krwi", "Witamina D pomaga w utrzymaniu zdrowych kości", "Witamina D pomaga w prawidłowym funkcjonowaniu mięśni", "Witamina D pomaga w utrzymaniu zdrowych zębów", "Witamina D pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina D bierze udział w procesie podziału komórek"], "b6": ["Witamina B6 pomaga w prawidłowej syntezie cysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B6 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu białka i glikogenu", "Witamina B6 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B6 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B6 przyczynia się zmniejszenia uczucia zmęczenia i znużenia", "Witamina B6 przyczynia się do regulacji aktywności hormonalnej"], "c": ["Witamina C pomaga w utrzymaniu prawidłowego funkcjonowania układu odpornościowego w trakcie intensywnych ćwiczeń fizycznych i po nich", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania naczyń krwionośnych", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania kości", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania chrząstki", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania dziąseł", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania skóry", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania zębów", "Witamina C przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina C pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina C pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina C pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina C pomaga w ochronie komórek przed stresem oksydacyjnym", "Witamina C przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina C pomaga w regeneracji zredukowanej formy witaminy E", "Witamina C zwiększa przyswajanie żelaza"], "zn": ["Cynk pomaga w utrzymaniu prawidłowej równowagi kwasowo- zasadowej", "Cynk pomaga w utrzymaniu prawidłowego metabolizmu węglowodanów", "Cynk pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Cynk pomaga w prawidłowej syntezie DNA", "Cynk pomaga w utrzymaniu prawidłowej płodności i prawidłowych funkcji rozrodczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu kwasów tłuszczowych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu witaminy A", "Cynk pomaga w prawidłowej syntezie białka", "Cynk pomaga w utrzymaniu zdrowych kości", "Cynk pomaga zachować zdrowe włosy", "Cynk pomaga zachować zdrowe paznokcie", "Cynk pomaga zachować zdrową skórę", "Cynk pomaga w utrzymaniu prawidłowego poziomu testosteronu we krwi", "Cynk pomaga w utrzymaniu prawidłowego widzenia", "Cynk pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Cynk pomaga w ochronie komórek przed stresem oksydacyjnym", "Cynk bierze udział w procesie podziału komórek"], "b12": ["Witamina B12 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B12 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B12 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B12 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B12 przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina B12 odgrywa rolę w procesie podziału komórek"], "fe": ["Żelazo pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Żelazo przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Żelazo pomaga w prawidłowej produkcji czerwonych krwinek i hemoglobiny", "Żelazo pomaga w prawidłowym transporcie tlenu w organizmie", "Żelazo pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Żelazo przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Żelazo odgrywa rolę w procesie podziału komórek"], "fol": ["Foliany przyczyniają się do wzrostu tkanek matczynych w czasie ciąży", "Foliany pomagają w prawidłowej syntezie aminokwasów", "Foliany pomagają w prawidłowej produkcji krwi", "Foliany pomagają w utrzymaniu prawidłowego metabolizmu homocysteiny", "Foliany pomagają w utrzymaniu prawidłowych funkcji psychologicznych", "Foliany pomagają w prawidłowym funkcjonowaniu układu odpornościowego", "Foliany przyczyniają się do zmniejszenia uczucia zmęczenia i znużenia", "Foliany biorą udział w procesie podziału komórek"], "ca": ["Wapń przyczynia się do prawidłowego krzepnięcia krwi", "Wapń przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Wapń pomaga w prawidłowym funkcjonowaniu mięśni", "Wapń pomaga w utrzymaniu prawidłowego przekaźnictwa nerwowego", "Wapń pomaga w prawidłowym funkcjonowaniu enzymów trawiennych", "Wapń bierze udział w procesie podziału i specjalizacji komórek", "Wapń jest potrzebny do utrzymania zdrowych kości", "Wapń jest potrzebny do utrzymania zdrowych zębów"], "k": ["Witamina K przyczynia się do prawidłowego krzepnięcia krwi", "Witamina K pomaga w utrzymaniu zdrowych kości"], "se": ["Selen przyczynia się do prawidłowego przebiegu spermatogenezy", "Selen pomaga zachować zdrowe włosy", "Selen pomaga zachować zdrowe paznokcie", "Selen pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Selen pomaga w prawidłowym funkcjonowaniu tarczycy", "Selen pomaga w ochronie komórek przed stresem oksydacyjnym"], "i": ["Jod pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Jod przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Jod pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Jod pomaga zachować zdrową skórę", "Jod pomaga w prawidłowej produkcji hormonów tarczycy i w prawidłowym funkcjonowaniu tarczycy"], "om3": ["Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego funkcjonowania mózgu (warunek: 250 mg DHA dziennie)", "Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego widzenia (warunek: 250 mg DHA dziennie)", "DHA pomaga w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego ciśnienia krwi (warunek: 3 g EPA i DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g EPA i DHA dziennie)", "Kwas eikozapentaenowy (EPA) i kwas dokozaheksaenowy (DHA) przyczyniają się do prawidłowego funkcjonowania serca (warunek: 250 mg EPA i DHA dziennie)"], "bio": ["Biotyna przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Biotyna pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Biotyna przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Biotyna pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Biotyna pomaga zachować zdrowe włosy", "Biotyna pomaga w utrzymaniu prawidłowego stanu błon śluzowych", "Biotyna pomaga zachować zdrową skórę"], "pot": ["Potas pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Potas pomaga w prawidłowym funkcjonowaniu mięśni", "Potas pomaga w utrzymaniu prawidłowego ciśnienia krwi"]};
 const NUTR = {
   mg:  { name:"Magnez", sym:"Mg", unit:"mg", rws:375, ul:250,
          ulNote:"UL magnezu (250 mg) dotyczy tylko magnezu z suplementów, wody i żywności wzbogacanej, nie z jedzenia." },
@@ -194,23 +214,29 @@ const NUTR = {
          ulNote:"UL (1000 µg) dotyczy syntetycznego kwasu foliowego z suplementów i żywności wzbogacanej.",
          normNote:"Norma jest podana w równoważniku folianów (DFE). 1 µg kwasu foliowego z suplementu to ok. 1,7 µg DFE i tak to przeliczamy." },
   ca:  { name:"Wapń", sym:"Ca", unit:"mg", rws:800, ul:2500, ulNote:"UL wapnia (2500 mg) obejmuje wszystkie źródła." },
-  k:   { name:"Witamina K", sym:"K", unit:"µg", rws:75, ul:null, ulNote:"Dla witaminy K nie ustalono górnego tolerowanego poziomu spożycia.",
+  k:   { name:"Witamina K", sym:"vit K", unit:"µg", rws:75, ul:null, ulNote:"Dla witaminy K nie ustalono górnego tolerowanego poziomu spożycia.",
          warn:"GIS rekomenduje ostrzeżenie: produkt nie dla osób przyjmujących leki przeciwzakrzepowe z grupy antagonistów witaminy K (np. warfaryna, acenokumarol)." },
   se:  { name:"Selen", sym:"Se", unit:"µg", rws:55, ul:255, ulNote:"UL selenu (255 µg) obejmuje wszystkie źródła." },
   i:   { name:"Jod", sym:"I", unit:"µg", rws:150, ul:600, ulNote:"UL jodu (600 µg) obejmuje wszystkie źródła, także sól jodowaną." },
+  bio: { name:"Biotyna", sym:"B7", unit:"µg", rws:50, ul:null,
+         ulNote:"Dla biotyny nie ustalono górnego tolerowanego poziomu spożycia ani limitu GIS.",
+         warn:"Wysokie dawki biotyny mogą zakłócać wyniki niektórych badań krwi (np. hormonów tarczycy). Przed badaniem powiedz o niej lekarzowi lub w laboratorium." },
+  pot: { name:"Potas", sym:"K", unit:"mg", rws:2000, ul:null,
+         ulNote:"Dla potasu nie ustalono UL. Większość potasu dostarczają warzywa i owoce.",
+         warn:"Przy suplementach z ponad 1000 mg potasu dziennie GIS wymaga ostrzeżenia: produkt nie dla osób starszych, z chorobami nerek, cukrzycą insulinooporną, nadciśnieniem tętniczym lub zaburzeniami rytmu serca." },
   om3: { name:"Omega-3 (EPA+DHA)", sym:"Ω3", unit:"mg", rws:null, ul:null,
          ulNote:"Nie ustalono UL. EFSA uznała, że do 5 g EPA+DHA dziennie z suplementów nie budzi obaw o bezpieczeństwo.",
          normNote:"Wpisuj sumę EPA i DHA z tabeli składu, a nie masę oleju rybiego." }
 };
-const ORDER = ["mg","d","b6","c","zn","b12","fe","fol","ca","k","se","i","om3"];
+const ORDER = ["mg","d","b6","c","zn","b12","fe","fol","ca","k","se","i","bio","pot","om3"];
 // Normy żywienia 2024: RDA, dla wit. D, K i EPA+DHA: AI
-const NB = { mg:400, d:15, b6:1.3, c:90, zn:11, b12:2.4, fe:10, fol:400, ca:1000, k:65, se:55, i:150, om3:250 };
-const NF = { mg:310, d:15, b6:1.3, c:75, zn:8,  b12:2.4, fe:18, fol:400, ca:1000, k:55, se:55, i:150, om3:250 };
+const NB = { mg:400, d:15, b6:1.3, c:90, zn:11, b12:2.4, fe:10, fol:400, ca:1000, k:65, se:55, i:150, bio:40, pot:3500, om3:250 };
+const NF = { mg:310, d:15, b6:1.3, c:75, zn:8,  b12:2.4, fe:18, fol:400, ca:1000, k:55, se:55, i:150, bio:40, pot:3500, om3:250 };
 const NORMS = {
   m: { "19-30":{...NB}, "31-50":{...NB,mg:420}, "51-65":{...NB,mg:420,b6:1.7}, "66-75":{...NB,mg:420,b6:1.7,ca:1200}, "75+":{...NB,mg:420,b6:1.7,ca:1200} },
   f: { "19-30":{...NF}, "31-50":{...NF,mg:320}, "51-65":{...NF,mg:320,b6:1.5,fe:10,ca:1200}, "66-75":{...NF,mg:320,b6:1.5,fe:10,ca:1200}, "75+":{...NF,mg:320,b6:1.5,fe:10,ca:1200} },
-  preg:{ mg:360, d:15, b6:1.9, c:85,  zn:11, b12:2.6, fe:27, fol:600, ca:1000, k:55, se:60, i:220, om3:450 },
-  lact:{ mg:320, d:15, b6:2.0, c:120, zn:12, b12:2.8, fe:10, fol:500, ca:1000, k:55, se:70, i:290, om3:450 }
+  preg:{ mg:360, d:15, b6:1.9, c:85,  zn:11, b12:2.6, fe:27, fol:600, ca:1000, k:55, se:60, i:220, bio:40, pot:3500, om3:450 },
+  lact:{ mg:320, d:15, b6:2.0, c:120, zn:12, b12:2.8, fe:10, fol:500, ca:1000, k:55, se:70, i:290, bio:45, pot:4000, om3:450 }
 };
 const AGES = ["19-30","31-50","51-65","66-75","75+"];
 const UNITS = { kapsulka:["kapsułka","kapsułki","kapsułek","kapsułce"], tabletka:["tabletka","tabletki","tabletek","tabletce"], kropla:["kropla","krople","kropli","kropli"], saszetka:["saszetka","saszetki","saszetek","saszetce"], porcja:["porcja","porcje","porcji","porcji"] };
@@ -223,11 +249,38 @@ const CATALOG = [
     info:"Lek bez recepty, nie suplement, więc limit GIS dla suplementów go nie dotyczy. Wskazanie z ulotki: zapobieganie niedoborowi witaminy D u dorosłych z otyłością (BMI ≥ 30), zwykle od października do kwietnia. Nie łączyć z innymi produktami z witaminą D bez konsultacji." }
 ];
 
+/* Pakiety „Sprawdzone działanie”: wyłącznie składniki z zatwierdzonym działaniem (rozp. 432/2012) */
+const PACKS = [
+  { id:"fatigue", name:"Mniej zmęczenia", claim:"przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", match:/zmęczenia/,
+    nutrients:["mg","b6","b12","c","fol","fe"],
+    flags:{ fe:"Żelazo suplementuj tylko wtedy, gdy badanie krwi potwierdzi taką potrzebę. Jego nadmiar odkłada się w organizmie." },
+    doctor:"Zmęczenie, które trwa kilka tygodni, może mieć przyczynę medyczną (np. niedokrwistość albo choroby tarczycy). Skonsultuj je z lekarzem." },
+  { id:"muscles", name:"Prawidłowa praca mięśni", claim:"pomaga w prawidłowym funkcjonowaniu mięśni", match:/mięśni/,
+    nutrients:["mg","d","ca","pot"],
+    flags:{ pot:"Powyżej 1000 mg potasu dziennie GIS wymaga ostrzeżeń dla osób starszych oraz z chorobami nerek lub serca, nadciśnieniem albo cukrzycą insulinooporną." },
+    doctor:"Częste lub bolesne skurcze mięśni skonsultuj z lekarzem. Dla żadnego składnika nie zatwierdzono w UE działania na skurcze." },
+  { id:"hair", name:"Zdrowe włosy, skóra i paznokcie", claim:"pomaga zachować zdrowe włosy, skórę lub paznokcie", match:/włos|skór|paznokci/,
+    nutrients:["bio","zn","se","c"], flags:{},
+    doctor:"Nagłe lub nasilone wypadanie włosów, zmiany skórne czy łamliwe paznokcie mogą mieć przyczynę medyczną. Skonsultuj je z lekarzem lub dermatologiem.",
+    fact:"Suplement z samym kolagenem nie ma w UE żadnego zatwierdzonego działania. Zatwierdzono działanie witaminy C, która pomaga organizmowi wytwarzać kolagen." }
+];
+const STEPS = [
+  { k:"min", t:"Minimum w suplemencie (15% RWS)", d:"Najmniejsza ilość, przy której składnik w suplemencie w ogóle się liczy. Poniżej niej producent nie może przypisywać mu żadnego działania." },
+  { k:"rws", t:"Wartość z etykiety (RWS)", d:"Uśredniona wartość odniesienia dla dorosłego, używana na opakowaniach (np. „27% RWS”). Służy do porównywania produktów, nie jest Twoją normą." },
+  { k:"norm", t:"Twoja norma", d:"Ile potrzebujesz dziennie ze wszystkich źródeł razem, przede wszystkim z jedzenia. Suplement tylko ją uzupełnia, więc wynik poniżej normy w aplikacji nie oznacza niedoboru." },
+  { k:"goal", t:"Twój cel", d:"Ilość z suplementów, którą ustawiasz sam, najlepiej razem z lekarzem lub dietetykiem. Aplikacja nie pozwoli ustawić celu powyżej granicy bezpieczeństwa." },
+  { k:"gis", t:"Limit GIS", d:"Najwyższa ilość w dziennej porcji jednego suplementu według Zespołu ds. Suplementów Diety przy Głównym Inspektoracie Sanitarnym. Nie dotyczy leków." },
+  { k:"ul", t:"Granica bezpieczeństwa (UL)", d:"Najwyższe codzienne spożycie, przy którym nie spodziewamy się szkód dla zdrowia. To sufit, nie cel: więcej nie daje dodatkowych korzyści, a zwiększa ryzyko. Nie przekraczaj jej." }
+];
+function rangeFor(n){ const N=NUTR[n], lims=[gisFor(n),N.ul].filter(Boolean); return { lo:N.rws?N.rws*0.15:null, hi:lims.length?Math.min(...lims):null }; }
+function packClaims(pk,n){ return (CLAIMS[n]||[]).filter(c=>pk.match.test(c)); }
+
 /* ============ Stan i zapis ============ */
 const KEY = "wassup.v1";
 let S = load();
-function blank(){ return { v:1, profile:null, products:[], log:{}, labs:[], prefs:{}, created:today() }; }
-function load(){ try{ const raw = localStorage.getItem(KEY); if(raw){ const s = JSON.parse(raw); if(s && s.v===1){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; return s; } } }catch(e){} return blank(); }
+function blank(){ return { v:1, profile:null, products:[], log:{}, labs:[], prefs:{}, goals:{}, packs:[], created:today() }; }
+function load(){ try{ const raw = localStorage.getItem(KEY); if(raw){ const s = JSON.parse(raw); if(s && s.v===1){ fill(s); return s; } } }catch(e){} return blank(); }
+function fill(s){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; s.goals=s.goals||{}; s.packs=s.packs||[]; return s; }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){ toast("Nie udało się zapisać danych na tym urządzeniu"); } }
 try{ if(navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
 
@@ -250,12 +303,12 @@ function syms(content){ return `<div class="syms">${Object.keys(content).filter(
 function norms(){ const p=S.profile; if(!p) return {}; if(p.state==="preg") return NORMS.preg; if(p.state==="lact") return NORMS.lact; return (NORMS[p.sex]||NORMS.m)[p.age]||{}; }
 function gisFor(n){
   const p=S.profile||{}, preg=p.state==="preg", lact=p.state==="lact";
-  return ({ mg:400, d:p.age==="75+"?100:50, b6:6, c:1000, zn:15, b12:100, fe:preg?30:20, fol:preg?800:600, ca:1500, k:200, se:200, i:(preg||lact)?200:150, om3:null })[n];
+  return ({ mg:400, d:p.age==="75+"?100:50, b6:6, c:1000, zn:15, b12:100, fe:preg?30:20, fol:preg?800:600, ca:1500, k:200, se:200, i:(preg||lact)?200:150, bio:null, pot:1500, om3:null })[n];
 }
 function taken(k,pid){ return (S.log[k]&&S.log[k][pid])||0; }
 function totals(k){ const t={}, byType={}; for(const p of S.products){ const u=taken(k,p.id); if(!u) continue; for(const n in p.content){ const v=(p.content[n]||0)*u; if(!v) continue; t[n]=(t[n]||0)+v; byType[n]=byType[n]||{}; byType[n][p.type]=(byType[n][p.type]||0)+v; } } return {t,byType}; }
 function planned(){ const t={}; for(const p of S.products) for(const n in p.content) if(p.content[n]) t[n]=(t[n]||0)+p.content[n]*p.daily; return t; }
-function activeNutrients(){ const s=new Set(); for(const p of S.products) for(const n in p.content) if(p.content[n]) s.add(n); return ORDER.filter(n=>s.has(n)); }
+function activeNutrients(){ const s=new Set(Object.keys(S.goals||{})); for(const p of S.products) for(const n in p.content) if(p.content[n]) s.add(n); return ORDER.filter(n=>s.has(n)); }
 function status(n,v){
   const ul=NUTR[n].ul, gis=gisFor(n);
   if(!v) return {c:"none",t:"Brak dziś"};
@@ -273,7 +326,7 @@ function doseText(p,u){ return Object.keys(p.content).filter(n=>p.content[n]).ma
 const I = {
   check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
   left:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
-  right:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
+  chev:'',right:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
   x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
   today:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M9 15l2 2 4-4"/></svg>',
   hist:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M5 20V12M10 20V6M15 20v-9M20 20V9"/></svg>',
@@ -327,12 +380,12 @@ function viewToday(){
   const {t,byType}=totals(k), plan=planned();
   const done=S.products.filter(p=>taken(k,p.id)>=p.daily);
   const prods=only?S.products.filter(p=>taken(k,p.id)<p.daily):S.products;
-  const ns=activeNutrients().filter(n=>!only || (t[n]||0) < (plan[n]||0)-1e-9);
+  const ns=activeNutrients().filter(n=>!only || (t[n]||0) < ((S.goals[n]!=null?S.goals[n]:plan[n])||0)-1e-9);
   const allDone=S.products.length && done.length===S.products.length;
   return `<section class="screen">
   <div class="head"><div><div class="sub">${isToday?esc(longDate(k)):"Uzupełniasz dzień"}</div><h1>${esc(cap(dayLabel(k)))}</h1></div>
     <div class="datenav"><button class="iconbtn" data-act="day-prev" aria-label="Poprzedni dzień">${I.left}</button><button class="iconbtn" data-act="day-next" aria-label="Następny dzień" ${isToday?"disabled":""}>${I.right}</button></div></div>
-  ${S.products.length?`<label class="switchrow card"><span class="grow"><span class="pname">Tylko to, co zostało na dziś</span><span class="pmeta" style="display:block">Ukrywa to, co już dziś przyjąłeś w zaplanowanej ilości.</span></span>
+  ${S.products.length?`<label class="switchrow card"><span class="grow"><span class="pname">Tylko to, co zostało na dziś</span><span class="pmeta" style="display:block">Ukrywa odhaczone produkty i składniki, które osiągnęły dziś Twój cel albo zaplanowaną ilość.</span></span>
     <input type="checkbox" id="only-left" class="switch" ${only?"checked":""}></label>`:""}
   ${S.products.length?`<div class="section-t">Do przyjęcia · ${done.length}/${S.products.length}</div>
   ${prods.length?`<div class="list">${prods.map(p=>{ const u=taken(k,p.id), on=u>=p.daily && u>0; const ro=runOut(p);
@@ -348,32 +401,41 @@ function viewToday(){
   <p class="src" style="padding:0 4px">Liczymy tylko to, co odhaczysz w aplikacji. Resztę składników dostarcza jedzenie, więc wynik poniżej normy nie oznacza niedoboru. Wassup informuje, nie zaleca dawek.</p>
   </section>`;
 }
+function infoBtn(k){ return `<button class="info" data-act="info" data-k="${k}" aria-label="Co to znaczy?">i</button>`; }
 function nutrientCard(n,v,bt){
-  const N=NUTR[n], nm=norms(), norm=nm[n], gis=gisFor(n), st=status(n,v), f=N.normFactor||1;
-  const marks=[["RWS",N.rws,""],["norma",norm?norm/f:null,""],["GIS",gis,""],["UL",N.ul,"ul"]].filter(m=>m[1]);
+  const N=NUTR[n], nm=norms(), norm=nm[n], gis=gisFor(n), f=N.normFactor||1, goal=S.goals[n];
+  let st=status(n,v);
+  if(goal && st.c==="ok") st = v>=goal-1e-9 ? {c:"ok",t:"Cel osiągnięty"} : {c:"none",t:`${fmt(v/goal*100,0)}% celu`};
+  if(goal && st.c==="none" && !v) st={c:"none",t:"0% celu"};
+  const marks=[["RWS",N.rws,""],["norma",norm?norm/f:null,""],["GIS",gis,""],["cel",goal,"goal"],["UL",N.ul,"ul"]].filter(m=>m[1]);
   const max=Math.max(...marks.map(m=>m[1]*1.15), v*1.08, 1);
   const pct=x=>Math.min(100,x/max*100);
   const groups=[]; marks.slice().sort((a,b)=>a[1]-b[1]).forEach(m=>{ const g=groups.find(g=>Math.abs(g.v-m[1])<1e-9); if(g){ g.names.push(m[0]); if(m[2]) g.cls=m[2]; } else groups.push({v:m[1],names:[m[0]],cls:m[2]}); });
   const rows=[]; const labels=groups.map(g=>{ const x=pct(g.v), txt=g.names.join(" · "), w=Math.max(9,txt.length*1.9); let row=0; while((rows[row]||[]).some(o=>Math.abs(o.x-x)<(o.w+w)/2+1)) row++; (rows[row]=rows[row]||[]).push({x,w}); return {txt,cls:g.cls,x,row}; });
-  const onlyLek=bt.lek && !bt.suplement;
+  const onlyLek=bt.lek && !bt.suplement, hasProd=S.products.some(p=>p.content[n]);
   return `<div class="card">
     <div class="ntop"><div><div class="nname">${sym(n)}${N.name}</div>
-      <div style="margin-top:8px" class="big num">${fmt(v)}<small>${N.unit}</small></div>
+      <div style="margin-top:8px" class="big num">${fmt(v)}<small>${N.unit}${goal?` / ${fmt(goal)} ${N.unit}`:""}</small></div>
       ${n==="d"?`<div class="alt num">${fmt(v*40,0)} IU</div>`:""}</div>
       <span class="chip ${st.c}">${st.t}</span></div>
-    <div class="scale" role="img" aria-label="${esc(N.name)}: ${fmt(v)} ${N.unit}">
-      <div class="track"></div><div class="fillbar" style="width:${pct(v)}%"></div>
-      ${labels.map(l=>`<i class="mark ${l.cls}" style="left:calc(${l.x}% - 1px)"></i><span class="mlabel" style="left:${l.x}%;top:${26+l.row*12}px">${l.txt}</span>`).join("")}
+    <div class="scale" role="img" aria-label="${esc(N.name)}: ${fmt(v)} ${N.unit}${N.ul?`, granica bezpieczeństwa ${fmt(N.ul)} ${N.unit}`:""}">
+      <div class="track"></div>
+      ${N.ul?`<div class="danger" style="left:${pct(N.ul)}%"></div>`:""}
+      <div class="fillbar ${N.ul&&v>N.ul+1e-9?"over":""}" style="width:${pct(v)}%"></div>
+      ${labels.map(l=>`<i class="mark ${l.cls}" style="left:calc(${l.x}% - 1px)"></i><span class="mlabel ${l.cls}" style="left:${l.x}%;top:${26+l.row*12}px">${l.txt}</span>`).join("")}
     </div>
     <div class="cmp" style="margin-top:${Math.max(0,...labels.map(l=>l.row))*12}px">
-      ${N.rws?`<div><span>Etykieta (RWS ${fmt(N.rws)} ${N.unit})</span><span class="num">${fmt(v/N.rws*100,0)}%</span></div>`:""}
-      ${norm?`<div><span>Twoja norma dzienna (${fmt(norm)} ${n==="fol"?"µg DFE":N.unit})</span><span class="num">${fmt(v*f/norm*100,0)}%</span></div>`:""}
-      ${gis?`<div><span>Limit GIS dla suplementu (${fmt(gis)} ${N.unit})</span><span class="num">${v>gis+1e-9?"powyżej":"poniżej"}</span></div>`:""}
-      ${N.ul?`<div><span>Górny limit UL (${fmt(N.ul)} ${N.unit})</span><span class="num">${fmt(v/N.ul*100,0)}%</span></div>`:`<div><span>Górny limit UL</span><span>nie ustalono</span></div>`}
+      ${goal?`<div><span>Twój cel (${fmt(goal)} ${N.unit}) ${infoBtn("goal")}</span><span class="num">${fmt(v/goal*100,0)}%</span></div>`:""}
+      ${N.rws?`<div><span>Etykieta: RWS ${fmt(N.rws)} ${N.unit} ${infoBtn("rws")}</span><span class="num">${fmt(v/N.rws*100,0)}%</span></div>`:""}
+      ${norm?`<div><span>Twoja norma: ${fmt(norm)} ${n==="fol"?"µg DFE":N.unit} ${infoBtn("norm")}</span><span class="num">${fmt(v*f/norm*100,0)}%</span></div>`:""}
+      ${gis?`<div><span>Limit GIS: ${fmt(gis)} ${N.unit} ${infoBtn("gis")}</span><span class="num">${v>gis+1e-9?"powyżej":"poniżej"}</span></div>`:""}
+      ${N.ul?`<div class="ulrow"><span><b>Granica bezpieczeństwa: ${fmt(N.ul)} ${N.unit}</b> ${infoBtn("ul")}</span><span class="num">${v>N.ul+1e-9?"przekroczona":fmt(v/N.ul*100,0)+"%"}</span></div>`:`<div><span>Granica bezpieczeństwa ${infoBtn("ul")}</span><span>nie ustalono</span></div>`}
     </div>
+    ${goal&&!hasProd?`<div class="note">Żaden produkt w Apteczce nie zawiera tego składnika. Dodaj produkt, żeby liczyć postęp do celu.</div>`:""}
     ${n==="mg"&&v?`<div class="note">${N.ulNote} Normę ${norm?fmt(norm)+" mg ":""}liczy się z dietą łącznie, więc resztę zwykle daje jedzenie.</div>`:""}
-    ${n==="d"&&v>=N.ul-1e-9?`<div class="note warn">${fmt(v)} µg to ${v>N.ul?"więcej niż":"dokładnie"} górny bezpieczny poziom spożycia z diety i suplementów. ${onlyLek?"Twój produkt to lek, więc limit GIS dla suplementów go nie dotyczy. ":""}O dawkę i badanie poziomu 25(OH)D zapytaj lekarza lub farmaceutę.</div>`:""}
-    ${n!=="mg"&&n!=="d"&&gis&&v>gis+1e-9&&!onlyLek?`<div class="note warn">Powyżej limitu, który Zespół ds. Suplementów Diety przy GIS przyjął dla jednej dziennej porcji suplementu.</div>`:""}
+    ${n==="d"&&v>=N.ul-1e-9?`<div class="note warn">${fmt(v)} µg to ${v>N.ul?"więcej niż":"dokładnie"} granica bezpieczeństwa dla diety i suplementów razem. ${onlyLek?"Twój produkt to lek, więc limit GIS dla suplementów go nie dotyczy. ":""}O dawkę i badanie poziomu 25(OH)D zapytaj lekarza lub farmaceutę.</div>`:""}
+    ${N.ul&&v>N.ul+1e-9&&n!=="d"?`<div class="note warn">Przekraczasz granicę bezpieczeństwa (UL). Porozmawiaj z lekarzem lub farmaceutą o dawce.</div>`:""}
+    ${n!=="mg"&&n!=="d"&&gis&&v>gis+1e-9&&!(N.ul&&v>N.ul)&&!onlyLek?`<div class="note warn">Powyżej limitu, który Zespół ds. Suplementów Diety przy GIS przyjął dla dziennej porcji suplementu.</div>`:""}
     ${N.warn&&v?`<div class="note">${N.warn}</div>`:""}
   </div>`;
 }
@@ -443,22 +505,35 @@ function viewBox(){
 
 /* ============ Wiedza ============ */
 function viewKnow(){
-  const n=KNOW, N=NUTR[n], nm=norms(), gis=gisFor(n);
+  const n=KNOW, N=NUTR[n], nm=norms(), gis=gisFor(n), r=rangeFor(n), goal=S.goals[n];
   return `<section class="screen">
-  <div class="head"><div><div class="sub">Co mówią przepisy i normy</div><h1>Wiedza</h1></div></div>
+  <div class="head"><div><div class="sub">Co mówią przepisy i nauka</div><h1>Wiedza</h1></div></div>
+  <button class="card howto" data-act="info" data-k="">
+    <div class="ruler" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="u"></i></div>
+    <div><div class="pname">Jak czytać dawki</div><div class="pmeta">Minimum, etykieta, norma, limit GIS i granica bezpieczeństwa. Co znaczy każda liczba.</div></div></button>
+  <div class="section-t">Pakiety: sprawdzone działanie</div>
+  <div class="list">${PACKS.map(pk=>{ const on=S.packs.includes(pk.id); return `<button class="row" style="width:100%;text-align:left" data-act="pack" data-id="${pk.id}">
+    ${syms(Object.fromEntries(pk.nutrients.map(x=>[x,1])))}<div class="grow"><div class="pname">${esc(pk.name)}</div><div class="pmeta">${on?"Włączony · ":""}${pk.nutrients.length} ${plural(pk.nutrients.length,["składnik","składniki","składników"])}</div></div><span class="chev">${I.right}</span></button>`; }).join("")}</div>
+  <div class="section-t">Składniki</div>
   ${nutrientSelect("know-n",ORDER,n)}
-  <div class="card"><div class="nname">${sym(n)}Twoje progi: ${N.name}</div>
+  <div class="card"><div class="nname">${sym(n)}Progi: ${N.name}</div>
     <dl class="kv">
-      <dt>Referencyjna wartość z etykiety (RWS)</dt><dd class="num">${N.rws?fmt(N.rws)+" "+N.unit:"brak"}</dd>
-      <dt>Twoja norma dzienna${["d","k","om3"].includes(n)?" (AI)":" (RDA)"}</dt><dd class="num">${nm[n]?fmt(nm[n])+" "+(n==="fol"?"µg DFE":N.unit):"–"}</dd>
-      <dt>Limit GIS na dzienną porcję suplementu</dt><dd class="num">${gis?fmt(gis)+" "+N.unit:"nie ustalono"}</dd>
-      ${N.rws?`<dt>Minimum w suplemencie (15% RWS)</dt><dd class="num">${fmt(N.rws*0.15,2)} ${N.unit}</dd>`:""}
-      <dt>Górny tolerowany poziom (UL)</dt><dd class="num">${N.ul?fmt(N.ul)+" "+N.unit:"nie ustalono"}</dd>
+      ${N.rws?`<dt>Minimum w suplemencie (15% RWS) ${infoBtn("min")}</dt><dd class="num">${fmt(N.rws*0.15,2)} ${N.unit}</dd>`:""}
+      <dt>Wartość z etykiety (RWS) ${infoBtn("rws")}</dt><dd class="num">${N.rws?fmt(N.rws)+" "+N.unit:"brak"}</dd>
+      <dt>Twoja norma${["d","k","om3","bio","pot"].includes(n)?" (AI)":" (RDA)"} ${infoBtn("norm")}</dt><dd class="num">${nm[n]?fmt(nm[n])+" "+(n==="fol"?"µg DFE":N.unit):"–"}</dd>
+      <dt>Limit GIS na dzienną porcję ${infoBtn("gis")}</dt><dd class="num">${gis?fmt(gis)+" "+N.unit:"nie ustalono"}</dd>
+      <dt><b>Granica bezpieczeństwa (UL)</b> ${infoBtn("ul")}</dt><dd class="num"><b>${N.ul?fmt(N.ul)+" "+N.unit:"nie ustalono"}</b></dd>
     </dl>
     <div class="note">${N.ulNote}</div>
     ${N.normNote?`<div class="note">${N.normNote}</div>`:""}
     ${N.warn?`<div class="note warn">${N.warn}</div>`:""}
     <div class="src">Źródła: rozp. 1169/2011 zał. XIII (RWS); Normy żywienia dla populacji Polski 2024 (normy, UL); uchwały Zespołu ds. Suplementów Diety GIS (limity); rozp. MZ ws. składu suplementów §4 (15% RWS).</div>
+  </div>
+  <div class="card"><div class="pname">Twój cel dzienny z suplementów ${infoBtn("goal")}</div>
+    <div class="pmeta">${r.lo?`Działanie potwierdzone w UE od ${fmt(r.lo,2)} ${N.unit}. `:""}${r.hi?`Górna granica dla celu: ${fmt(r.hi)} ${N.unit}.`:"Nie ustalono górnego limitu."} Wartość ustal najlepiej z lekarzem lub dietetykiem.</div>
+    <div class="f-row"><label class="f">Cel (${N.unit})<input id="g-val" inputmode="decimal" value="${goal!=null?String(goal).replace(".",","):""}" placeholder="${r.lo?fmt(r.lo,2)+"–"+(r.hi?fmt(r.hi):"…"):""}"></label>
+      <div class="btns" style="align-self:end"><button class="btn" data-act="goal-save" data-n="${n}">Zapisz</button>${goal!=null?`<button class="btn sec" data-act="goal-del" data-n="${n}">Usuń</button>`:""}</div></div>
+    ${planned()[n]?`<button class="link" style="justify-self:start" data-act="goal-plan" data-n="${n}">Wpisz moją obecną ilość z Apteczki (${fmt(planned()[n])} ${N.unit})</button>`:""}
   </div>
   ${n==="mg"?`<div class="card"><div class="pname">Licz magnez, nie sól magnezu</div>
     <p style="margin:0">Na opakowaniu często widnieje masa całego związku, np. „670 mg cytrynianu magnezu”. Samego magnezu jest w nim ok. 15%, czyli 102 mg. Etykieta musi podawać tę drugą liczbę w tabeli składu na dzienną porcję.</p>
@@ -466,10 +541,52 @@ function viewKnow(){
   ${n==="d"?`<div class="card"><div class="pname">Przelicznik IU ↔ µg</div>
     <div class="f-row"><label class="f">IU<input id="iu" inputmode="decimal" value="4000"></label><label class="f">µg<input id="ug" inputmode="decimal" value="100"></label></div>
     <div class="pmeta">1 µg witaminy D = 40 IU. Limit GIS dla suplementu: 2000 IU (50 µg), dla osób powyżej 75 lat 4000 IU. Leki z witaminą D (np. 4000 IU) mają własne wskazania z ulotki.</div></div>`:""}
-  <div class="card"><div class="pname">Co wolno o nim powiedzieć</div>
-    <div class="pmeta">Dopuszczone w UE oświadczenia zdrowotne (rozp. 432/2012). Inne obietnice na etykietach i w reklamach są niedozwolone.</div>
+  <div class="card"><div class="pname">Sprawdzone działanie</div>
+    <div class="pmeta">Tylko te działania sprawdził Europejski Urząd ds. Bezpieczeństwa Żywności (EFSA) i zatwierdziła UE.${N.rws?` Dotyczą ilości co najmniej ${fmt(N.rws*0.15,2)} ${N.unit} dziennie (15% RWS).`:""} Jeśli produkt obiecuje coś więcej, podchodź do tego z dystansem.</div>
     <ul class="claims">${(CLAIMS[n]||[]).map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>
+  <div class="card"><div class="pname">Czerwone flagi w reklamach</div>
+    <div class="pmeta">Żaden suplement nie może obiecywać, że:</div>
+    <ul class="claims">
+      <li>leczy chorobę albo jej zapobiega,</li>
+      <li>zastąpi lek albo wizytę u lekarza,</li>
+      <li>bez niego zwykła dieta nie wystarczy,</li>
+      <li>schudniesz w określonym tempie, np. „5 kg w tydzień”,</li>
+      <li>poleca go lekarz lub farmaceuta (w reklamie suplementu nie wolno używać ich wizerunku),</li>
+      <li>uchroni Cię przed objawami, którymi reklama straszy.</li>
+    </ul>
+    <div class="src">Na podstawie rozp. 1924/2006, 1169/2011, dyrektywy 2002/46/WE i Kodeksu Dobrych Praktyk Reklamy Suplementów Diety.</div></div>
   </section>`;
+}
+function infoSheet(k){
+  sheet("Jak czytać dawki",`<div class="pmeta">Liczby w Wassup, od najniższej do najwyższej. Twój wynik z suplementów najlepiej mieści się między minimum a granicą bezpieczeństwa.</div>
+  <ol class="steps">${STEPS.map(s=>`<li class="${s.k===k?"on":""} ${s.k==="ul"?"ul":""}"><div class="pname">${s.t}</div><div class="pmeta">${s.d}</div></li>`).join("")}</ol>
+  <button class="btn full" data-act="close">Rozumiem</button>`);
+  const on=document.querySelector(".steps li.on"); if(on) on.scrollIntoView({block:"center"});
+}
+function packSheet(id){
+  const pk=PACKS.find(p=>p.id===id), plan=planned(), on=S.packs.includes(pk.id);
+  sheet(pk.name,`<div class="pmeta">Składniki, dla których UE zatwierdziła działanie: <i>${esc(pk.claim)}</i>. Pakiet nie poleca produktów ani dawek. Wpisz własne cele w bezpiecznym zakresie, najlepiej po rozmowie z lekarzem lub dietetykiem.</div>
+  ${pk.nutrients.map(n=>{ const N=NUTR[n], r=rangeFor(n), g=S.goals[n]; return `<div class="fieldset">
+    <div class="ntop"><div class="nname">${sym(n)}${N.name}</div>${plan[n]?`<span class="chip ok">Masz: ${fmt(plan[n])} ${N.unit}</span>`:`<span class="chip none">Brak w Apteczce</span>`}</div>
+    <ul class="claims small">${packClaims(pk,n).map(c=>`<li>${esc(c)}</li>`).join("")}</ul>
+    <div class="pmeta">Zakres: ${r.lo?fmt(r.lo,2):"–"} – ${r.hi?fmt(r.hi)+" "+N.unit:"brak ustalonego limitu"}${r.hi&&N.ul&&r.hi<N.ul?` · granica bezpieczeństwa ${fmt(N.ul)} ${N.unit}`:""}</div>
+    ${pk.flags[n]?`<div class="note warn">${pk.flags[n]}</div>`:""}
+    <label class="f">Twój cel (${N.unit}, opcjonalnie)<input data-goal="${n}" inputmode="decimal" value="${g!=null?String(g).replace(".",","):""}" placeholder="${r.lo?fmt(r.lo,2)+"–"+(r.hi?fmt(r.hi):"…"):""}"></label>
+  </div>`; }).join("")}
+  <div class="note warn"><b>Kiedy do lekarza:</b> ${pk.doctor}</div>
+  ${pk.fact?`<div class="note"><b>Warto wiedzieć:</b> ${pk.fact}</div>`:""}
+  <button class="btn full" data-act="pack-save" data-id="${pk.id}">${on?"Zapisz cele":"Włącz pakiet i zapisz cele"}</button>
+  ${on?`<button class="btn sec full" data-act="pack-off" data-id="${pk.id}">Wyłącz pakiet</button>`:""}
+  <div class="src">Działania z rozp. 432/2012. Zakres: od 15% RWS do niższej z wartości limit GIS / UL.</div>`);
+}
+function checkGoal(n,v){
+  const N=NUTR[n], gis=gisFor(n);
+  if(v==null || v<=0) return {err:"Wpisz liczbę większą od zera."};
+  if(N.ul && v>N.ul+1e-9) return {err:`${N.name}: cel nie może przekraczać granicy bezpieczeństwa (${fmt(N.ul)} ${N.unit}).`};
+  let warn=null;
+  if(gis && v>gis+1e-9) warn=`${N.name}: cel powyżej limitu GIS dla suplementu (${fmt(gis)} ${N.unit}). Ma sens tylko przy leku lub zaleceniu lekarza.`;
+  else if(N.rws && v<N.rws*0.15-1e-9) warn=`${N.name}: cel poniżej progu, od którego UE potwierdza działanie (${fmt(N.rws*0.15,2)} ${N.unit}).`;
+  return {warn};
 }
 
 /* ============ Ty ============ */
@@ -566,6 +683,17 @@ document.addEventListener("click", async e=>{
   const act=a.dataset.act, id=a.dataset.id;
   if(act==="close-bg"){ if(e.target===a) closeSheet(); return; }
   if(act==="close"){ closeSheet(); return; }
+  if(act==="info"){ infoSheet(a.dataset.k); return; }
+  if(act==="pack"){ packSheet(id); return; }
+  if(act==="pack-save"||act==="goal-save"||act==="goal-plan"){
+    const items = act==="pack-save" ? [...document.querySelectorAll("[data-goal]")].map(el=>[el.dataset.goal, el.value.trim()]) : [[a.dataset.n, act==="goal-plan"?String(planned()[a.dataset.n]):document.getElementById("g-val").value.trim()]];
+    const warns=[];
+    for(const [n,raw] of items){ if(raw===""){ continue; } const v=parseNum(raw), c=checkGoal(n,v); if(c.err){ toast(c.err); return; } if(c.warn) warns.push(c.warn); }
+    for(const [n,raw] of items){ if(raw===""){ if(act==="pack-save") delete S.goals[n]; continue; } S.goals[n]=Math.round(parseNum(raw)*1000)/1000; }
+    if(act==="pack-save" && !S.packs.includes(id)) S.packs.push(id);
+    save(); closeSheet(); render(); toast(warns.length?warns[0]:"Zapisano cel"); return; }
+  if(act==="goal-del"){ delete S.goals[a.dataset.n]; save(); render(); toast("Usunięto cel"); return; }
+  if(act==="pack-off"){ S.packs=S.packs.filter(x=>x!==id); save(); closeSheet(); render(); toast("Pakiet wyłączony. Cele zostały, usuniesz je w Wiedzy."); return; }
   if(act==="ob-done"){ S.profile={sex:OB.sex, age:(document.getElementById("ob-age")||{}).value||OB.age, state:OB.sex==="f"?((document.getElementById("ob-state")||{}).value||"none"):"none"}; S.created=today();
     S.products=CATALOG.filter(c=>OB.pick[c.cid]).map(c=>fromCatalog(c.cid)); save(); TAB="today"; render(); return; }
   if(act==="day-prev"){ DAY=addDays(DAY,-1); render(); return; }
@@ -612,7 +740,7 @@ document.addEventListener("change", e=>{
   if(el.id==="me-state"){ S.profile.state=el.value; save(); render(); }
   if(el.id==="ob-age"){ OB.age=el.value; }
   if(el.id==="ob-state"){ OB.state=el.value; }
-  if(el.id==="import-file"){ const f=el.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ try{ const d=JSON.parse(r.result); if(!d||d.v!==1||!Array.isArray(d.products)) throw 0; d.prefs=d.prefs||{}; d.labs=d.labs||[]; S=d; save(); render(); toast("Wczytano kopię"); }catch(_){ toast("To nie jest plik kopii Wassup"); } }; r.readAsText(f); }
+  if(el.id==="import-file"){ const f=el.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ try{ const d=JSON.parse(r.result); if(!d||d.v!==1||!Array.isArray(d.products)) throw 0; S=fill(d); save(); render(); toast("Wczytano kopię"); }catch(_){ toast("To nie jest plik kopii Wassup"); } }; r.readAsText(f); }
 });
 document.addEventListener("input", e=>{
   const el=e.target;
