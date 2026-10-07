@@ -193,6 +193,22 @@ body.locked{overflow:hidden}
 .dietrow .chip{margin-top:2px}
 .warnli{color:var(--bad)}
 .diethero{border:1.5px solid var(--brand)}
+
+/* v0.5 Badania */
+.tabbar nav{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
+.tab span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+button.card.labcard{width:100%;text-align:left;color:inherit;font:inherit}
+.rbar{position:relative;height:40px}
+.rtrack{position:absolute;left:0;right:0;top:9px;height:10px;border-radius:5px;background:var(--fill)}
+.rband{position:absolute;top:9px;height:10px;background:var(--ok);opacity:.4;border-radius:5px}
+.rdot{position:absolute;top:4px;width:20px;height:20px;border-radius:50%;transform:translateX(-50%);border:3px solid var(--card);background:var(--ok);box-sizing:border-box}
+.rdot.low{background:var(--warn)}.rdot.high{background:var(--bad)}.rdot.none{background:var(--muted)}
+.rlab{position:absolute;top:24px;font-size:10.5px;color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+svg.trend{width:100%;height:auto;display:block;overflow:visible}
+.tdot{fill:var(--ok);stroke:var(--card);stroke-width:2}.tdot.low{fill:var(--warn)}.tdot.high{fill:var(--bad)}.tdot.none{fill:var(--muted)}
+.lfprev{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px;color:var(--muted)}
+#lf-prev .seg button{font-size:12.5px;padding:8px 2px}
+.note .link{font-size:14px;padding:0 2px}
 </style>
 </head>
 <body>
@@ -205,7 +221,7 @@ body.locked{overflow:hidden}
 /* ============ Dane referencyjne (źródła: baza regulacyjna Wassup) ============
    RWS: rozp. 1169/2011 zał. XIII · normy i UL: Normy żywienia dla populacji Polski 2024 (NIZP PZH–PIB)
    limity GIS: uchwały Zespołu ds. Suplementów Diety · oświadczenia: rozp. 432/2012 */
-const APP_VERSION = "0.4.0";
+const APP_VERSION = "0.5.0";
 const CLAIMS = {"mg": ["Magnez przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Magnez pomaga w utrzymaniu równowagi elektrolitowej", "Magnez przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Magnez pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Magnez pomaga w prawidłowym funkcjonowaniu mięśni", "Magnez pomaga w prawidłowej syntezie białka", "Magnez pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Magnez pomaga w utrzymaniu zdrowych kości", "Magnez pomaga w utrzymaniu zdrowych zębów", "Magnez odgrywa rolę w procesie podziału komórek"], "d": ["Witamina D pomaga w prawidłowym wchłanianiu/wykorzystywaniu wapnia i fosforu", "Witamina D pomaga w utrzymaniu prawidłowego poziomu wapnia we krwi", "Witamina D pomaga w utrzymaniu zdrowych kości", "Witamina D pomaga w prawidłowym funkcjonowaniu mięśni", "Witamina D pomaga w utrzymaniu zdrowych zębów", "Witamina D pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina D bierze udział w procesie podziału komórek"], "b6": ["Witamina B6 pomaga w prawidłowej syntezie cysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B6 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu białka i glikogenu", "Witamina B6 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B6 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B6 przyczynia się zmniejszenia uczucia zmęczenia i znużenia", "Witamina B6 przyczynia się do regulacji aktywności hormonalnej"], "c": ["Witamina C pomaga w utrzymaniu prawidłowego funkcjonowania układu odpornościowego w trakcie intensywnych ćwiczeń fizycznych i po nich", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania naczyń krwionośnych", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania kości", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania chrząstki", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania dziąseł", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania skóry", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania zębów", "Witamina C przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina C pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina C pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina C pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina C pomaga w ochronie komórek przed stresem oksydacyjnym", "Witamina C przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina C pomaga w regeneracji zredukowanej formy witaminy E", "Witamina C zwiększa przyswajanie żelaza"], "zn": ["Cynk pomaga w utrzymaniu prawidłowej równowagi kwasowo- zasadowej", "Cynk pomaga w utrzymaniu prawidłowego metabolizmu węglowodanów", "Cynk pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Cynk pomaga w prawidłowej syntezie DNA", "Cynk pomaga w utrzymaniu prawidłowej płodności i prawidłowych funkcji rozrodczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu kwasów tłuszczowych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu witaminy A", "Cynk pomaga w prawidłowej syntezie białka", "Cynk pomaga w utrzymaniu zdrowych kości", "Cynk pomaga zachować zdrowe włosy", "Cynk pomaga zachować zdrowe paznokcie", "Cynk pomaga zachować zdrową skórę", "Cynk pomaga w utrzymaniu prawidłowego poziomu testosteronu we krwi", "Cynk pomaga w utrzymaniu prawidłowego widzenia", "Cynk pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Cynk pomaga w ochronie komórek przed stresem oksydacyjnym", "Cynk bierze udział w procesie podziału komórek"], "b12": ["Witamina B12 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B12 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B12 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B12 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B12 przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina B12 odgrywa rolę w procesie podziału komórek"], "fe": ["Żelazo pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Żelazo przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Żelazo pomaga w prawidłowej produkcji czerwonych krwinek i hemoglobiny", "Żelazo pomaga w prawidłowym transporcie tlenu w organizmie", "Żelazo pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Żelazo przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Żelazo odgrywa rolę w procesie podziału komórek"], "fol": ["Foliany przyczyniają się do wzrostu tkanek matczynych w czasie ciąży", "Foliany pomagają w prawidłowej syntezie aminokwasów", "Foliany pomagają w prawidłowej produkcji krwi", "Foliany pomagają w utrzymaniu prawidłowego metabolizmu homocysteiny", "Foliany pomagają w utrzymaniu prawidłowych funkcji psychologicznych", "Foliany pomagają w prawidłowym funkcjonowaniu układu odpornościowego", "Foliany przyczyniają się do zmniejszenia uczucia zmęczenia i znużenia", "Foliany biorą udział w procesie podziału komórek"], "ca": ["Wapń przyczynia się do prawidłowego krzepnięcia krwi", "Wapń przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Wapń pomaga w prawidłowym funkcjonowaniu mięśni", "Wapń pomaga w utrzymaniu prawidłowego przekaźnictwa nerwowego", "Wapń pomaga w prawidłowym funkcjonowaniu enzymów trawiennych", "Wapń bierze udział w procesie podziału i specjalizacji komórek", "Wapń jest potrzebny do utrzymania zdrowych kości", "Wapń jest potrzebny do utrzymania zdrowych zębów"], "k": ["Witamina K przyczynia się do prawidłowego krzepnięcia krwi", "Witamina K pomaga w utrzymaniu zdrowych kości"], "se": ["Selen przyczynia się do prawidłowego przebiegu spermatogenezy", "Selen pomaga zachować zdrowe włosy", "Selen pomaga zachować zdrowe paznokcie", "Selen pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Selen pomaga w prawidłowym funkcjonowaniu tarczycy", "Selen pomaga w ochronie komórek przed stresem oksydacyjnym"], "i": ["Jod pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Jod przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Jod pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Jod pomaga zachować zdrową skórę", "Jod pomaga w prawidłowej produkcji hormonów tarczycy i w prawidłowym funkcjonowaniu tarczycy"], "om3": ["Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego funkcjonowania mózgu (warunek: 250 mg DHA dziennie)", "Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego widzenia (warunek: 250 mg DHA dziennie)", "DHA pomaga w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego ciśnienia krwi (warunek: 3 g EPA i DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g EPA i DHA dziennie)", "Kwas eikozapentaenowy (EPA) i kwas dokozaheksaenowy (DHA) przyczyniają się do prawidłowego funkcjonowania serca (warunek: 250 mg EPA i DHA dziennie)"], "bio": ["Biotyna przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Biotyna pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Biotyna przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Biotyna pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Biotyna pomaga zachować zdrowe włosy", "Biotyna pomaga w utrzymaniu prawidłowego stanu błon śluzowych", "Biotyna pomaga zachować zdrową skórę"], "pot": ["Potas pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Potas pomaga w prawidłowym funkcjonowaniu mięśni", "Potas pomaga w utrzymaniu prawidłowego ciśnienia krwi"]};
 const NUTR = {
   mg:  { name:"Magnez", sym:"Mg", unit:"mg", rws:375, ul:250,
@@ -290,7 +306,7 @@ const KEY = "wassup.v1";
 let S = load();
 function blank(){ return { v:1, profile:null, products:[], log:{}, labs:[], prefs:{}, goals:{}, packs:[], foodMap:{}, diet:null, created:today() }; }
 function load(){ try{ const raw = localStorage.getItem(KEY); if(raw){ const s = JSON.parse(raw); if(s && s.v===1){ fill(s); return s; } } }catch(e){} return blank(); }
-function fill(s){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; s.goals=s.goals||{}; s.packs=s.packs||[]; s.foodMap=s.foodMap||{}; return s; }
+function fill(s){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; s.goals=s.goals||{}; s.packs=s.packs||[]; s.foodMap=s.foodMap||{}; labsMigrate(s); return s; }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){ toast("Nie udało się zapisać danych na tym urządzeniu"); } }
 try{ if(navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
 
@@ -342,21 +358,23 @@ const I = {
   hist:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M5 20V12M10 20V6M15 20v-9M20 20V9"/></svg>',
   box:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M12 11v5M9.5 13.5h5"/></svg>',
   book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg>',
+  lab:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3.5h5M10.5 3.5v5.2L5.6 17.4A2 2 0 0 0 7.4 20.5h9.2a2 2 0 0 0 1.8-3.1l-4.9-8.7V3.5"/><path d="M7.8 14h8.4"/></svg>',
   user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.4-3.6 4.2-5.4 7.5-5.4s6.1 1.8 7.5 5.4"/></svg>'
 };
 
 /* ============ Nawigacja ============ */
 let TAB="today", DAY=today(), KNOW="mg";
-const TABS=[["today","Dziś",I.today],["hist","Historia",I.hist],["box","Apteczka",I.box],["know","Wiedza",I.book],["me","Ty",I.user]];
+function TABS(){ const t=[["today","Dziś",I.today],["hist","Historia",I.hist]]; if(S.prefs.labsMode) t.push(["labs","Badania",I.lab]); return t.concat([["box","Apteczka",I.box],["know","Wiedza",I.book],["me","Ty",I.user]]); }
 function renderTabs(){
   document.querySelector(".tabbar").hidden = !S.profile;
-  document.getElementById("tabs").innerHTML = TABS.map(([id,l,ic])=>`<button class="tab ${TAB===id?"on":""}" data-tab="${id}" aria-current="${TAB===id?"page":"false"}">${ic}<span>${l}</span></button>`).join("");
+  document.getElementById("tabs").innerHTML = TABS().map(([id,l,ic])=>`<button class="tab ${TAB===id?"on":""}" data-tab="${id}" aria-current="${TAB===id?"page":"false"}">${ic}<span>${l}</span></button>`).join("");
 }
 function render(){
   renderTabs();
   const el=document.getElementById("app");
   if(!S.profile){ el.innerHTML=viewWelcome(); return; }
-  el.innerHTML=({today:viewToday,hist:viewHist,box:viewBox,know:viewKnow,me:viewMe})[TAB]();
+  if(TAB==="labs" && !S.prefs.labsMode) TAB="me";
+  el.innerHTML=({today:viewToday,hist:viewHist,labs:viewLabs,box:viewBox,know:viewKnow,me:viewMe})[TAB]();
   if(TAB==="hist") bindChart();
 }
 function nutrientSelect(id,list,cur){ return `<label class="f"><span class="sr">Składnik</span><select id="${id}">${list.map(n=>`<option value="${n}" ${n===cur?"selected":""}>${esc(NUTR[n].name)}</option>`).join("")}</select></label>`; }
@@ -395,6 +413,7 @@ function viewToday(){
   return `<section class="screen">
   <div class="head"><div><div class="sub">${isToday?esc(longDate(k)):"Uzupełniasz dzień"}</div><h1>${esc(cap(dayLabel(k)))}</h1></div>
     <div class="datenav"><button class="iconbtn" data-act="day-prev" aria-label="Poprzedni dzień">${I.left}</button><button class="iconbtn" data-act="day-next" aria-label="Następny dzień" ${isToday?"disabled":""}>${I.right}</button></div></div>
+  ${isToday?todayLabAlert():""}
   ${!S.diet?dietCard():""}
   ${S.products.length?`<label class="switchrow card"><span class="grow"><span class="pname">Tylko to, co zostało na dziś</span><span class="pmeta" style="display:block">Ukrywa odhaczone produkty i składniki, które osiągnęły dziś Twój cel albo zaplanowaną ilość.</span></span>
     <input type="checkbox" id="only-left" class="switch" ${only?"checked":""}></label>`:""}
@@ -458,7 +477,7 @@ function viewHist(){
   if(!ns.length) return `<section class="screen"><div class="head"><h1>Historia</h1></div><div class="card empty">Dodaj produkty w Apteczce, a tu zobaczysz swoje ostatnie 30 dni.</div></section>`;
   const n=ns.includes(KNOW)?KNOW:ns[0];
   const days=[...Array(30)].map((_,i)=>addDays(today(),i-29)), vals=days.map(k=>totals(k).t[n]||0);
-  const st=streak(), adh=adherence(30), labs=S.labs.filter(l=>l.n===n).sort((a,b)=>b.date.localeCompare(a.date));
+  const st=streak(), adh=adherence(30);
   return `<section class="screen">
   <div class="head"><div><div class="sub">Ostatnie 30 dni</div><h1>Historia</h1></div></div>
   <div class="stat"><div><b class="num">${st}</b><span>${plural(st,["dzień","dni","dni"])} z rzędu wszystko</span></div><div><b class="num">${adh.full}/${adh.n}</b><span>dni z kompletem</span></div><div><b class="num">${adh.pct}%</b><span>przyjętych dawek</span></div></div>
@@ -466,10 +485,16 @@ function viewHist(){
   <div class="card chart"><div class="nname">${sym(n)}${NUTR[n].name} dziennie (${NUTR[n].unit})</div>
     ${chartSVG(days,vals,n)}<div class="sel num" id="hsel">Dotknij słupka, aby zobaczyć dzień.</div></div>
   <div class="card"><div class="pname">Kalendarz przyjęć</div>${calendar()}<div class="pmeta">Pełny kolor: wszystkie produkty. Jaśniejszy: część.</div></div>
-  ${n==="d"?`<div class="card"><div class="pname">Wyniki badań 25(OH)D</div>
-    ${labs.length?`<dl class="kv">${labs.map(l=>`<dt>${esc(shortDate(l.date))} ${parseKey(l.date).getFullYear()}</dt><dd class="num">${fmt(l.value)} ${esc(l.unit)}</dd>`).join("")}</dl>`:`<div class="pmeta">Brak zapisanych wyników. Wassup tylko zapisuje wynik, interpretację zostaw lekarzowi.</div>`}
-    <button class="btn sec" data-act="lab">Dodaj wynik</button></div>`:""}
+  ${histLabs(n)}
   </section>`;
+}
+function histLabs(n){
+  const ms=MARKERS.filter(x=>x.n===n); if(!ms.length) return "";
+  const groups=labGroups().filter(a=>MK[a[0].m] && MK[a[0].m].n===n);
+  return `<div class="card"><div class="pname">Wyniki badań: ${esc(NUTR[n].name)}</div>
+    ${groups.length?`<dl class="kv">${groups.map(a=>{ const l=a[0], st=LST[labFlag(l)]; return `<dt>${esc(labName(l))}<br><span class="pmeta">${esc(fullDate(l.date))}</span></dt><dd class="num">${fmt(l.value,2)} ${esc(l.unit)}<br><span class="chip ${st.c}">${st.t}</span></dd>`; }).join("")}</dl>`
+      :`<div class="pmeta">Brak zapisanych wyników. Przepisz wynik z wydruku, a Wassup porówna go z zakresem z tego wydruku.</div>`}
+    <div class="btns"><button class="btn sec" data-act="lab-add" data-k="${ms[0].m}">Dodaj wynik</button>${groups.length?`<button class="btn sec" data-act="go-labs">Wszystkie badania</button>`:""}</div></div>`;
 }
 function streak(){ if(!S.products.length) return 0; let k=today(); const full=x=>S.products.every(p=>taken(x,p.id)>=p.daily); if(!full(k)) k=addDays(k,-1); let c=0; while(full(k) && c<3650){ c++; k=addDays(k,-1); } return c; }
 function adherence(N){ let full=0,need=0,got=0,n=0; const start=S.created||today(); for(let i=0;i<N;i++){ const k=addDays(today(),-i); if(k<start) break; n++; let all=true; for(const p of S.products){ need+=p.daily; got+=Math.min(taken(k,p.id),p.daily); if(taken(k,p.id)<p.daily) all=false; } if(all && S.products.length) full++; } return {full,n,pct:need?Math.round(got/need*100):0}; }
@@ -612,6 +637,8 @@ function viewMe(){
     <label class="f">Wiek<select id="me-age">${ageOptions(p.age)}</select></label>
     ${p.sex==="f"?`<label class="f">Stan<select id="me-state"><option value="none">brak szczególnego</option><option value="preg" ${p.state==="preg"?"selected":""}>ciąża</option><option value="lact" ${p.state==="lact"?"selected":""}>karmienie piersią</option></select></label>`:""}
   </div>
+  <label class="switchrow card"><span class="grow"><span class="pname">Tryb „Mam badania”</span><span class="pmeta" style="display:block">Dodaje zakładkę Badania: przepisujesz wyniki z wydruku laboratorium i widzisz je na tle zakresu z tego wydruku.</span></span>
+    <input type="checkbox" id="labs-mode" class="switch" ${S.prefs.labsMode?"checked":""}></label>
   <div class="card"><div class="pname">Codzienne przypomnienie</div>
     <div class="pmeta">Dodaje powtarzające się wydarzenie do Kalendarza na iPhonie (z alarmem). Wybierz godzinę i stuknij przycisk.</div>
     <label class="f">Godzina<select id="rem-time">${remTimes().map(t=>`<option value="${t}" ${t==="0800"?"selected":""}>${t.slice(0,2)}:${t.slice(2)}</option>`).join("")}</select></label>
@@ -673,10 +700,6 @@ function rowsHTML(){
       ${r.n==="d"?`<select data-row="${i}" data-k="u" aria-label="Jednostka"><option ${r.u!=="IU"?"selected":""}>µg</option><option ${r.u==="IU"?"selected":""}>IU</option></select>`:`<span class="unit">${r.n?NUTR[r.n].unit:""}</span>`}
       <button class="iconbtn" data-act="row-del" data-i="${i}" aria-label="Usuń składnik">${I.x}</button></div>`; }).join("");
 }
-function labSheet(){ sheet("Wynik 25(OH)D",`<div class="pmeta">Zapisz wynik z badania krwi. Wassup go nie interpretuje.</div>
-  <div class="f-row"><label class="f">Data<input id="l-date" type="date" value="${today()}"></label><label class="f">Wynik<input id="l-val" inputmode="decimal" placeholder="np. 32"></label></div>
-  <label class="f">Jednostka<select id="l-unit"><option>ng/ml</option><option>nmol/l</option></select></label>
-  <button class="btn full" data-act="l-save">Zapisz</button>`); }
 function wipeSheet(){ sheet("Usunąć wszystkie dane?",`<div class="pmeta">Profil, Apteczka i cała historia znikną z tego telefonu. Tego nie da się cofnąć, chyba że masz kopię.</div><button class="btn danger full" data-act="wipe-yes">Usuń wszystko</button>`); }
 
 
@@ -901,6 +924,205 @@ function dietCard(){
   return `<button class="card howto" data-act="diet-show"><div class="ruler" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="u"></i></div><div><div class="pname">Twoja dieta: ${ok} składników pokrytych${low?`, ${low} poniżej normy`:""}</div><div class="pmeta">${D.method==="ffq"?"Ankieta":"Plik z jadłospisem"} z ${esc(shortDate(D.date))}. Zobacz szczegóły i wpływ na Twoje suplementy.</div></div></button>`;
 }
 
+/* ============ Badania (tryb „Mam badania”) ============ */
+// units: przelicznik z pierwszej (bazowej) jednostki: wartość_w_jednostce = wartość_bazowa × czynnik
+const MARKERS = [
+  { m:"d25",  name:"Witamina D (25(OH)D)", n:"d",   units:{"ng/ml":1,"nmol/l":2.496},
+    note:"25(OH)D to najlepszy wskaźnik zapasów witaminy D. Latem skóra wytwarza ją pod wpływem słońca, więc wynik zmienia się z porą roku. Porównując dwa wyniki, pamiętaj, z jakiego miesiąca pochodzą." },
+  { m:"ferr", name:"Ferrytyna",            n:"fe",  units:{"ng/ml":1,"µg/l":1},
+    note:"Ferrytyna pokazuje zapasy żelaza. Infekcja albo stan zapalny mogą ją podnieść, dlatego lekarz ocenia ją razem z innymi badaniami (np. morfologią)." },
+  { m:"fe",   name:"Żelazo w surowicy",    n:"fe",  units:{"µg/dl":1,"µmol/l":0.179},
+    note:"Stężenie żelaza zmienia się w ciągu dnia i po posiłkach. Samo w sobie mówi niewiele, zwykle ocenia się je razem z ferrytyną." },
+  { m:"b12",  name:"Witamina B12",         n:"b12", units:{"pg/ml":1,"pmol/l":0.738},
+    note:"Wynik w dolnej części zakresu bywa niejednoznaczny. Lekarz może wtedy zlecić dodatkowe badanie." },
+  { m:"fol",  name:"Kwas foliowy (foliany)", n:"fol", units:{"ng/ml":1,"nmol/l":2.266},
+    note:"Stężenie folianów w surowicy w dużej mierze odzwierciedla to, co jadłeś w ostatnich dniach." },
+  { m:"mg",   name:"Magnez w surowicy",    n:"mg",  units:{"mmol/l":1,"mg/dl":2.431},
+    note:"We krwi jest ok. 1% magnezu z całego organizmu, a organizm utrzymuje jego stężenie w wąskim zakresie. Wynik w zakresie niewiele mówi o zapasach magnezu." },
+  { m:"zn",   name:"Cynk",                 n:"zn",  units:{"µg/dl":1,"µmol/l":0.153},
+    note:"Stężenie cynku we krwi słabo odzwierciedla jego zapasy i spada m.in. przy infekcji." },
+  { m:"ca",   name:"Wapń całkowity",       n:"ca",  units:{"mmol/l":1,"mg/dl":4.008},
+    note:"Organizm utrzymuje poziom wapnia we krwi bardzo stabilnie, więc wynik nie pokazuje, ile wapnia jest w diecie." },
+  { m:"other", name:"Inny parametr", n:null, units:null }
+];
+const MK = Object.fromEntries(MARKERS.map(x=>[x.m,x]));
+const LST = { low:{c:"warn",t:"Poniżej zakresu"}, in:{c:"ok",t:"W zakresie"}, high:{c:"bad",t:"Powyżej zakresu"}, none:{c:"none",t:"Bez zakresu"} };
+
+function labName(l){ return l.m==="other" ? (l.name||"Inny parametr") : (MK[l.m]||{}).name || l.name || "Badanie"; }
+function labKey(l){ return l.m==="other" ? "other:"+fNorm(l.name||"") : l.m; }
+function labFlag(l){
+  const has=l.lo!=null||l.hi!=null;
+  if(has){ if(l.lo!=null && l.value<l.lo) return "low"; if(l.hi!=null && l.value>l.hi) return "high"; return "in"; }
+  return l.flag||"none";
+}
+function rangeText(l){
+  if(l.lo!=null && l.hi!=null) return `${fmt(l.lo,2)}–${fmt(l.hi,2)} ${l.unit}`;
+  if(l.lo!=null) return `powyżej ${fmt(l.lo,2)} ${l.unit}`;
+  if(l.hi!=null) return `poniżej ${fmt(l.hi,2)} ${l.unit}`;
+  return "";
+}
+function convert(m,v,from,to){ if(from===to) return v; const u=(MK[m]||{}).units; if(!u||!u[from]||!u[to]) return null; return v/u[from]*u[to]; }
+function labGroups(){
+  const g={};
+  for(const l of S.labs){ const k=labKey(l); (g[k]=g[k]||[]).push(l); }
+  return Object.values(g).map(arr=>arr.sort((a,b)=>b.date.localeCompare(a.date)||(b.ts||0)-(a.ts||0))).sort((a,b)=>b[0].date.localeCompare(a[0].date));
+}
+function activeWith(n){ return n ? S.products.filter(p=>p.daily>0 && p.content[n]) : []; }
+function ago(k){ const d=Math.round((parseKey(today())-parseKey(k))/864e5); if(d<=0) return "dziś"; if(d===1) return "wczoraj"; if(d<14) return `${d} dni temu`; if(d<60) return `${Math.round(d/7)} tyg. temu`; const mo=Math.round(d/30.4); return mo<12?`${mo} mies. temu`:`ponad rok temu`; }
+function fullDate(k){ return parseKey(k).toLocaleDateString("pl-PL",{day:"numeric",month:"short",year:"numeric"}); }
+
+/* --- alerty bezpieczeństwa (Badania + Dziś) --- */
+function labAlerts(){
+  const out=[];
+  for(const arr of labGroups()){ const l=arr[0], mk=MK[l.m]||{}, f=labFlag(l), prods=activeWith(mk.n);
+    if(f==="high" && prods.length) out.push({kind:"high",l,html:`<b>${esc(labName(l))}: wynik powyżej zakresu</b> (${esc(fullDate(l.date))}), a w Apteczce masz produkt z tym składnikiem: ${prods.map(p=>esc(p.name)).join(", ")}. Pokaż ten wynik lekarzowi, zanim przyjmiesz kolejne dawki.`});
+    else if(f==="low") out.push({kind:"low",l,html:`<b>${esc(labName(l))}: wynik poniżej zakresu</b> (${esc(fullDate(l.date))}). Taki wynik warto omówić z lekarzem: przyczyną nie zawsze jest dieta, a dawkę dobiera lekarz.`});
+  }
+  return out;
+}
+function todayLabAlert(){
+  const a=labAlerts().filter(x=>x.kind==="high"); if(!a.length) return "";
+  return a.map(x=>`<div class="note warn" role="alert">${x.html} <button class="link" data-act="go-labs">Badania</button></div>`).join("");
+}
+
+/* --- widok --- */
+function viewLabs(){
+  const groups=labGroups(), alerts=labAlerts();
+  return `<section class="screen">
+  <div class="head"><div><div class="sub">Wyniki z laboratorium</div><h1>Badania</h1></div><button class="btn" data-act="lab-add">Dodaj</button></div>
+  ${!groups.length?`<div class="card empty"><div class="pname" style="color:var(--ink)">Przepisz wynik z wydruku</div>
+    <div style="margin-top:6px">Wybierz badanie, wpisz wynik, jednostkę i zakres referencyjny z wydruku. Wassup pokaże, czy wynik jest w tym zakresie, i zapamięta go, żeby porównać z kolejnym badaniem.</div>
+    <button class="btn" style="margin-top:14px" data-act="lab-add">Dodaj wynik</button></div>`:""}
+  ${alerts.map(x=>`<div class="note ${x.kind==="high"?"warn":""}">${x.html}</div>`).join("")}
+  ${groups.map(labCard).join("")}
+  <p class="src" style="padding:0 4px">Wassup porównuje wynik tylko z zakresem z Twojego wydruku. Nie stawia diagnozy i nie dobiera dawek: o tym decyduje lekarz. Laboratoria mają różne zakresy i jednostki, dlatego zawsze przepisuj zakres z tego samego wydruku.</p>
+  </section>`;
+}
+function labCard(arr){
+  const l=arr[0], f=labFlag(l), st=LST[f], prev=arr[1];
+  let delta="";
+  if(prev){ const pv=convert(l.m,prev.value,prev.unit,l.unit); if(pv!=null){ const d=l.value-pv; delta=`<div class="pmeta">Poprzednio ${fmt(pv,2)} ${esc(l.unit)} (${esc(fullDate(prev.date))}) · zmiana ${d>0?"+":d<0?"−":"±"}${fmt(Math.abs(d),2)} ${esc(l.unit)}</div>`; } }
+  const old=(parseKey(today())-parseKey(l.date))/864e5>183;
+  return `<button class="card labcard" data-act="lab-open" data-k="${esc(labKey(l))}" aria-label="${esc(labName(l))}: szczegóły">
+    <div class="ntop"><div><div class="nname">${l.m!=="other"&&MK[l.m].n?sym(MK[l.m].n):""}${esc(labName(l))}</div>
+      <div style="margin-top:8px" class="big num">${fmt(l.value,2)}<small>${esc(l.unit)}</small></div>
+      <div class="pmeta">${esc(fullDate(l.date))} · ${ago(l.date)}${old?" · wynik ma ponad pół roku":""}</div></div>
+      <span class="chip ${st.c}">${st.t}</span></div>
+    ${rangeBar(l)}
+    ${arr.length>1?trendSVG(arr):""}
+    ${delta}
+  </button>`;
+}
+function rangeBar(l){
+  if(l.lo==null && l.hi==null) return `<div class="pmeta">${l.flag&&l.flag!=="none"?"Oznaczenie przepisane z wydruku (bez liczbowego zakresu).":"Bez zakresu z wydruku. Dopisz go, żeby zobaczyć wynik na tle zakresu."}</div>`;
+  const top=Math.max((l.hi!=null?l.hi:l.lo)*1.35, l.value*1.12, l.lo!=null?l.lo*1.6:0);
+  const p=x=>Math.max(0,Math.min(100,x/top*100));
+  const a=l.lo!=null?p(l.lo):0, b=l.hi!=null?p(l.hi):100, v=p(l.value), f=labFlag(l);
+  return `<div class="rbar" role="img" aria-label="Wynik ${fmt(l.value,2)} ${esc(l.unit)}, zakres z wydruku ${esc(rangeText(l))}">
+    <div class="rtrack"></div><div class="rband" style="left:${a}%;width:${b-a}%"></div>
+    <i class="rdot ${f}" style="left:${v}%"></i>
+    ${l.lo!=null?`<span class="rlab" style="left:${a}%">${fmt(l.lo,2)}</span>`:""}${l.hi!=null?`<span class="rlab" style="left:${b}%">${fmt(l.hi,2)}</span>`:""}
+  </div><div class="pmeta">Zakres z wydruku: ${esc(rangeText(l))}</div>`;
+}
+function trendSVG(arr){
+  const unit=arr[0].unit, pts=arr.slice().reverse().map(x=>({d:x.date,v:convert(x.m,x.value,x.unit,unit),f:labFlag(x)})).filter(x=>x.v!=null);
+  if(pts.length<2) return "";
+  const l=arr[0], W=320,H=120,L=8,R=8,T=12,B=22,pw=W-L-R,ph=H-T-B;
+  const pv=pts.map(p=>p.v), pmax=Math.max(...pv), vals=pv.concat([l.lo,l.hi].filter(x=>x!=null && x<=pmax*1.6));
+  let lo=Math.min(...vals), hi=Math.max(...vals); const pad=(hi-lo||hi||1)*0.18; lo=Math.max(0,lo-pad); hi=hi+pad;
+  const t0=parseKey(pts[0].d).getTime(), t1=parseKey(pts[pts.length-1].d).getTime(), span=Math.max(1,t1-t0);
+  const x=d=>L+(parseKey(d).getTime()-t0)/span*pw, y=v=>T+ph-(v-lo)/(hi-lo)*ph;
+  let s=`<svg class="trend" viewBox="0 0 ${W} ${H}" role="img" aria-label="Wyniki w czasie: ${pts.map(p=>fmt(p.v,2)+" "+unit+" ("+fullDate(p.d)+")").join(", ")}">`;
+  if(l.lo!=null||l.hi!=null){ const ya=y(l.hi!=null?Math.min(l.hi,hi):hi), yb=y(l.lo!=null?Math.max(l.lo,lo):lo); s+=`<rect x="${L}" y="${ya}" width="${pw}" height="${Math.max(0,yb-ya)}" fill="var(--ok)" opacity=".13" rx="4"/>`; }
+  s+=`<polyline fill="none" stroke="var(--muted)" stroke-width="1.5" points="${pts.map(p=>x(p.d)+","+y(p.v)).join(" ")}"/>`;
+  pts.forEach((p,i)=>{ const cx=x(p.d), cy=y(p.v), last=i===pts.length-1;
+    s+=`<circle cx="${cx}" cy="${cy}" r="${last?5:4}" class="tdot ${p.f}"/>`;
+    s+=`<text x="${cx}" y="${cy-9}" text-anchor="${i===0?"start":last?"end":"middle"}" font-size="10.5" font-weight="${last?700:500}" fill="var(--ink)">${fmt(p.v,1)}</text>`;
+    if(i===0||last) s+=`<text x="${cx}" y="${H-6}" text-anchor="${i===0?"start":"end"}" font-size="10" fill="var(--muted)">${esc(shortDate(p.d))} ${String(parseKey(p.d).getFullYear()).slice(2)}</text>`; });
+  return s+"</svg>";
+}
+
+/* --- arkusz szczegółów --- */
+function labDetail(k){
+  const arr=labGroups().find(a=>labKey(a[0])===k); if(!arr) return;
+  const l=arr[0], mk=MK[l.m]||{}, n=mk.n, prods=activeWith(n);
+  sheet(labName(l),`
+    ${mk.note?`<div class="note">${esc(mk.note)}</div>`:""}
+    <div class="pname">Wszystkie wyniki</div>
+    <div class="list">${arr.map(x=>{ const st=LST[labFlag(x)]; return `<button class="row" style="width:100%;text-align:left" data-act="lab-edit" data-id="${x.id}">
+      <div class="grow"><div class="pname num">${fmt(x.value,2)} ${esc(x.unit)}</div><div class="pmeta">${esc(fullDate(x.date))}${rangeText(x)?" · zakres "+esc(rangeText(x)):""}</div></div>
+      <span class="chip ${st.c}">${st.t}</span></button>`; }).join("")}</div>
+    ${n?`<div class="pname">Z czym to się łączy w Wassup</div>
+      <div class="cmp">
+        <div><span>W Apteczce z tym składnikiem</span><span>${prods.length?prods.map(p=>esc(p.name)).join(", "):"nic"}</span></div>
+        ${S.diet&&!NOT_FROM_DIET[n]&&S.diet.intake[n]?`<div><span>Z diety (szacunek)</span><span class="num">ok. ${fmt(S.diet.intake[n],0)} ${NUTR[n].unit}/dzień</span></div>`:""}
+      </div>
+      ${SOURCES[n]?`<div class="pmeta"><b>Źródła w diecie:</b> ${esc(SOURCES[n])}.</div>`:NOT_FROM_DIET[n]?`<div class="pmeta">${esc(NOT_FROM_DIET[n])}</div>`:""}`:""}
+    <button class="btn full" data-act="lab-add" data-k="${esc(l.m)}">Dodaj nowszy wynik</button>
+    <p class="src">Wassup nie interpretuje wyników. Co dalej z suplementacją, ustal z lekarzem.</p>`);
+}
+
+/* --- formularz wyniku --- */
+let LF=null;
+function labForm(id,preset){
+  const e=id?S.labs.find(x=>x.id===id):null;
+  if(e) LF={id:e.id,m:e.m,name:e.name||"",date:e.date,value:String(e.value).replace(".",","),unit:e.unit,lo:e.lo!=null?String(e.lo).replace(".",","):"",hi:e.hi!=null?String(e.hi).replace(".",","):"",flag:e.flag||"none"};
+  else { const m=preset&&MK[preset]?preset:"d25"; LF={id:null,m,name:"",date:today(),value:"",unit:"",lo:"",hi:"",flag:"none"}; prefillRange(); }
+  labSheet();
+}
+function prefillRange(){
+  const mk=MK[LF.m]; if(mk.units && !mk.units[LF.unit]) LF.unit=Object.keys(mk.units)[0];
+  if(LF.id) return;
+  const prev=S.labs.filter(x=>x.m===LF.m && (LF.m!=="other") && x.unit===LF.unit && (x.lo!=null||x.hi!=null)).sort((a,b)=>b.date.localeCompare(a.date))[0];
+  LF.lo=prev&&prev.lo!=null?String(prev.lo).replace(".",","):""; LF.hi=prev&&prev.hi!=null?String(prev.hi).replace(".",","):""; LF.prefilled=!!prev;
+}
+function readLF(){ const g=id=>{ const el=document.getElementById(id); return el?el.value:null; };
+  for(const [k,id] of [["m","lf-m"],["name","lf-name"],["date","lf-date"],["value","lf-val"],["unit","lf-unit"],["lo","lf-lo"],["hi","lf-hi"]]){ const v=g(id); if(v!=null) LF[k]=v; } }
+function lfPreview(){
+  const v=parseNum(LF.value), lo=parseNum(LF.lo), hi=parseNum(LF.hi);
+  if(lo==null && hi==null) return `<div class="pname">Jak laboratorium oznaczyło wynik?</div>
+    <div class="pmeta">Jeśli na wydruku nie ma zakresu, przepisz oznaczenie (np. „L”, „H”, strzałka albo pogrubienie).</div>
+    <div class="seg" role="group" aria-label="Oznaczenie z wydruku">${[["low","Poniżej"],["in","W normie"],["high","Powyżej"],["none","Brak"]].map(([f,t])=>`<button data-lf-flag="${f}" class="${LF.flag===f?"on":""}">${t}</button>`).join("")}</div>`;
+  if(v==null) return `<div class="pmeta">Wpisz wynik, a zobaczysz go na tle zakresu.</div>`;
+  if(lo!=null && hi!=null && lo>=hi) return `<div class="pmeta" style="color:var(--bad)">Dolna granica musi być mniejsza od górnej.</div>`;
+  const st=LST[labFlag({value:v,lo,hi})];
+  return `<div class="lfprev"><span>Według zakresu z wydruku:</span><span class="chip ${st.c}">${st.t}</span></div>`;
+}
+function labSheet(){
+  const mk=MK[LF.m], units=mk.units?Object.keys(mk.units):null, bio=activeWith("bio");
+  sheet(LF.id?"Edytuj wynik":"Dodaj wynik",`
+    <label class="f">Badanie<select id="lf-m">${MARKERS.map(x=>`<option value="${x.m}" ${x.m===LF.m?"selected":""}>${esc(x.name)}</option>`).join("")}</select></label>
+    ${LF.m==="other"?`<label class="f">Nazwa badania<input id="lf-name" value="${esc(LF.name)}" placeholder="np. Selen" autocomplete="off"></label>`:""}
+    <div class="f-row"><label class="f">Data badania<input id="lf-date" type="date" max="${today()}" value="${esc(LF.date)}"></label>
+      <label class="f">Wynik<input id="lf-val" inputmode="decimal" value="${esc(LF.value)}" placeholder="z wydruku"></label></div>
+    <label class="f">Jednostka${units?`<select id="lf-unit">${units.map(u=>`<option ${u===LF.unit?"selected":""}>${u}</option>`).join("")}</select>`:`<input id="lf-unit" value="${esc(LF.unit)}" placeholder="np. µg/l" autocomplete="off">`}</label>
+    <div class="fieldset"><div class="pname">Zakres referencyjny z wydruku</div>
+      <div class="pmeta">Przepisz z kolumny „Zakres referencyjny”, „Wartości prawidłowe” albo „Norma”. Jeśli jest tylko jedna granica (np. „&gt; 30”), wpisz tylko ją.${LF.prefilled?" Uzupełniliśmy go z Twojego poprzedniego wyniku: sprawdź, czy się zgadza.":""}</div>
+      <div class="f-row"><label class="f">Od<input id="lf-lo" inputmode="decimal" value="${esc(LF.lo)}"></label><label class="f">Do<input id="lf-hi" inputmode="decimal" value="${esc(LF.hi)}"></label></div>
+      <div id="lf-prev">${lfPreview()}</div></div>
+    ${bio.length?`<div class="note">${esc(NUTR.bio.warn)}</div>`:""}
+    <button class="btn full" data-act="lab-save">Zapisz</button>
+    ${LF.id?`<button class="btn danger full" data-act="lab-del" data-id="${LF.id}">Usuń ten wynik</button>`:""}
+    <p class="src">Wassup porównuje wynik z zakresem, który wpiszesz. Nie podpowiada zakresów, bo każde laboratorium ma własne.</p>`);
+}
+function labSave(){
+  readLF();
+  const v=parseNum(LF.value), lo=parseNum(LF.lo), hi=parseNum(LF.hi), unit=(LF.unit||"").trim(), name=(LF.name||"").trim();
+  if(LF.m==="other" && !name){ toast("Wpisz nazwę badania"); return false; }
+  if(!LF.date){ toast("Podaj datę badania"); return false; }
+  if(LF.date>today()){ toast("Data badania nie może być z przyszłości"); return false; }
+  if(v==null || v<0){ toast("Wpisz wynik z wydruku"); return false; }
+  if(!unit){ toast("Podaj jednostkę"); return false; }
+  if(lo!=null && hi!=null && lo>=hi){ toast("Dolna granica zakresu musi być mniejsza od górnej"); return false; }
+  let e=LF.id?S.labs.find(x=>x.id===LF.id):null; if(!e){ e={id:uid(),ts:Date.now()}; S.labs.push(e); }
+  Object.assign(e,{ m:LF.m, n:(MK[LF.m]||{}).n||null, name:LF.m==="other"?name:undefined, date:LF.date, value:v, unit, lo, hi, flag:(lo==null&&hi==null)?LF.flag:undefined });
+  S.prefs.labsMode=true; save(); return true;
+}
+function labsMigrate(s){
+  (s.labs||[]).forEach(l=>{ if(!l.id) l.id=uid(); if(!l.m) l.m = l.n==="d"?"d25":"other"; if(l.lo===undefined) l.lo=null; if(l.hi===undefined) l.hi=null; });
+  if(s.labs && s.labs.length && s.prefs && s.prefs.labsMode==null) s.prefs.labsMode=true;
+}
+
 /* ============ Akcje ============ */
 function num(id){ const el=document.getElementById(id); if(!el) return null; return parseNum(el.value); }
 function parseNum(s){ const v=parseFloat(String(s).replace(/\s/g,"").replace(",",".")); return isFinite(v)?v:null; }
@@ -913,6 +1135,7 @@ document.addEventListener("click", async e=>{
   const tab=e.target.closest("[data-tab]"); if(tab){ TAB=tab.dataset.tab; if(TAB==="today") DAY=today(); render(); window.scrollTo(0,0); return; }
   const sx=e.target.closest("[data-ob-sex]"); if(sx){ OB.sex=sx.dataset.obSex; render(); return; }
   const pk=e.target.closest("[data-ob-pick]"); if(pk){ OB.pick[pk.dataset.obPick]=!OB.pick[pk.dataset.obPick]; render(); return; }
+  const lff=e.target.closest("[data-lf-flag]"); if(lff){ readLF(); LF.flag=lff.dataset.lfFlag; document.getElementById("lf-prev").innerHTML=lfPreview(); return; }
   const ms=e.target.closest("[data-sex]"); if(ms){ S.profile.sex=ms.dataset.sex; if(S.profile.sex==="m") S.profile.state="none"; save(); render(); return; }
   const a=e.target.closest("[data-act]"); if(!a) return;
   const act=a.dataset.act, id=a.dataset.id;
@@ -960,8 +1183,12 @@ document.addEventListener("click", async e=>{
     save(); closeSheet(); render(); toast("Zapisano"); return; }
   if(act==="p-del"){ S.products=S.products.filter(x=>x.id!==id); save(); closeSheet(); render(); toast("Usunięto z Apteczki"); return; }
   if(act==="refill"){ const p=S.products.find(x=>x.id===id); const c=CATALOG.find(x=>x.cid===p.cid); const left=stockLeft(p)||0; const add=(c&&c.pack)||30; p.stock={count:left+add+takenToday(p), since:today()}; save(); render(); toast(`Dodano ${add} ${unitWord(p,add)}. Liczbę zmienisz w Edytuj.`); return; }
-  if(act==="lab"){ labSheet(); return; }
-  if(act==="l-save"){ const v=num("l-val"); const dt=document.getElementById("l-date").value; if(v==null||!dt){ toast("Podaj datę i wynik"); return; } S.labs.push({n:"d",date:dt,value:v,unit:document.getElementById("l-unit").value}); save(); closeSheet(); render(); return; }
+  if(act==="lab"||act==="lab-add"){ closeSheet(); labForm(null,a.dataset.k); return; }
+  if(act==="lab-open"){ labDetail(a.dataset.k); return; }
+  if(act==="lab-edit"){ closeSheet(); labForm(id); return; }
+  if(act==="lab-save"){ const wasOff=TAB!=="labs"; if(labSave()){ closeSheet(); render(); toast(wasOff?"Zapisano. Wynik znajdziesz w zakładce Badania":"Zapisano wynik"); } return; }
+  if(act==="lab-del"){ S.labs=S.labs.filter(x=>x.id!==id); save(); closeSheet(); render(); toast("Usunięto wynik"); return; }
+  if(act==="go-labs"){ S.prefs.labsMode=true; save(); TAB="labs"; render(); window.scrollTo(0,0); return; }
   if(act==="reminder"){ const t=document.getElementById("rem-time").value; window.location.href=`reminders/przypomnienie-${t}.ics`; return; }
   if(act==="export"){ await exportData(); return; }
   if(act==="import"){ document.getElementById("import-file").click(); return; }
@@ -978,6 +1205,9 @@ document.addEventListener("change", e=>{
   if(el.dataset && el.dataset.row!=null){ const r=FORM.rows[+el.dataset.row]; r[el.dataset.k]=el.value; if(el.dataset.k==="n"){ r.u=el.value?NUTR[el.value].unit:""; document.getElementById("rows").innerHTML=rowsHTML(); } return; }
   if(el.dataset && el.dataset.risk){ DW.risk[el.dataset.risk]=el.checked; return; }
   if(el.id==="dw-file"){ const f=el.files[0]; if(f) importFile(f); return; }
+  if(el.id==="lf-m"){ readLF(); LF.m=el.value; LF.unit=""; prefillRange(); labSheet(); return; }
+  if(el.id==="lf-unit" && el.tagName==="SELECT"){ readLF(); if(!LF.lo&&!LF.hi) prefillRange(); else LF.prefilled=false; labSheet(); return; }
+  if(el.id==="labs-mode"){ S.prefs.labsMode=el.checked; save(); render(); toast(el.checked?"Dodano zakładkę Badania":"Ukryto zakładkę Badania. Wyniki zostały zapisane."); return; }
   if(el.id==="only-left"){ S.prefs.onlyLeft=el.checked; save(); render(); return; }
   if(el.id==="hist-n"||el.id==="know-n"){ KNOW=el.value; render(); return; }
   if(el.id==="me-age"){ S.profile.age=el.value; save(); render(); }
@@ -989,6 +1219,7 @@ document.addEventListener("change", e=>{
 document.addEventListener("input", e=>{
   const el=e.target;
   if(el.dataset && el.dataset.row!=null && el.dataset.k==="amt"){ FORM.rows[+el.dataset.row].amt=el.value; return; }
+  if(el.id==="lf-val"||el.id==="lf-lo"||el.id==="lf-hi"){ readLF(); document.getElementById("lf-prev").innerHTML=lfPreview(); return; }
   if(el.id==="iu"){ const v=parseNum(el.value); document.getElementById("ug").value=v!=null?fmt(v/40,2):""; }
   if(el.id==="ug"){ const v=parseNum(el.value); document.getElementById("iu").value=v!=null?String(Math.round(v*40)):""; }
 });
