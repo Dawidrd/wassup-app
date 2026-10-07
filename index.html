@@ -183,6 +183,16 @@ body.locked{overflow:hidden}
 .steps li.ul{border:1.5px solid var(--bad)}
 .steps li.ul::before{background:var(--bad);color:#fff}
 .steps li.on{outline:2px solid var(--brand);outline-offset:-2px}
+
+.checkrow{display:flex;gap:10px;align-items:center;font-size:15px;color:var(--ink);padding:4px 0}
+.checkrow input{width:20px;height:20px;accent-color:var(--brand)}
+.fsel{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);font-size:16px}
+.choice{text-align:left;width:100%;border:1.5px solid var(--line)}
+.dietrow{align-items:flex-start}
+.dietrow .sym{margin-top:2px}
+.dietrow .chip{margin-top:2px}
+.warnli{color:var(--bad)}
+.diethero{border:1.5px solid var(--brand)}
 </style>
 </head>
 <body>
@@ -195,7 +205,7 @@ body.locked{overflow:hidden}
 /* ============ Dane referencyjne (źródła: baza regulacyjna Wassup) ============
    RWS: rozp. 1169/2011 zał. XIII · normy i UL: Normy żywienia dla populacji Polski 2024 (NIZP PZH–PIB)
    limity GIS: uchwały Zespołu ds. Suplementów Diety · oświadczenia: rozp. 432/2012 */
-const APP_VERSION = "0.3.0";
+const APP_VERSION = "0.4.0";
 const CLAIMS = {"mg": ["Magnez przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Magnez pomaga w utrzymaniu równowagi elektrolitowej", "Magnez przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Magnez pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Magnez pomaga w prawidłowym funkcjonowaniu mięśni", "Magnez pomaga w prawidłowej syntezie białka", "Magnez pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Magnez pomaga w utrzymaniu zdrowych kości", "Magnez pomaga w utrzymaniu zdrowych zębów", "Magnez odgrywa rolę w procesie podziału komórek"], "d": ["Witamina D pomaga w prawidłowym wchłanianiu/wykorzystywaniu wapnia i fosforu", "Witamina D pomaga w utrzymaniu prawidłowego poziomu wapnia we krwi", "Witamina D pomaga w utrzymaniu zdrowych kości", "Witamina D pomaga w prawidłowym funkcjonowaniu mięśni", "Witamina D pomaga w utrzymaniu zdrowych zębów", "Witamina D pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina D bierze udział w procesie podziału komórek"], "b6": ["Witamina B6 pomaga w prawidłowej syntezie cysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B6 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu białka i glikogenu", "Witamina B6 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B6 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B6 przyczynia się zmniejszenia uczucia zmęczenia i znużenia", "Witamina B6 przyczynia się do regulacji aktywności hormonalnej"], "c": ["Witamina C pomaga w utrzymaniu prawidłowego funkcjonowania układu odpornościowego w trakcie intensywnych ćwiczeń fizycznych i po nich", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania naczyń krwionośnych", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania kości", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania chrząstki", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania dziąseł", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania skóry", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania zębów", "Witamina C przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina C pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina C pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina C pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina C pomaga w ochronie komórek przed stresem oksydacyjnym", "Witamina C przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina C pomaga w regeneracji zredukowanej formy witaminy E", "Witamina C zwiększa przyswajanie żelaza"], "zn": ["Cynk pomaga w utrzymaniu prawidłowej równowagi kwasowo- zasadowej", "Cynk pomaga w utrzymaniu prawidłowego metabolizmu węglowodanów", "Cynk pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Cynk pomaga w prawidłowej syntezie DNA", "Cynk pomaga w utrzymaniu prawidłowej płodności i prawidłowych funkcji rozrodczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu kwasów tłuszczowych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu witaminy A", "Cynk pomaga w prawidłowej syntezie białka", "Cynk pomaga w utrzymaniu zdrowych kości", "Cynk pomaga zachować zdrowe włosy", "Cynk pomaga zachować zdrowe paznokcie", "Cynk pomaga zachować zdrową skórę", "Cynk pomaga w utrzymaniu prawidłowego poziomu testosteronu we krwi", "Cynk pomaga w utrzymaniu prawidłowego widzenia", "Cynk pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Cynk pomaga w ochronie komórek przed stresem oksydacyjnym", "Cynk bierze udział w procesie podziału komórek"], "b12": ["Witamina B12 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B12 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B12 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B12 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B12 przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina B12 odgrywa rolę w procesie podziału komórek"], "fe": ["Żelazo pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Żelazo przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Żelazo pomaga w prawidłowej produkcji czerwonych krwinek i hemoglobiny", "Żelazo pomaga w prawidłowym transporcie tlenu w organizmie", "Żelazo pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Żelazo przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Żelazo odgrywa rolę w procesie podziału komórek"], "fol": ["Foliany przyczyniają się do wzrostu tkanek matczynych w czasie ciąży", "Foliany pomagają w prawidłowej syntezie aminokwasów", "Foliany pomagają w prawidłowej produkcji krwi", "Foliany pomagają w utrzymaniu prawidłowego metabolizmu homocysteiny", "Foliany pomagają w utrzymaniu prawidłowych funkcji psychologicznych", "Foliany pomagają w prawidłowym funkcjonowaniu układu odpornościowego", "Foliany przyczyniają się do zmniejszenia uczucia zmęczenia i znużenia", "Foliany biorą udział w procesie podziału komórek"], "ca": ["Wapń przyczynia się do prawidłowego krzepnięcia krwi", "Wapń przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Wapń pomaga w prawidłowym funkcjonowaniu mięśni", "Wapń pomaga w utrzymaniu prawidłowego przekaźnictwa nerwowego", "Wapń pomaga w prawidłowym funkcjonowaniu enzymów trawiennych", "Wapń bierze udział w procesie podziału i specjalizacji komórek", "Wapń jest potrzebny do utrzymania zdrowych kości", "Wapń jest potrzebny do utrzymania zdrowych zębów"], "k": ["Witamina K przyczynia się do prawidłowego krzepnięcia krwi", "Witamina K pomaga w utrzymaniu zdrowych kości"], "se": ["Selen przyczynia się do prawidłowego przebiegu spermatogenezy", "Selen pomaga zachować zdrowe włosy", "Selen pomaga zachować zdrowe paznokcie", "Selen pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Selen pomaga w prawidłowym funkcjonowaniu tarczycy", "Selen pomaga w ochronie komórek przed stresem oksydacyjnym"], "i": ["Jod pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Jod przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Jod pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Jod pomaga zachować zdrową skórę", "Jod pomaga w prawidłowej produkcji hormonów tarczycy i w prawidłowym funkcjonowaniu tarczycy"], "om3": ["Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego funkcjonowania mózgu (warunek: 250 mg DHA dziennie)", "Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego widzenia (warunek: 250 mg DHA dziennie)", "DHA pomaga w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego ciśnienia krwi (warunek: 3 g EPA i DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g EPA i DHA dziennie)", "Kwas eikozapentaenowy (EPA) i kwas dokozaheksaenowy (DHA) przyczyniają się do prawidłowego funkcjonowania serca (warunek: 250 mg EPA i DHA dziennie)"], "bio": ["Biotyna przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Biotyna pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Biotyna przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Biotyna pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Biotyna pomaga zachować zdrowe włosy", "Biotyna pomaga w utrzymaniu prawidłowego stanu błon śluzowych", "Biotyna pomaga zachować zdrową skórę"], "pot": ["Potas pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Potas pomaga w prawidłowym funkcjonowaniu mięśni", "Potas pomaga w utrzymaniu prawidłowego ciśnienia krwi"]};
 const NUTR = {
   mg:  { name:"Magnez", sym:"Mg", unit:"mg", rws:375, ul:250,
@@ -278,9 +288,9 @@ function packClaims(pk,n){ return (CLAIMS[n]||[]).filter(c=>pk.match.test(c)); }
 /* ============ Stan i zapis ============ */
 const KEY = "wassup.v1";
 let S = load();
-function blank(){ return { v:1, profile:null, products:[], log:{}, labs:[], prefs:{}, goals:{}, packs:[], created:today() }; }
+function blank(){ return { v:1, profile:null, products:[], log:{}, labs:[], prefs:{}, goals:{}, packs:[], foodMap:{}, diet:null, created:today() }; }
 function load(){ try{ const raw = localStorage.getItem(KEY); if(raw){ const s = JSON.parse(raw); if(s && s.v===1){ fill(s); return s; } } }catch(e){} return blank(); }
-function fill(s){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; s.goals=s.goals||{}; s.packs=s.packs||[]; return s; }
+function fill(s){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; s.goals=s.goals||{}; s.packs=s.packs||[]; s.foodMap=s.foodMap||{}; return s; }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){ toast("Nie udało się zapisać danych na tym urządzeniu"); } }
 try{ if(navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
 
@@ -385,6 +395,7 @@ function viewToday(){
   return `<section class="screen">
   <div class="head"><div><div class="sub">${isToday?esc(longDate(k)):"Uzupełniasz dzień"}</div><h1>${esc(cap(dayLabel(k)))}</h1></div>
     <div class="datenav"><button class="iconbtn" data-act="day-prev" aria-label="Poprzedni dzień">${I.left}</button><button class="iconbtn" data-act="day-next" aria-label="Następny dzień" ${isToday?"disabled":""}>${I.right}</button></div></div>
+  ${!S.diet?dietCard():""}
   ${S.products.length?`<label class="switchrow card"><span class="grow"><span class="pname">Tylko to, co zostało na dziś</span><span class="pmeta" style="display:block">Ukrywa odhaczone produkty i składniki, które osiągnęły dziś Twój cel albo zaplanowaną ilość.</span></span>
     <input type="checkbox" id="only-left" class="switch" ${only?"checked":""}></label>`:""}
   ${S.products.length?`<div class="section-t">Do przyjęcia · ${done.length}/${S.products.length}</div>
@@ -426,6 +437,7 @@ function nutrientCard(n,v,bt){
     </div>
     <div class="cmp" style="margin-top:${Math.max(0,...labels.map(l=>l.row))*12}px">
       ${goal?`<div><span>Twój cel (${fmt(goal)} ${N.unit}) ${infoBtn("goal")}</span><span class="num">${fmt(v/goal*100,0)}%</span></div>`:""}
+      ${S.diet&&!NOT_FROM_DIET[n]&&S.diet.intake[n]?`<div><span>Z diety (szacunek): ok. ${fmt(S.diet.intake[n],0)} ${N.unit}</span><span class="num">${norm?fmt(S.diet.intake[n]/norm*100,0)+"% normy":""}</span></div>`:""}
       ${N.rws?`<div><span>Etykieta: RWS ${fmt(N.rws)} ${N.unit} ${infoBtn("rws")}</span><span class="num">${fmt(v/N.rws*100,0)}%</span></div>`:""}
       ${norm?`<div><span>Twoja norma: ${fmt(norm)} ${n==="fol"?"µg DFE":N.unit} ${infoBtn("norm")}</span><span class="num">${fmt(v*f/norm*100,0)}%</span></div>`:""}
       ${gis?`<div><span>Limit GIS: ${fmt(gis)} ${N.unit} ${infoBtn("gis")}</span><span class="num">${v>gis+1e-9?"powyżej":"poniżej"}</span></div>`:""}
@@ -508,6 +520,7 @@ function viewKnow(){
   const n=KNOW, N=NUTR[n], nm=norms(), gis=gisFor(n), r=rangeFor(n), goal=S.goals[n];
   return `<section class="screen">
   <div class="head"><div><div class="sub">Co mówią przepisy i nauka</div><h1>Wiedza</h1></div></div>
+  ${dietCard()}
   <button class="card howto" data-act="info" data-k="">
     <div class="ruler" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="u"></i></div>
     <div><div class="pname">Jak czytać dawki</div><div class="pmeta">Minimum, etykieta, norma, limit GIS i granica bezpieczeństwa. Co znaczy każda liczba.</div></div></button>
@@ -666,6 +679,228 @@ function labSheet(){ sheet("Wynik 25(OH)D",`<div class="pmeta">Zapisz wynik z ba
   <button class="btn full" data-act="l-save">Zapisz</button>`); }
 function wipeSheet(){ sheet("Usunąć wszystkie dane?",`<div class="pmeta">Profil, Apteczka i cała historia znikną z tego telefonu. Tego nie da się cofnąć, chyba że masz kopię.</div><button class="btn danger full" data-act="wipe-yes">Usuń wszystko</button>`); }
 
+
+/* ============ Czy potrzebuję suplementów? (ankieta + import jadłospisu) ============
+   Skład żywności: USDA National Nutrient Database SR28 (domena publiczna); produkty wzbogacane w USA
+   zastąpione wersjami niewzbogacanymi, bo polskiej żywności zwykle się nie wzbogaca. */
+const FOODS = [{"name":"Chleb graham / pełnoziarnisty","p":["graham","pelnoziarnist chleb","chleb pelnoziarnist","chleb pszenny razowy","pieczywo pelnoziarnist"],"n":{"mg":75.0,"b6":0.215,"zn":1.77,"fe":2.47,"fol":42.0,"ca":161.0,"k":7.8,"se":25.7,"pot":254.0}},{"name":"Chleb żytni","p":["chleb zytni","zytni razowy","pumpernikiel","chleb razowy"],"n":{"mg":46.8,"b6":0.199,"zn":1.61,"fe":1.885,"fol":25.2,"ca":17.8,"k":4.4,"se":10.7,"pot":277.6}},{"name":"Bułka / chleb pszenny","p":["bulka","kajzerka","chleb pszenny","chleb bialy","bagietka","chleb tostowy","tost","pieczywo"],"n":{"mg":16.3,"b6":0.033,"zn":0.519,"fe":0.868,"fol":19.3,"ca":11.1,"k":0.2,"se":25.1,"pot":79.4}},{"name":"Tortilla pszenna","p":["tortilla","wrap"],"n":{"mg":18.5,"b6":0.037,"zn":0.588,"fe":0.984,"fol":21.9,"ca":12.6,"k":0.3,"se":28.5,"pot":90.0}},{"name":"Wafle ryżowe","p":["wafle ryzowe","wafel ryzowy"],"n":{"mg":114.0,"b6":0.14,"zn":2.22,"fe":1.17,"fol":19.0,"ca":9.0,"pot":275.0}},{"name":"Płatki owsiane","p":["owsian","platki owsiane","owsianka"],"n":{"mg":177.0,"b6":0.119,"zn":3.97,"fe":4.72,"fol":56.0,"ca":54.0,"pot":429.0}},{"name":"Ryż (ugotowany)","p":["ryz gotowan","ryz ugotowan"],"n":{"mg":12.0,"b6":0.093,"zn":0.49,"fe":0.2,"fol":3.0,"ca":10.0,"se":7.5,"pot":35.0}},{"name":"Ryż brązowy (suchy)","p":["ryz brazowy","ryz pelnoziarnist"],"n":{"mg":116.0,"b6":0.477,"zn":2.13,"fe":1.29,"fol":23.0,"ca":9.0,"k":0.6,"se":17.1,"pot":250.0}},{"name":"Ryż biały (suchy)","p":["ryz"],"n":{"mg":25.0,"b6":0.164,"zn":1.09,"fe":0.8,"fol":8.0,"ca":28.0,"k":0.1,"se":15.1,"pot":115.0}},{"name":"Makaron (ugotowany)","p":["makaron gotowan","makaron ugotowan"],"n":{"mg":18.0,"b6":0.049,"zn":0.51,"fe":0.5,"fol":7.0,"ca":7.0,"se":26.4,"pot":44.0}},{"name":"Makaron pełnoziarnisty (suchy)","p":["makaron pelnoziarnist","makaron razow","spaghetti pelnoziarnist"],"n":{"mg":128.0,"b6":0.283,"zn":2.97,"fe":3.62,"fol":69.0,"ca":29.0,"k":1.4,"se":77.6,"pot":434.0}},{"name":"Makaron (suchy)","p":["makaron","spaghetti","penne","fusilli"],"n":{"mg":53.0,"b6":0.142,"zn":1.41,"fe":1.3,"fol":18.0,"ca":21.0,"k":0.1,"se":63.2,"pot":223.0}},{"name":"Kasza gryczana (ugotowana)","p":["gryczana gotowan","gryczana ugotowan"],"n":{"mg":51.0,"b6":0.077,"zn":0.61,"fe":0.8,"fol":14.0,"ca":7.0,"k":1.9,"se":2.2,"pot":88.0}},{"name":"Kasza gryczana (sucha)","p":["gryczan"],"n":{"mg":221.0,"b6":0.353,"zn":2.42,"fe":2.47,"fol":42.0,"ca":17.0,"se":8.4,"pot":320.0}},{"name":"Kasza jaglana (sucha)","p":["jaglan","proso"],"n":{"mg":114.0,"b6":0.384,"zn":1.68,"fe":3.01,"fol":85.0,"ca":8.0,"k":0.9,"se":2.7,"pot":195.0}},{"name":"Kasza jęczmienna (sucha)","p":["jeczmien","peczak","peczak"],"n":{"mg":79.0,"b6":0.26,"zn":2.13,"fe":2.5,"fol":23.0,"ca":29.0,"k":2.2,"se":37.7,"pot":280.0}},{"name":"Kasza manna (sucha)","p":["manna","semolina"],"n":{"mg":47.0,"b6":0.103,"zn":1.05,"fe":1.23,"fol":72.0,"ca":17.0,"pot":186.0}},{"name":"Mąka pszenna","p":["maka pszenna"],"n":{"mg":22.0,"b6":0.044,"zn":0.7,"fe":1.17,"fol":26.0,"ca":15.0,"k":0.3,"se":33.9,"pot":107.0}},{"name":"Ziemniaki","p":["ziemniak","kartofl"],"n":{"mg":23.0,"b6":0.298,"c":19.7,"zn":0.3,"fe":0.81,"fol":15.0,"ca":12.0,"k":2.0,"se":0.4,"pot":425.0}},{"name":"Frytki","p":["frytki"],"n":{"mg":35.0,"b6":0.372,"c":4.7,"zn":0.5,"fe":0.81,"fol":30.0,"ca":18.0,"k":11.2,"se":0.9,"pot":579.0}},{"name":"Batat","p":["batat","slodki ziemniak"],"n":{"mg":25.0,"b6":0.209,"c":2.4,"zn":0.3,"fe":0.61,"fol":11.0,"ca":30.0,"k":1.8,"se":0.6,"pot":337.0}},{"name":"Passata / przecier pomidorowy","p":["passata","przecier pomidor","pomidory krojone","koncentrat pomidor"],"n":{"mg":23.0,"b6":0.126,"c":10.6,"zn":0.36,"fe":1.78,"fol":11.0,"ca":18.0,"k":3.4,"se":0.7,"pot":439.0}},{"name":"Pomidor","p":["pomidor"],"n":{"mg":11.0,"b6":0.08,"c":13.7,"zn":0.17,"fe":0.27,"fol":15.0,"ca":10.0,"k":7.9,"pot":237.0}},{"name":"Ogórek kiszony","p":["ogorek kiszon","ogorki kiszon"],"n":{"mg":13.0,"b6":0.13,"c":14.7,"zn":0.19,"fe":1.47,"fol":24.0,"ca":30.0,"k":13.0,"se":0.6,"pot":170.0}},{"name":"Ogórek","p":["ogorek"],"n":{"mg":13.0,"b6":0.04,"c":2.8,"zn":0.2,"fe":0.28,"fol":7.0,"ca":16.0,"k":16.4,"se":0.3,"pot":147.0}},{"name":"Marchew","p":["marchew","marchewka"],"n":{"mg":12.0,"b6":0.138,"c":5.9,"zn":0.24,"fe":0.3,"fol":19.0,"ca":33.0,"k":13.2,"se":0.1,"pot":320.0}},{"name":"Papryka","p":["papryka"],"n":{"mg":12.0,"b6":0.291,"c":127.7,"zn":0.25,"fe":0.43,"fol":46.0,"ca":7.0,"k":4.9,"se":0.1,"pot":211.0}},{"name":"Cebula","p":["cebul"],"n":{"mg":10.0,"b6":0.12,"c":7.4,"zn":0.17,"fe":0.21,"fol":19.0,"ca":23.0,"k":0.4,"se":0.5,"pot":146.0}},{"name":"Czosnek","p":["czosnek"],"n":{"mg":25.0,"b6":1.235,"c":31.2,"zn":1.16,"fe":1.7,"fol":3.0,"ca":181.0,"k":1.7,"se":14.2,"pot":401.0}},{"name":"Kapusta kiszona","p":["kapusta kiszon","kiszona kapusta"],"n":{"mg":13.0,"b6":0.13,"c":14.7,"zn":0.19,"fe":1.47,"fol":24.0,"ca":30.0,"k":13.0,"se":0.6,"pot":170.0}},{"name":"Kapusta","p":["kapusta"],"n":{"mg":12.0,"b6":0.124,"c":36.6,"zn":0.18,"fe":0.47,"fol":43.0,"ca":40.0,"k":76.0,"se":0.3,"pot":170.0}},{"name":"Kalafior","p":["kalafior"],"n":{"mg":15.0,"b6":0.184,"c":48.2,"zn":0.27,"fe":0.42,"fol":57.0,"ca":22.0,"k":15.5,"se":0.6,"pot":299.0}},{"name":"Brokuł","p":["brokul"],"n":{"mg":21.0,"b6":0.175,"c":89.2,"zn":0.41,"fe":0.73,"fol":63.0,"ca":47.0,"k":101.6,"se":2.5,"pot":316.0}},{"name":"Szpinak","p":["szpinak"],"n":{"mg":79.0,"b6":0.195,"c":28.1,"zn":0.53,"fe":2.71,"fol":194.0,"ca":99.0,"k":482.9,"se":1.0,"pot":558.0}},{"name":"Jarmuż","p":["jarmuz"],"n":{"mg":47.0,"b6":0.271,"c":120.0,"zn":0.56,"fe":1.47,"fol":141.0,"ca":150.0,"k":704.8,"se":0.9,"pot":491.0}},{"name":"Rukola","p":["rukola","rukkola"],"n":{"mg":47.0,"b6":0.073,"c":15.0,"zn":0.47,"fe":1.46,"fol":97.0,"ca":160.0,"k":108.6,"se":0.3,"pot":369.0}},{"name":"Sałata / mix sałat","p":["salat","salata"],"n":{"mg":13.0,"b6":0.09,"c":9.2,"zn":0.18,"fe":0.86,"fol":38.0,"ca":36.0,"k":126.3,"se":0.6,"pot":194.0}},{"name":"Cukinia","p":["cukini"],"n":{"mg":18.0,"b6":0.163,"c":17.9,"zn":0.32,"fe":0.37,"fol":24.0,"ca":16.0,"k":4.3,"se":0.2,"pot":261.0}},{"name":"Bakłażan","p":["baklazan"],"n":{"mg":14.0,"b6":0.084,"c":2.2,"zn":0.16,"fe":0.23,"fol":22.0,"ca":9.0,"k":3.5,"se":0.3,"pot":229.0}},{"name":"Burak","p":["burak","buracz"],"n":{"mg":23.0,"b6":0.067,"c":4.9,"zn":0.35,"fe":0.8,"fol":109.0,"ca":16.0,"k":0.2,"se":0.7,"pot":325.0}},{"name":"Por","p":["por="],"n":{"mg":28.0,"b6":0.233,"c":12.0,"zn":0.12,"fe":2.1,"fol":64.0,"ca":59.0,"k":47.0,"se":1.0,"pot":180.0}},{"name":"Seler","p":["seler"],"n":{"mg":20.0,"b6":0.165,"c":8.0,"zn":0.33,"fe":0.7,"fol":8.0,"ca":43.0,"k":41.0,"se":0.7,"pot":300.0}},{"name":"Pieczarki","p":["pieczark","grzyb"],"n":{"mg":9.0,"d":0.2,"b6":0.104,"c":2.1,"zn":0.52,"b12":0.04,"fe":0.5,"fol":17.0,"ca":3.0,"se":9.3,"pot":318.0}},{"name":"Kukurydza (konserwa)","p":["kukurydz"],"n":{"mg":13.0,"b6":0.037,"c":1.8,"zn":0.32,"fe":0.27,"fol":36.0,"ca":3.0,"se":0.6,"pot":132.0}},{"name":"Groszek zielony","p":["groszek"],"n":{"mg":26.0,"b6":0.083,"c":18.0,"zn":0.82,"fe":1.53,"fol":53.0,"ca":22.0,"k":27.9,"se":1.9,"pot":153.0}},{"name":"Fasolka szparagowa","p":["szparagow"],"n":{"mg":25.0,"b6":0.141,"c":12.2,"zn":0.24,"fe":1.03,"fol":33.0,"ca":37.0,"k":43.0,"se":0.6,"pot":211.0}},{"name":"Dynia","p":["dynia"],"n":{"mg":12.0,"b6":0.061,"c":9.0,"zn":0.32,"fe":0.8,"fol":16.0,"ca":21.0,"k":1.1,"se":0.3,"pot":340.0}},{"name":"Awokado","p":["awokado"],"n":{"mg":29.0,"b6":0.257,"c":10.0,"zn":0.64,"fe":0.55,"fol":81.0,"ca":12.0,"k":21.0,"se":0.4,"pot":485.0}},{"name":"Banan","p":["banan"],"n":{"mg":27.0,"b6":0.367,"c":8.7,"zn":0.15,"fe":0.26,"fol":20.0,"ca":5.0,"k":0.5,"se":1.0,"pot":358.0}},{"name":"Jabłko","p":["jablk"],"n":{"mg":5.0,"b6":0.041,"c":4.6,"zn":0.04,"fe":0.12,"fol":3.0,"ca":6.0,"k":2.2,"pot":107.0}},{"name":"Gruszka","p":["grusz"],"n":{"mg":7.0,"b6":0.029,"c":4.3,"zn":0.1,"fe":0.18,"fol":7.0,"ca":9.0,"k":4.4,"se":0.1,"pot":116.0}},{"name":"Pomarańcza","p":["pomarancz"],"n":{"mg":10.0,"b6":0.06,"c":53.2,"zn":0.07,"fe":0.1,"fol":30.0,"ca":40.0,"se":0.5,"pot":181.0}},{"name":"Mandarynka","p":["mandaryn"],"n":{"mg":12.0,"b6":0.078,"c":26.7,"zn":0.07,"fe":0.15,"fol":16.0,"ca":37.0,"se":0.1,"pot":166.0}},{"name":"Kiwi","p":["kiwi"],"n":{"mg":17.0,"b6":0.063,"c":92.7,"zn":0.14,"fe":0.31,"fol":25.0,"ca":34.0,"k":40.3,"se":0.2,"pot":312.0}},{"name":"Śliwka","p":["sliwk"],"n":{"mg":7.0,"b6":0.029,"c":9.5,"zn":0.1,"fe":0.17,"fol":5.0,"ca":6.0,"k":6.4,"pot":157.0}},{"name":"Winogrona","p":["winogron"],"n":{"mg":7.0,"b6":0.086,"c":3.2,"zn":0.07,"fe":0.36,"fol":2.0,"ca":10.0,"k":14.6,"se":0.1,"pot":191.0}},{"name":"Truskawki","p":["truskaw"],"n":{"mg":11.0,"b6":0.028,"c":41.2,"zn":0.13,"fe":0.75,"fol":17.0,"ca":16.0,"k":2.2,"se":0.7,"pot":148.0}},{"name":"Maliny","p":["malin"],"n":{"mg":22.0,"b6":0.055,"c":26.2,"zn":0.42,"fe":0.69,"fol":21.0,"ca":25.0,"k":7.8,"se":0.2,"pot":151.0}},{"name":"Borówki","p":["borowk","jagod"],"n":{"mg":6.0,"b6":0.052,"c":9.7,"zn":0.16,"fe":0.28,"fol":6.0,"ca":6.0,"k":19.3,"se":0.1,"pot":77.0}},{"name":"Czereśnie / wiśnie","p":["czeresn","wisn"],"n":{"mg":11.0,"b6":0.049,"c":7.0,"zn":0.07,"fe":0.36,"fol":4.0,"ca":13.0,"k":2.1,"pot":222.0}},{"name":"Arbuz","p":["arbuz"],"n":{"mg":10.0,"b6":0.045,"c":8.1,"zn":0.1,"fe":0.24,"fol":3.0,"ca":7.0,"k":0.1,"se":0.4,"pot":112.0}},{"name":"Cytryna","p":["cytryn"],"n":{"mg":8.0,"b6":0.08,"c":53.0,"zn":0.06,"fe":0.6,"fol":11.0,"ca":26.0,"se":0.4,"pot":138.0}},{"name":"Sok pomarańczowy","p":["sok pomarancz"],"n":{"mg":11.0,"b6":0.04,"c":50.0,"zn":0.05,"fe":0.2,"fol":30.0,"ca":11.0,"k":0.1,"se":0.1,"pot":200.0}},{"name":"Ciecierzyca (konserwa)","p":["ciecierzyc konserw","ciecierzyc puszk"],"n":{"mg":26.0,"b6":0.116,"c":0.1,"zn":0.63,"fe":1.07,"fol":48.0,"ca":45.0,"k":3.4,"se":3.1,"pot":126.0}},{"name":"Ciecierzyca (sucha)","p":["ciecierzyc"],"n":{"mg":79.0,"b6":0.535,"c":4.0,"zn":2.76,"fe":4.31,"fol":557.0,"ca":57.0,"k":9.0,"pot":718.0}},{"name":"Fasola czerwona (konserwa)","p":["fasola czerwona konserw","fasola czerwona puszk","fasola konserw","fasola puszk"],"n":{"mg":30.0,"c":0.2,"zn":0.75,"fe":1.5,"fol":28.0,"ca":57.0,"se":1.6,"pot":277.0}},{"name":"Fasola biała (konserwa)","p":["fasola biala"],"n":{"mg":51.0,"b6":0.075,"zn":1.12,"fe":2.99,"fol":65.0,"ca":73.0,"k":2.9,"se":1.6,"pot":454.0}},{"name":"Fasola (sucha)","p":["fasola","fasoli"],"n":{"mg":138.0,"b6":0.397,"c":4.5,"zn":2.79,"fe":6.69,"fol":394.0,"ca":83.0,"k":5.6,"se":3.2,"pot":1359.0}},{"name":"Soczewica (sucha)","p":["soczewic"],"n":{"mg":59.0,"b6":0.403,"c":1.7,"zn":3.6,"fe":7.39,"fol":204.0,"ca":48.0,"pot":668.0}},{"name":"Groch (suchy)","p":["groch"],"n":{"mg":49.0,"b6":0.174,"c":1.8,"zn":3.55,"fe":4.82,"fol":274.0,"ca":37.0,"k":14.5,"se":4.1,"pot":823.0}},{"name":"Tofu","p":["tofu"],"n":{"mg":58.0,"b6":0.092,"c":0.2,"zn":1.57,"fe":2.66,"fol":29.0,"ca":683.0,"se":17.4,"pot":237.0}},{"name":"Hummus","p":["hummus"],"n":{"mg":71.0,"b6":0.2,"zn":1.83,"fe":2.44,"fol":83.0,"ca":38.0,"se":2.6,"pot":228.0}},{"name":"Napój sojowy (niewzbogacany)","p":["napoj sojow","mleko sojow"],"n":{"mg":25.0,"b6":0.077,"zn":0.12,"fe":0.64,"fol":18.0,"ca":25.0,"k":3.0,"se":4.8,"pot":118.0}},{"name":"Masło orzechowe","p":["maslo orzechow"],"n":{"mg":168.0,"b6":0.441,"zn":2.51,"fe":1.74,"fol":87.0,"ca":49.0,"k":0.3,"se":4.1,"pot":558.0}},{"name":"Orzechy włoskie","p":["orzechy wloskie","orzech wloski"],"n":{"mg":158.0,"b6":0.537,"c":1.3,"zn":3.09,"fe":2.91,"fol":98.0,"ca":98.0,"k":2.7,"se":4.9,"pot":441.0}},{"name":"Orzechy laskowe","p":["laskow"],"n":{"mg":163.0,"b6":0.563,"c":6.3,"zn":2.45,"fe":4.7,"fol":113.0,"ca":114.0,"k":14.2,"se":2.4,"pot":680.0}},{"name":"Orzechy nerkowca","p":["nerkowc"],"n":{"mg":292.0,"b6":0.417,"c":0.5,"zn":5.78,"fe":6.68,"fol":25.0,"ca":37.0,"k":34.1,"se":19.9,"pot":660.0}},{"name":"Pistacje","p":["pistacj"],"n":{"mg":121.0,"b6":1.7,"c":5.6,"zn":2.2,"fe":3.92,"fol":51.0,"ca":105.0,"se":7.0,"pot":1025.0}},{"name":"Orzeszki ziemne","p":["arachid","orzeszki ziemne"],"n":{"mg":168.0,"b6":0.348,"zn":3.27,"fe":4.58,"fol":240.0,"ca":92.0,"se":7.2,"pot":705.0}},{"name":"Migdały","p":["migdal"],"n":{"mg":270.0,"b6":0.137,"zn":3.12,"fe":3.71,"fol":44.0,"ca":269.0,"se":4.1,"pot":733.0}},{"name":"Pestki dyni","p":["pestki dyni","dyni pestk"],"n":{"mg":592.0,"b6":0.143,"c":1.9,"zn":7.81,"fe":8.82,"fol":58.0,"ca":46.0,"k":7.3,"se":9.4,"pot":809.0}},{"name":"Słonecznik","p":["slonecznik"],"n":{"mg":325.0,"b6":1.345,"c":1.4,"zn":5.0,"fe":5.25,"fol":227.0,"ca":78.0,"se":53.0,"pot":645.0,"om3":14.0}},{"name":"Siemię lniane","p":["siemie","len="],"n":{"mg":392.0,"b6":0.473,"c":0.6,"zn":4.34,"fe":5.73,"fol":87.0,"ca":255.0,"k":4.3,"se":25.4,"pot":813.0}},{"name":"Chia","p":["chia"],"n":{"mg":335.0,"c":1.6,"zn":4.58,"fe":7.72,"ca":631.0,"se":55.2,"pot":407.0}},{"name":"Sezam","p":["sezam"],"n":{"mg":351.0,"b6":0.79,"zn":7.75,"fe":14.55,"fol":97.0,"ca":975.0,"se":34.4,"pot":468.0}},{"name":"Kefir","p":["kefir"],"n":{"mg":12.0,"b6":0.058,"c":0.2,"zn":0.46,"b12":0.29,"fe":0.04,"fol":13.0,"ca":130.0,"k":0.1,"se":3.6,"pot":164.0}},{"name":"Maślanka","p":["maslank"],"n":{"mg":11.0,"b6":0.034,"c":1.0,"zn":0.42,"b12":0.22,"fe":0.05,"fol":5.0,"ca":116.0,"k":0.1,"se":2.0,"pot":151.0}},{"name":"Skyr / jogurt grecki","p":["skyr","jogurt grecki"],"n":{"mg":11.0,"b6":0.063,"zn":0.52,"b12":0.75,"fe":0.07,"fol":7.0,"ca":110.0,"se":9.7,"pot":141.0}},{"name":"Jogurt naturalny","p":["jogurt"],"n":{"mg":17.0,"b6":0.049,"c":0.8,"zn":0.89,"b12":0.56,"fe":0.08,"fol":11.0,"ca":183.0,"k":0.2,"se":3.3,"pot":234.0}},{"name":"Mleko 3,2%","p":["mleko 3"],"n":{"mg":10.0,"d":0.1,"b6":0.036,"zn":0.37,"b12":0.45,"fe":0.03,"fol":5.0,"ca":113.0,"k":0.3,"se":3.7,"pot":132.0}},{"name":"Mleko 2%","p":["mleko"],"n":{"mg":11.0,"b6":0.038,"c":0.2,"zn":0.48,"b12":0.53,"fe":0.02,"fol":5.0,"ca":120.0,"k":0.2,"se":2.5,"pot":140.0}},{"name":"Twaróg","p":["twarog","twarozek"],"n":{"mg":9.0,"b6":0.057,"zn":0.51,"b12":0.47,"fe":0.13,"fol":8.0,"ca":111.0,"se":11.9,"pot":125.0,"om3":1.0}},{"name":"Serek wiejski","p":["serek wiejski","cottage"],"n":{"mg":5.0,"b6":0.068,"zn":0.38,"b12":0.63,"fe":0.14,"fol":12.0,"ca":61.0,"k":0.1,"se":9.0,"pot":86.0}},{"name":"Mozzarella","p":["mozzarell"],"n":{"mg":23.0,"d":0.3,"b6":0.07,"zn":2.76,"b12":0.82,"fe":0.22,"fol":9.0,"ca":782.0,"k":1.6,"se":14.4,"pot":84.0}},{"name":"Feta","p":["feta","ser salatkowy","ser salatkowy"],"n":{"mg":19.0,"d":0.4,"b6":0.424,"zn":2.88,"b12":1.69,"fe":0.65,"fol":32.0,"ca":493.0,"k":1.8,"se":15.0,"pot":62.0}},{"name":"Parmezan","p":["parmezan","grana padano"],"n":{"mg":44.0,"d":0.5,"b6":0.091,"zn":2.75,"b12":1.2,"fe":0.82,"fol":7.0,"ca":1184.0,"k":1.7,"se":22.5,"pot":92.0}},{"name":"Ricotta","p":["ricotta"],"n":{"mg":15.0,"d":0.1,"b6":0.02,"zn":1.34,"b12":0.29,"fe":0.44,"fol":13.0,"ca":272.0,"k":0.7,"se":16.7,"pot":125.0}},{"name":"Ser żółty (gouda)","p":["ser zolty","gouda","edam","ser="],"n":{"mg":29.0,"d":0.5,"b6":0.08,"zn":3.9,"b12":1.54,"fe":0.24,"fol":21.0,"ca":700.0,"k":2.3,"se":14.5,"pot":121.0}},{"name":"Śmietana","p":["smietan"],"n":{"mg":10.0,"b6":0.041,"c":0.9,"zn":0.33,"b12":0.21,"fe":0.07,"fol":6.0,"ca":101.0,"k":1.5,"se":3.7,"pot":125.0,"om3":7.0}},{"name":"Masło","p":["maslo"],"n":{"mg":2.0,"b6":0.003,"zn":0.09,"b12":0.17,"fe":0.02,"fol":3.0,"ca":24.0,"k":7.0,"se":1.0,"pot":24.0}},{"name":"Jajko","p":["jajk","jaja","jajecznic"],"n":{"mg":12.0,"d":2.0,"b6":0.17,"zn":1.29,"b12":0.89,"fe":1.75,"fol":47.0,"ca":56.0,"k":0.3,"se":30.7,"pot":138.0,"om3":58.0}},{"name":"Wątróbka drobiowa","p":["watrob"],"n":{"mg":19.0,"b6":0.853,"c":17.9,"zn":2.67,"b12":16.58,"fe":8.99,"fol":588.0,"ca":8.0,"se":54.6,"pot":230.0}},{"name":"Szynka / wędlina z indyka","p":["szynka z indyka","szynka z piersi indyka","poledwica z indyka","wedlina z indyka"],"n":{"mg":21.0,"d":0.1,"b6":0.128,"c":5.7,"zn":1.33,"b12":0.09,"fe":0.63,"fol":4.0,"ca":8.0,"se":22.8,"pot":211.0,"om3":2.0}},{"name":"Szynka wieprzowa","p":["szynka","wedlina","poledwica sopocka"],"n":{"mg":22.0,"d":0.7,"b6":0.329,"c":4.0,"zn":1.35,"b12":0.42,"fe":1.02,"fol":7.0,"ca":24.0,"se":20.7,"pot":287.0}},{"name":"Kiełbasa","p":["kielbas"],"n":{"mg":12.0,"d":1.1,"b6":0.17,"zn":2.11,"b12":1.51,"fe":1.0,"fol":4.0,"ca":7.0,"se":13.1,"pot":189.0}},{"name":"Parówki","p":["parowk"],"n":{"mg":15.0,"b6":0.322,"c":2.0,"zn":2.09,"b12":0.49,"fe":3.7,"fol":3.0,"ca":267.0,"se":27.8,"pot":264.0}},{"name":"Pierś z indyka","p":["indyk"],"n":{"mg":27.0,"d":0.2,"b6":0.814,"zn":1.16,"b12":1.35,"fe":0.76,"ca":9.0,"se":22.1,"pot":267.0,"om3":3.0}},{"name":"Udo z kurczaka","p":["udo","udko","podudzi"],"n":{"mg":23.0,"b6":0.451,"zn":1.58,"b12":0.61,"fe":0.81,"fol":4.0,"ca":7.0,"k":2.9,"se":22.9,"pot":242.0,"om3":9.0}},{"name":"Pierś z kurczaka","p":["kurczak","kurczaka","drob"],"n":{"mg":25.0,"b6":0.761,"zn":0.63,"b12":0.19,"fe":0.34,"fol":8.0,"ca":5.0,"se":26.4,"pot":332.0,"om3":6.0}},{"name":"Wołowina mielona","p":["wolowin mielon","mielona wolow","mielone wolow"],"n":{"mg":20.0,"d":0.1,"b6":0.369,"zn":4.79,"b12":2.21,"fe":2.24,"fol":6.0,"ca":12.0,"k":0.8,"se":16.6,"pot":321.0}},{"name":"Wieprzowina mielona","p":["mielon","mielone"],"n":{"mg":19.0,"b6":0.383,"c":0.7,"zn":2.2,"b12":0.7,"fe":0.88,"fol":5.0,"ca":14.0,"se":24.6,"pot":287.0}},{"name":"Wołowina","p":["wolowin","wolowe","stek","rostbef"],"n":{"mg":25.0,"d":0.1,"b6":0.666,"zn":4.29,"b12":1.89,"fe":2.12,"fol":13.0,"ca":20.0,"k":1.2,"se":28.6,"pot":352.0,"om3":3.0}},{"name":"Schab","p":["schab","poledwiczk"],"n":{"mg":23.0,"d":0.5,"b6":0.527,"c":0.6,"zn":1.84,"b12":0.63,"fe":0.84,"fol":5.0,"ca":17.0,"se":36.1,"pot":389.0}},{"name":"Karkówka","p":["karkow","lopatka"],"n":{"mg":22.0,"d":0.6,"b6":0.521,"zn":3.36,"b12":0.91,"fe":1.2,"ca":14.0,"se":28.2,"pot":339.0}},{"name":"Wieprzowina","p":["wieprzow"],"n":{"mg":23.0,"b6":0.51,"c":0.6,"zn":1.99,"b12":0.66,"fe":0.88,"fol":5.0,"ca":17.0,"se":32.4,"pot":384.0}},{"name":"Burger (fast food)","p":["burger","hamburger"],"n":{"mg":20.0,"b6":0.17,"zn":3.0,"b12":1.5,"fe":2.61,"fol":59.0,"ca":54.0,"se":19.8,"pot":195.0}},{"name":"Pizza","p":["pizza"],"n":{"mg":23.0,"b6":0.083,"c":1.2,"zn":1.32,"b12":0.78,"fe":2.27,"fol":65.0,"ca":179.0,"k":6.6,"se":21.5,"pot":152.0}},{"name":"Łosoś","p":["losos"],"n":{"mg":27.0,"d":11.0,"b6":0.636,"c":3.9,"zn":0.36,"b12":3.23,"fe":0.34,"fol":26.0,"ca":9.0,"k":0.5,"se":24.0,"pot":363.0,"om3":1966.0}},{"name":"Makrela","p":["makrel"],"n":{"mg":76.0,"d":16.1,"b6":0.399,"c":0.4,"zn":0.63,"b12":8.71,"fe":1.63,"fol":1.0,"ca":12.0,"k":5.0,"se":44.1,"pot":314.0,"om3":2299.0}},{"name":"Śledź","p":["sledz"],"n":{"mg":32.0,"d":4.2,"b6":0.302,"c":0.7,"zn":0.99,"b12":13.67,"fe":1.1,"fol":10.0,"ca":57.0,"k":0.1,"se":36.5,"pot":327.0,"om3":1571.0}},{"name":"Pstrąg","p":["pstrag"],"n":{"mg":25.0,"d":15.9,"b6":0.34,"c":2.9,"zn":0.45,"b12":4.3,"fe":0.31,"fol":11.0,"ca":25.0,"k":0.1,"se":23.6,"pot":377.0,"om3":733.0}},{"name":"Sardynki (w oleju)","p":["sardyn"],"n":{"mg":39.0,"d":4.8,"b6":0.167,"zn":1.31,"b12":8.94,"fe":2.92,"fol":10.0,"ca":382.0,"k":2.6,"se":52.7,"pot":397.0,"om3":982.0}},{"name":"Tuńczyk (w wodzie)","p":["tunczyk"],"n":{"mg":23.0,"d":1.2,"b6":0.319,"zn":0.69,"b12":2.55,"fe":1.63,"fol":4.0,"ca":17.0,"k":0.2,"se":70.6,"pot":179.0,"om3":224.0}},{"name":"Dorsz","p":["dorsz"],"n":{"mg":32.0,"d":0.9,"b6":0.245,"c":1.0,"zn":0.45,"b12":0.91,"fe":0.38,"fol":7.0,"ca":16.0,"k":0.1,"se":33.1,"pot":413.0,"om3":184.0}},{"name":"Mintaj","p":["mintaj","morszczuk","miruna"],"n":{"mg":16.0,"d":0.2,"b6":0.069,"zn":0.31,"b12":1.63,"fe":0.22,"fol":3.0,"ca":15.0,"se":15.9,"pot":160.0,"om3":165.0}},{"name":"Krewetki","p":["krewetk"],"n":{"mg":35.0,"zn":1.34,"fe":0.52,"ca":64.0,"pot":264.0,"om3":61.0}},{"name":"Oliwa z oliwek","p":["oliwa"],"n":{"fe":0.56,"ca":1.0,"k":60.2,"pot":1.0}},{"name":"Olej rzepakowy","p":["olej"],"n":{"k":71.3}},{"name":"Majonez","p":["majonez"],"n":{"mg":1.0,"d":0.2,"b6":0.008,"zn":0.15,"b12":0.12,"fe":0.21,"fol":5.0,"ca":8.0,"k":163.0,"se":2.3,"pot":20.0,"om3":5.0}},{"name":"Miód","p":["miod"],"n":{"mg":2.0,"b6":0.024,"c":0.5,"zn":0.22,"fe":0.42,"fol":2.0,"ca":6.0,"se":0.8,"pot":52.0}},{"name":"Cukier","p":["cukier"],"n":{"zn":0.01,"fe":0.05,"ca":1.0,"se":0.6,"pot":2.0}},{"name":"Czekolada gorzka","p":["czekolada gorzka","gorzka czekolada"],"n":{"mg":228.0,"b6":0.038,"zn":3.31,"b12":0.28,"fe":11.9,"ca":73.0,"k":7.3,"se":6.8,"pot":715.0}},{"name":"Czekolada mleczna","p":["czekolad"],"n":{"mg":63.0,"b6":0.036,"zn":2.3,"b12":0.75,"fe":2.35,"fol":11.0,"ca":189.0,"k":5.7,"se":4.5,"pot":372.0}},{"name":"Kakao","p":["kakao"],"n":{"mg":499.0,"b6":0.118,"zn":6.81,"fe":13.86,"fol":32.0,"ca":128.0,"k":2.5,"se":14.3,"pot":1524.0}},{"name":"Dżem","p":["dzem","konfitur"],"n":{"mg":4.0,"b6":0.02,"c":8.8,"zn":0.06,"fe":0.49,"fol":11.0,"ca":20.0,"se":2.0,"pot":77.0}},{"name":"Ketchup","p":["ketchup"],"n":{"mg":13.0,"b6":0.158,"c":4.1,"zn":0.17,"fe":0.35,"fol":9.0,"ca":15.0,"k":3.0,"se":0.7,"pot":281.0}},{"name":"Kawa","p":["kawa"],"n":{"mg":3.0,"b6":0.001,"zn":0.02,"fe":0.01,"fol":2.0,"ca":2.0,"k":0.1,"pot":49.0}},{"name":"Herbata","p":["herbat"],"n":{"mg":3.0,"zn":0.02,"fe":0.02,"fol":5.0,"pot":37.0}},{"name":"Odżywka białkowa (serwatkowa)","p":["odzywka bialkow","bialko serwatkow","whey"],"n":{"mg":195.0,"b6":0.607,"zn":6.18,"b12":2.45,"fe":1.13,"fol":33.0,"ca":469.0,"se":26.7,"pot":500.0}}];
+const FOOD_BY = Object.fromEntries(FOODS.map(f=>[f.name,f]));
+const DIET_NUTR = ["mg","ca","fe","zn","pot","se","c","b6","b12","fol","k","om3","d","i","bio"];
+const NOT_FROM_DIET = { d:"Witaminy D nie ocenimy z diety: głównym źródłem jest synteza w skórze pod wpływem słońca. Polskie zalecenia przewidują suplementację u większości osób jesienią i zimą. Dawkę ustal z lekarzem, a poziom pokaże badanie 25(OH)D.",
+  i:"Jodu nie liczymy z jadłospisu: głównym źródłem w Polsce jest sól jodowana, a zawartość jodu w produktach bardzo się różni.",
+  bio:"Brak wiarygodnych danych o biotynie w tabelach składu żywności." };
+const LAB_NOTE = { fe:"Pewną odpowiedź da badanie krwi (morfologia, ferrytyna). Żelazo z suplementu bierz tylko, gdy badanie to potwierdzi.", b12:"Pewną odpowiedź da badanie poziomu witaminy B12 we krwi." };
+const UNSURE_NOTE = { se:"Wartości selenu pochodzą z tabel amerykańskich. W Europie zboża zawierają go zwykle mniej, więc wynik może być zawyżony." };
+const SOURCES = {
+  mg:"kasza gryczana, płatki owsiane, pestki dyni, migdały, strączki, pieczywo pełnoziarniste, gorzka czekolada",
+  ca:"mleko, jogurt, kefir, sery, tofu z wapniem, sezam, jarmuż",
+  fe:"czerwone mięso, wątróbka, strączki, kasza jaglana i gryczana, pestki dyni (z warzywami bogatymi w witaminę C)",
+  zn:"wołowina, sery żółte, pestki dyni, kasza gryczana, płatki owsiane, strączki",
+  pot:"ziemniaki, pomidory, strączki, banany, warzywa liściaste",
+  se:"ryby, jaja, mięso, pieczywo pełnoziarniste",
+  c:"papryka, natka pietruszki, kiwi, cytrusy, truskawki, brokuł, kapusta kiszona",
+  b6:"drób, ryby, ziemniaki, banany, strączki, orzechy",
+  b12:"ryby, mięso, jaja, nabiał (w diecie roślinnej potrzebne jest źródło spoza roślin)",
+  fol:"zielone warzywa liściaste, brokuł, strączki, pieczywo pełnoziarniste, wątróbka",
+  k:"jarmuż, szpinak, brokuł, sałata, kapusta",
+  om3:"tłuste ryby morskie (łosoś, makrela, śledź, sardynki) 1–2 razy w tygodniu"
+};
+function fNorm(s){ return String(s||"").replace(/ł/g,"l").replace(/Ł/g,"L").normalize("NFKD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9%= ]/g," ").replace(/\s+/g," ").trim(); }
+function matchFood(name){
+  const key=fNorm(name); if(S.foodMap && S.foodMap[key]) return FOOD_BY[S.foodMap[key]]||null;
+  const s=" "+key+" ";
+  for(const f of FOODS) for(const p of f.p){ if(p.split(" ").every(t=> t.endsWith("=") ? s.includes(" "+t.slice(0,-1)+" ") : s.includes(" "+t))) return f; }
+  return null;
+}
+function vecAvg(names){ const v={}; names.forEach(nm=>{ const f=FOOD_BY[nm]; for(const k in f.n) v[k]=(v[k]||0)+f.n[k]/names.length; }); return v; }
+const GROUPS = {
+  breadWhite:vecAvg(["Bułka / chleb pszenny"]), breadWhole:vecAvg(["Chleb graham / pełnoziarnisty","Chleb żytni"]),
+  grains:vecAvg(["Płatki owsiane","Kasza gryczana (sucha)","Ryż biały (suchy)","Makaron (suchy)","Kasza jaglana (sucha)"]),
+  potato:vecAvg(["Ziemniaki"]), veg:vecAvg(["Pomidor","Ogórek","Marchew","Papryka","Cebula","Kapusta","Kalafior","Cukinia"]),
+  leafy:vecAvg(["Szpinak","Jarmuż","Brokuł","Sałata / mix sałat","Rukola"]), fruit:vecAvg(["Jabłko","Banan","Pomarańcza","Gruszka","Truskawki","Śliwka"]),
+  legumes:vecAvg(["Ciecierzyca (konserwa)","Fasola czerwona (konserwa)","Fasola biała (konserwa)","Tofu"]),
+  nuts:vecAvg(["Orzechy włoskie","Migdały","Orzechy laskowe","Pestki dyni","Słonecznik"]),
+  milk:vecAvg(["Mleko 2%","Jogurt naturalny","Kefir"]), cheese:vecAvg(["Ser żółty (gouda)","Twaróg"]), egg:vecAvg(["Jajko"]),
+  meat:vecAvg(["Pierś z kurczaka","Schab","Wołowina","Szynka wieprzowa","Pierś z indyka"]),
+  fatfish:vecAvg(["Łosoś","Makrela","Śledź"]), leanfish:vecAvg(["Dorsz","Mintaj","Tuńczyk (w wodzie)"])
+};
+const W=x=>x/7;
+const FFQ = [
+  { id:"bread", q:"Ile kromek pieczywa (lub bułek) jesz dziennie?", g:35, opts:[["nie jem",0],["1–2",1.5],["3–4",3.5],["5 i więcej",5.5]] },
+  { id:"breadType", q:"Jakie pieczywo przeważa?", opts:[["głównie białe, pszenne","white"],["pół na pół","mix"],["głównie pełnoziarniste lub żytnie","whole"]] },
+  { id:"grains", q:"Kasze, ryż, makaron, płatki: ile porcji dziennie?", hint:"porcja ≈ 60 g suchego produktu", g:60, group:"grains", opts:[["rzadko",0.15],["1",1],["2",2],["3 i więcej",3]] },
+  { id:"potato", q:"Ziemniaki: ile razy w tygodniu?", hint:"porcja ≈ 2–3 ziemniaki", g:200, group:"potato", opts:[["wcale",0],["1–2",W(1.5)],["3–4",W(3.5)],["5 i więcej",W(6)]] },
+  { id:"veg", q:"Warzywa (bez ziemniaków): ile porcji dziennie?", hint:"porcja ≈ garść, 100 g", g:100, group:"veg", opts:[["0–1",0.5],["2",2],["3",3],["4 i więcej",4.5]] },
+  { id:"leafy", q:"Zielone liściaste (szpinak, jarmuż, brokuł, sałata): ile razy w tygodniu?", g:80, group:"leafy", opts:[["wcale",0],["1–2",W(1.5)],["3–5",W(4)],["codziennie",1]] },
+  { id:"fruit", q:"Owoce: ile porcji dziennie?", hint:"porcja ≈ jabłko, banan, garść jagód", g:120, group:"fruit", opts:[["0",0],["1",1],["2",2],["3 i więcej",3.2]] },
+  { id:"legumes", q:"Strączki lub tofu: ile razy w tygodniu?", hint:"porcja ≈ pół szklanki ugotowanych", g:100, group:"legumes", opts:[["wcale",0],["1",W(1)],["2–3",W(2.5)],["4 i więcej",W(5)]] },
+  { id:"nuts", q:"Orzechy lub pestki: ile garści w tygodniu?", hint:"garść ≈ 30 g", g:30, group:"nuts", opts:[["wcale",0],["1–2",W(1.5)],["3–5",W(4)],["codziennie",1]] },
+  { id:"milk", q:"Mleko, jogurt, kefir: ile szklanek lub kubków dziennie?", g:250, group:"milk", opts:[["wcale",0],["mniej niż 1",0.5],["1",1],["2 i więcej",2.2]] },
+  { id:"cheese", q:"Sery (żółty, twaróg): ile porcji dziennie?", hint:"porcja ≈ 2 plastry albo 3 łyżki twarogu", g:40, group:"cheese", opts:[["wcale",0],["co drugi dzień",0.5],["1",1],["2 i więcej",2]] },
+  { id:"egg", q:"Jajka: ile sztuk w tygodniu?", g:55, group:"egg", opts:[["wcale",0],["1–2",W(1.5)],["3–5",W(4)],["6 i więcej",W(8)]] },
+  { id:"meat", q:"Mięso i wędliny: ile porcji w tygodniu?", hint:"porcja ≈ 120 g", g:120, group:"meat", opts:[["wcale",0],["1–3",W(2)],["4–6",W(5)],["codziennie",1.1]] },
+  { id:"fatfish", q:"Tłuste ryby morskie (łosoś, makrela, śledź, sardynki): ile porcji w tygodniu?", g:100, group:"fatfish", opts:[["wcale",0],["rzadziej niż raz",W(0.4)],["1",W(1)],["2 i więcej",W(2.2)]] },
+  { id:"leanfish", q:"Chude ryby lub owoce morza (dorsz, mintaj, tuńczyk): ile porcji w tygodniu?", g:100, group:"leanfish", opts:[["wcale",0],["rzadziej niż raz",W(0.4)],["1",W(1)],["2 i więcej",W(2.2)]] },
+  { id:"salt", q:"Czy w domu używasz soli jodowanej?", opts:[["tak","yes"],["nie","no"],["nie wiem","dk"]] },
+  { id:"sun", q:"Od maja do września: czy spędzasz na słońcu min. 15 minut dziennie z odsłoniętymi rękami?", opts:[["prawie codziennie","often"],["czasem","some"],["rzadko","rare"]] }
+];
+let DW=null; // stan kreatora
+function ffqIntake(ans){
+  const t={}; const add=(vec,grams)=>{ for(const k in vec) t[k]=(t[k]||0)+vec[k]*grams/100; };
+  const bq=FFQ[0], bt=ans.breadType||"mix", per=bq.opts[ans.bread??1][1]*bq.g;
+  if(bt==="white") add(GROUPS.breadWhite,per); else if(bt==="whole") add(GROUPS.breadWhole,per); else { add(GROUPS.breadWhite,per/2); add(GROUPS.breadWhole,per/2); }
+  FFQ.filter(q=>q.group).forEach(q=>{ const o=q.opts[ans[q.id]??0]; add(GROUPS[q.group], o[1]*q.g); });
+  return t;
+}
+function verdict(n,v,method){
+  const nm=norms(), norm=nm[n];
+  if(NOT_FROM_DIET[n]) return {c:"na",t:"Nie oceniamy z diety",note:NOT_FROM_DIET[n]};
+  if(!norm) return {c:"na",t:"Brak normy"};
+  const r=v/norm, hi=method==="ffq"?1.1:1.0, lo=method==="ffq"?0.7:0.75;
+  let out = r>=hi?{c:"ok",t:"Dieta prawdopodobnie pokrywa normę"} : r>=lo?{c:"warn",t:"Blisko normy, niepewne"} : {c:"bad",t:"Prawdopodobnie poniżej normy"};
+  if(n==="se" && out.c==="ok") out={c:"warn",t:"Niepewne"};
+  out.note=[UNSURE_NOTE[n],LAB_NOTE[n]].filter(Boolean).join(" ");
+  return out;
+}
+
+/* --- UI kreatora --- */
+function dietStart(){ DW={step:1, risk:{}, goal:"none", ans:{}}; dietSheet(); }
+function dietSheet(){
+  const st=DW.step;
+  if(st===1){ sheet("Czy potrzebuję suplementów?",`
+    <div class="pmeta">Suplementy są dla osób zdrowych i tylko uzupełniają dietę. Zanim coś kupisz, odpowiedz na trzy pytania.</div>
+    <div class="fieldset"><div class="pname">1. Czy należysz do grupy, która częściej potrzebuje suplementacji?</div>
+      ${[["preg","ciąża, karmienie albo planowanie ciąży"],["vegan","dieta roślinna (wegańska)"],["senior","wiek 65+"],["sport","intensywny trening"],["ill","choroba przewlekła albo stałe leki"]].map(([k,l])=>`<label class="checkrow"><input type="checkbox" data-risk="${k}" ${DW.risk[k]?"checked":""}> ${l}</label>`).join("")}
+    </div>
+    <div class="fieldset"><div class="pname">2. Czy Twoja dieta jest zróżnicowana?</div><div class="pmeta">Sprawdzimy to w następnym kroku: ankietą albo plikiem z jadłospisem.</div></div>
+    <div class="fieldset"><div class="pname">3. Czy masz konkretny cel?</div>
+      <select class="fsel" id="dw-goal">${[["none","nie, biorę „na wszelki wypadek”"],["fatigue","mniej zmęczenia"],["muscles","prawidłowa praca mięśni"],["hair","włosy, skóra, paznokcie"],["other","inny, konkretny cel"]].map(([v,l])=>`<option value="${v}" ${DW.goal===v?"selected":""}>${l}</option>`).join("")}</select></div>
+    <div class="src">Pytania na podstawie artykułu dr. Pawła Szewczyka „Jak sprawdzić, czy potrzebuję tego suplementu?” (Fundacja Badamy Suplementy).</div>
+    <button class="btn full" data-act="dw-next">Dalej</button>`); return; }
+  if(st===2){ const notes=[];
+    if(DW.risk.ill) notes.push(`<div class="note warn"><b>Choroba albo stałe leki:</b> suplementację omów z lekarzem lub farmaceutą. Składniki suplementów mogą wpływać na działanie leków, a Wassup jest pomyślany dla osób zdrowych.</div>`);
+    if(DW.risk.preg) notes.push(`<div class="note warn"><b>Ciąża i jej planowanie</b> to okres, w którym zalecenia obejmują m.in. kwas foliowy, jod, witaminę D i DHA. Ustal je z lekarzem prowadzącym.</div>`);
+    if(DW.risk.vegan) notes.push(`<div class="note warn"><b>Dieta roślinna:</b> witamina B12 praktycznie nie występuje w roślinach, więc jej uzupełnianie jest standardem. Warto okresowo badać B12 i ferrytynę.</div>`);
+    if(DW.goal==="none") notes.push(`<div class="note">Branie suplementów „na wszelki wypadek” nie jest dobrym powodem. Jeśli dieta pokrywa normy, suplement niczego nie doda, a nadmiar niektórych składników może szkodzić.</div>`);
+    sheet("Sprawdźmy Twoją dietę",`${notes.join("")}
+    <div class="pmeta">Wybierz sposób. Wynik to przybliżenie, nie diagnoza.</div>
+    <button class="card choice" data-act="dw-ffq"><div class="pname">Krótka ankieta</div><div class="pmeta">17 pytań o to, jak zwykle jesz. Ok. 2–3 minuty.</div></button>
+    <button class="card choice" data-act="dw-import"><div class="pname">Plik z jadłospisem (np. Fitatu)</div><div class="pmeta">Eksport XLSX lub CSV z produktami i gramaturą, najlepiej z 3–30 dni. Dokładniejszy wynik.</div></button>
+    <input type="file" id="dw-file" accept=".xlsx,.xls,.csv,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden>`); return; }
+  if(st===3){ sheet("Jak zwykle jesz?",`<div class="pmeta">Myśl o typowym tygodniu, nie o idealnym.</div>
+    ${FFQ.map(q=>`<label class="f">${esc(q.q)}${q.hint?`<span class="src">${esc(q.hint)}</span>`:""}<select data-ffq="${q.id}">${q.opts.map((o,i)=>`<option value="${i}" ${(DW.ans[q.id]??defaultOpt(q))===i?"selected":""}>${esc(o[0])}</option>`).join("")}</select></label>`).join("")}
+    <button class="btn full" data-act="dw-calc">Pokaż wynik</button>`); return; }
+}
+function defaultOpt(q){ return q.id==="breadType"?1:(q.id==="salt"||q.id==="sun")?0:1; }
+function readFFQ(){ document.querySelectorAll("[data-ffq]").forEach(el=>{ DW.ans[el.dataset.ffq]=+el.value; }); FFQ.forEach(q=>{ if(DW.ans[q.id]==null) DW.ans[q.id]=defaultOpt(q); }); }
+function saveDiet(method, intake, extra){
+  const ans=DW?DW.ans:{}; S.diet=Object.assign({ method, date:today(), intake, risk:DW?DW.risk:{}, goal:DW?DW.goal:"none",
+    salt:FFQ[15].opts[ans.salt??0]?.[1], sun:FFQ[16].opts[ans.sun??0]?.[1] }, extra||{});
+  save(); dietResultSheet();
+}
+/* --- import pliku --- */
+/* Minimalny czytnik XLSX (zip + XML), bez zewnętrznych bibliotek: działa offline. */
+async function unzipEntries(buf){
+  const dv=new DataView(buf), u8=new Uint8Array(buf); let eocd=-1;
+  for(let i=buf.byteLength-22;i>=Math.max(0,buf.byteLength-66000);i--){ if(dv.getUint32(i,true)===0x06054b50){ eocd=i; break; } }
+  if(eocd<0) throw new Error("To nie jest plik XLSX.");
+  const n=dv.getUint16(eocd+10,true); let p=dv.getUint32(eocd+16,true); const out={}; const td=new TextDecoder();
+  for(let k=0;k<n;k++){
+    const method=dv.getUint16(p+10,true), csize=dv.getUint32(p+20,true), nlen=dv.getUint16(p+28,true), xlen=dv.getUint16(p+30,true), clen=dv.getUint16(p+32,true), lho=dv.getUint32(p+42,true);
+    const name=td.decode(u8.subarray(p+46,p+46+nlen)); p+=46+nlen+xlen+clen;
+    out[name]={method,csize,lho};
+  }
+  return { names:Object.keys(out), async text(name){ const e=out[name]; if(!e) return null;
+      const lnl=dv.getUint16(e.lho+26,true), lxl=dv.getUint16(e.lho+28,true), start=e.lho+30+lnl+lxl, data=u8.slice(start,start+e.csize);
+      if(e.method===0) return td.decode(data);
+      const ds=new Blob([data]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
+      return await new Response(ds).text(); } };
+}
+async function readXLSX(buf){
+  const z=await unzipEntries(buf), P=new DOMParser(), xml=async n=>{ const t=await z.text(n); return t?P.parseFromString(t,"application/xml"):null; };
+  const ss=[]; const sst=await xml("xl/sharedStrings.xml"); if(sst) [...sst.getElementsByTagName("si")].forEach(si=>ss.push([...si.getElementsByTagName("t")].map(t=>t.textContent).join("")));
+  const wb=await xml("xl/workbook.xml"), rels=await xml("xl/_rels/workbook.xml.rels"); const relMap={};
+  if(rels) [...rels.getElementsByTagName("Relationship")].forEach(r=>{ relMap[r.getAttribute("Id")]=r.getAttribute("Target"); });
+  const sheets=[...(wb?wb.getElementsByTagName("sheet"):[])].map(s=>{ const rid=s.getAttribute("r:id")||s.getAttributeNS("http://schemas.openxmlformats.org/officeDocument/2006/relationships","id"); let t=relMap[rid]||""; t=t.replace(/^\//,""); if(!t.startsWith("xl/")) t="xl/"+t; return {name:s.getAttribute("name"), path:t}; });
+  const col=ref=>{ const m=/^([A-Z]+)/.exec(ref||""); let c=0; if(m) for(const ch of m[1]) c=c*26+ch.charCodeAt(0)-64; return c-1; };
+  const result=[];
+  for(const sh of sheets){ const doc=await xml(sh.path); if(!doc) continue; const rows=[];
+    [...doc.getElementsByTagName("row")].forEach(r=>{ const row=[]; [...r.getElementsByTagName("c")].forEach(c=>{ const t=c.getAttribute("t"), v=c.getElementsByTagName("v")[0]; let val="";
+        if(t==="s"&&v) val=ss[+v.textContent]||""; else if(t==="inlineStr") val=[...c.getElementsByTagName("t")].map(x=>x.textContent).join(""); else if(v) val=t==="str"||t==="b"?v.textContent:(isFinite(+v.textContent)?+v.textContent:v.textContent);
+        row[col(c.getAttribute("r"))]=val; }); rows.push(Array.from(row,x=>x??"")); });
+    result.push({name:sh.name, rows}); }
+  return result;
+}
+
+function parseCSV(text){ const sep=(text.split("\n")[0].match(/;/g)||[]).length>(text.split("\n")[0].match(/,/g)||[]).length?";":","; return text.split(/\r?\n/).map(line=>{ const out=[]; let cur="",q=false; for(const ch of line){ if(ch==='"'){ q=!q; } else if(ch===sep && !q){ out.push(cur); cur=""; } else cur+=ch; } out.push(cur); return out.map(x=>x.trim()); }); }
+function tableToItems(rows){
+  for(let h=0; h<Math.min(rows.length,15); h++){
+    const r=rows[h].map(x=>fNorm(x));
+    const pi=r.findIndex(x=>/^(produkt|nazwa|skladnik|produkt nazwa)/.test(x)), gi=r.findIndex(x=>/ilosc|gram|\(g\)|^g$|waga|masa/.test(x)||x==="ilosc g");
+    if(pi<0||gi<0) continue;
+    const di=r.findIndex(x=>/^(dzien|data|date)/.test(x));
+    const items=[]; for(const row of rows.slice(h+1)){ const name=String(row[pi]??"").trim(); const g=parseNum(row[gi]); if(!name||g==null||g<=0||/^suma|^razem|^total/i.test(fNorm(name))) continue; items.push({name, g, day:di>=0?String(row[di]??""):""}); }
+    if(items.length) return items;
+  }
+  return null;
+}
+async function importFile(file){
+  let rows=null;
+  try{
+    if(/\.csv$/i.test(file.name)||file.type==="text/csv"){ rows=parseCSV(await file.text()); }
+    else if(/\.xls$/i.test(file.name)){ throw new Error("Starszy format XLS nie jest obsługiwany. Wyeksportuj plik jako XLSX albo CSV."); }
+    else { const sheets=await readXLSX(await file.arrayBuffer()); for(const sh of sheets){ if(tableToItems(sh.rows)){ rows=sh.rows; break; } } }
+  }catch(e){ toast(e.message||"Nie udało się odczytać pliku"); return; }
+  const items=rows?tableToItems(rows):null;
+  if(!items){ toast("Nie znalazłem w pliku kolumn z nazwą produktu i ilością w gramach."); return; }
+  const days=new Set(items.map(i=>i.day).filter(Boolean)).size||1;
+  DW=DW||{risk:{},goal:"none",ans:{}}; DW.items=items; DW.days=days;
+  computeImport();
+}
+function computeImport(){
+  const t={}, unmatched={}; let gAll=0,gOk=0;
+  for(const it of DW.items){ gAll+=it.g; const f=matchFood(it.name); if(!f){ unmatched[it.name]=(unmatched[it.name]||0)+it.g; continue; } gOk+=it.g; for(const k in f.n) t[k]=(t[k]||0)+f.n[k]*it.g/100; }
+  for(const k in t) t[k]/=DW.days;
+  saveDiet("import", t, { days:DW.days, coverage:gAll?gOk/gAll:0, unmatched:Object.entries(unmatched).sort((a,b)=>b[1]-a[1]).map(([name,g])=>({name,g})), items:DW.items.length });
+}
+/* --- wynik --- */
+function dietResultSheet(){
+  const D=S.diet; if(!D){ dietStart(); return; }
+  const nm=norms(), ffq=D.method==="ffq";
+  const rows=DIET_NUTR.map(n=>{ const v=D.intake[n]||0, vd=verdict(n,v,D.method); return {n,v,vd}; });
+  const okN=rows.filter(r=>r.vd.c==="ok").map(r=>NUTR[r.n].sym), lowN=rows.filter(r=>r.vd.c==="bad"), na=rows.filter(r=>r.vd.c==="na");
+  const prodNotes=[]; S.products.forEach(p=>{ Object.keys(p.content).filter(n=>p.content[n]).forEach(n=>{ const r=rows.find(x=>x.n===n); if(!r) return;
+      const supp=p.content[n]*p.daily, N=NUTR[n];
+      if(r.vd.c==="ok") prodNotes.push(`<li><b>${esc(p.name)}</b> → ${esc(N.name)}: dieta prawdopodobnie już pokrywa normę. Ten składnik z suplementu może być niepotrzebny. Omów to z dietetykiem lub lekarzem.</li>`);
+      const sum=(n==="mg"||n==="fol")?supp:r.v+supp;
+      if(N.ul && sum>N.ul) prodNotes.push(`<li class="warnli"><b>${esc(p.name)}</b> → ${esc(N.name)}: ${n==="mg"||n==="fol"?"suplementy":"dieta i suplement razem"} dają ok. ${fmt(sum)} ${N.unit}, czyli więcej niż granica bezpieczeństwa (${fmt(N.ul)} ${N.unit}).</li>`);
+  }); });
+  sheet("Twoja dieta a suplementy",`
+    <div class="pmeta">${ffq?"Wynik z ankiety, przybliżony (±25%).":`Wynik z pliku: ${D.items} pozycji, średnio na dzień z ${D.days} ${plural(D.days,["dnia","dni","dni"])}. Rozpoznano ${fmt((D.coverage||0)*100,0)}% masy produktów.`} Stan na ${esc(shortDate(D.date))}.</div>
+    <div class="stat"><div><b class="num">${okN.length}</b><span>składników pokrywa dieta</span></div><div><b class="num">${lowN.length}</b><span>prawdopodobnie poniżej normy</span></div><div><b class="num">${na.length}</b><span>do oceny inaczej</span></div></div>
+    ${prodNotes.length?`<div class="fieldset"><div class="pname">Twoje suplementy</div><ul class="claims small">${prodNotes.join("")}</ul></div>`:""}
+    <div class="list">${rows.map(({n,v,vd})=>{ const N=NUTR[n], norm=nm[n]; return `<div class="row dietrow"><span class="sym">${N.sym}</span>
+      <div class="grow"><div class="pname">${esc(N.name)}</div>
+        <div class="pmeta num">${vd.c==="na"?(v?`z diety ok. ${fmt(v)} ${N.unit}`:""):`${ffq?`${fmt(v*0.75,0)}–${fmt(v*1.25,0)}`:`ok. ${fmt(v)}`} ${N.unit}${norm?` · ${fmt(v/norm*100,0)}% normy (${fmt(norm)} ${n==="fol"?"µg DFE":N.unit})`:""}`}</div>
+        ${vd.note?`<div class="pmeta">${esc(vd.note)}</div>`:""}
+        ${(vd.c==="bad"||vd.c==="warn")&&SOURCES[n]?`<div class="pmeta"><b>Najpierw dieta:</b> ${esc(SOURCES[n])}.</div>`:""}
+      </div><span class="chip ${vd.c==="na"?"none":vd.c}">${vd.c==="ok"?"pokrywa":vd.c==="warn"?"niepewne":vd.c==="bad"?"poniżej":"inaczej"}</span></div>`; }).join("")}</div>
+    ${D.method==="import"&&D.unmatched&&D.unmatched.length?`<div class="fieldset"><div class="pname">Nierozpoznane produkty (${D.unmatched.length})</div><div class="pmeta">Nie liczą się do wyniku. Przypisz je do najbliższego produktu z bazy, a Wassup zapamięta to na przyszłość.</div>
+      ${D.unmatched.slice(0,15).map((u,i)=>`<label class="f">${esc(u.name)} <span class="src">${fmt(u.g,0)} g</span><select data-map="${esc(u.name)}"><option value="">wybierz…</option>${FOODS.map(f=>f.name).filter((x,j,a)=>a.indexOf(x)===j).sort((a,b)=>a.localeCompare(b,"pl")).map(f=>`<option>${esc(f)}</option>`).join("")}</select></label>`).join("")}
+      ${DW&&DW.items?`<button class="btn sec" data-act="dw-remap">Przelicz z przypisaniami</button>`:`<div class="src">Aby przypisać produkty, wczytaj plik ponownie.</div>`}</div>`:""}
+    ${S.diet.salt==="no"?`<div class="note">Bez soli jodowanej łatwo o za mało jodu. Warto porozmawiać o tym z lekarzem lub dietetykiem.</div>`:""}
+    ${S.diet.sun==="rare"?`<div class="note">Mało słońca latem zwiększa szansę na niski poziom witaminy D. Badanie 25(OH)D pokaże, jak jest naprawdę.</div>`:""}
+    <div class="note"><b>Co dalej:</b> to przybliżenie, nie diagnoza. Wynik „poniżej normy” to sygnał, żeby najpierw zmienić dietę albo porozmawiać z dietetykiem, a nie od razu kupować suplement.</div>
+    <div class="src">Skład żywności: USDA National Nutrient Database SR28, z poprawką na brak wzbogacania żywności w Polsce. Normy: NIZP PZH 2024.</div>
+    <div class="btns"><button class="btn" data-act="dw-again">Sprawdź ponownie</button><button class="btn sec" data-act="close">Zamknij</button></div>`);
+}
+function dietCard(){
+  const D=S.diet;
+  if(!D) return `<button class="card howto diethero" data-act="diet"><div class="ruler" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="u"></i></div><div><div class="pname">Czy w ogóle potrzebuję suplementów?</div><div class="pmeta">Sprawdź swoją dietę: krótka ankieta albo plik z Fitatu. Wynik zostaje na telefonie.</div></div></button>`;
+  const ok=DIET_NUTR.filter(n=>verdict(n,D.intake[n]||0,D.method).c==="ok").length, low=DIET_NUTR.filter(n=>verdict(n,D.intake[n]||0,D.method).c==="bad").length;
+  return `<button class="card howto" data-act="diet-show"><div class="ruler" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="u"></i></div><div><div class="pname">Twoja dieta: ${ok} składników pokrytych${low?`, ${low} poniżej normy`:""}</div><div class="pmeta">${D.method==="ffq"?"Ankieta":"Plik z jadłospisem"} z ${esc(shortDate(D.date))}. Zobacz szczegóły i wpływ na Twoje suplementy.</div></div></button>`;
+}
+
 /* ============ Akcje ============ */
 function num(id){ const el=document.getElementById(id); if(!el) return null; return parseNum(el.value); }
 function parseNum(s){ const v=parseFloat(String(s).replace(/\s/g,"").replace(",",".")); return isFinite(v)?v:null; }
@@ -684,6 +919,13 @@ document.addEventListener("click", async e=>{
   if(act==="close-bg"){ if(e.target===a) closeSheet(); return; }
   if(act==="close"){ closeSheet(); return; }
   if(act==="info"){ infoSheet(a.dataset.k); return; }
+  if(act==="diet"||act==="dw-again"){ dietStart(); return; }
+  if(act==="diet-show"){ dietResultSheet(); return; }
+  if(act==="dw-next"){ DW.goal=document.getElementById("dw-goal").value; DW.step=2; dietSheet(); return; }
+  if(act==="dw-ffq"){ DW.step=3; dietSheet(); return; }
+  if(act==="dw-import"){ document.getElementById("dw-file").click(); return; }
+  if(act==="dw-calc"){ readFFQ(); saveDiet("ffq", ffqIntake(DW.ans)); return; }
+  if(act==="dw-remap"){ document.querySelectorAll("[data-map]").forEach(el=>{ if(el.value) S.foodMap[fNorm(el.dataset.map)]=el.value; }); save(); computeImport(); toast("Przeliczono"); return; }
   if(act==="pack"){ packSheet(id); return; }
   if(act==="pack-save"||act==="goal-save"||act==="goal-plan"){
     const items = act==="pack-save" ? [...document.querySelectorAll("[data-goal]")].map(el=>[el.dataset.goal, el.value.trim()]) : [[a.dataset.n, act==="goal-plan"?String(planned()[a.dataset.n]):document.getElementById("g-val").value.trim()]];
@@ -734,6 +976,8 @@ async function exportData(){
 document.addEventListener("change", e=>{
   const el=e.target;
   if(el.dataset && el.dataset.row!=null){ const r=FORM.rows[+el.dataset.row]; r[el.dataset.k]=el.value; if(el.dataset.k==="n"){ r.u=el.value?NUTR[el.value].unit:""; document.getElementById("rows").innerHTML=rowsHTML(); } return; }
+  if(el.dataset && el.dataset.risk){ DW.risk[el.dataset.risk]=el.checked; return; }
+  if(el.id==="dw-file"){ const f=el.files[0]; if(f) importFile(f); return; }
   if(el.id==="only-left"){ S.prefs.onlyLeft=el.checked; save(); render(); return; }
   if(el.id==="hist-n"||el.id==="know-n"){ KNOW=el.value; render(); return; }
   if(el.id==="me-age"){ S.profile.age=el.value; save(); render(); }
