@@ -283,7 +283,7 @@ button.card.reprow{width:100%;text-align:left;color:inherit;font:inherit;display
 /* ============ Dane referencyjne (źródła: baza regulacyjna Wassup) ============
    RWS: rozp. 1169/2011 zał. XIII · normy i UL: Normy żywienia dla populacji Polski 2024 (NIZP PZH–PIB)
    limity GIS: uchwały Zespołu ds. Suplementów Diety · oświadczenia: rozp. 432/2012 */
-const APP_VERSION = "0.9.0";
+const APP_VERSION = "0.9.1";
 const CLAIMS = {"mg": ["Magnez przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Magnez pomaga w utrzymaniu równowagi elektrolitowej", "Magnez przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Magnez pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Magnez pomaga w prawidłowym funkcjonowaniu mięśni", "Magnez pomaga w prawidłowej syntezie białka", "Magnez pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Magnez pomaga w utrzymaniu zdrowych kości", "Magnez pomaga w utrzymaniu zdrowych zębów", "Magnez odgrywa rolę w procesie podziału komórek"], "d": ["Witamina D pomaga w prawidłowym wchłanianiu/wykorzystywaniu wapnia i fosforu", "Witamina D pomaga w utrzymaniu prawidłowego poziomu wapnia we krwi", "Witamina D pomaga w utrzymaniu zdrowych kości", "Witamina D pomaga w prawidłowym funkcjonowaniu mięśni", "Witamina D pomaga w utrzymaniu zdrowych zębów", "Witamina D pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina D bierze udział w procesie podziału komórek"], "b6": ["Witamina B6 pomaga w prawidłowej syntezie cysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B6 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu białka i glikogenu", "Witamina B6 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B6 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B6 przyczynia się zmniejszenia uczucia zmęczenia i znużenia", "Witamina B6 przyczynia się do regulacji aktywności hormonalnej"], "c": ["Witamina C pomaga w utrzymaniu prawidłowego funkcjonowania układu odpornościowego w trakcie intensywnych ćwiczeń fizycznych i po nich", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania naczyń krwionośnych", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania kości", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania chrząstki", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania dziąseł", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania skóry", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania zębów", "Witamina C przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina C pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina C pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina C pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina C pomaga w ochronie komórek przed stresem oksydacyjnym", "Witamina C przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina C pomaga w regeneracji zredukowanej formy witaminy E", "Witamina C zwiększa przyswajanie żelaza"], "zn": ["Cynk pomaga w utrzymaniu prawidłowej równowagi kwasowo- zasadowej", "Cynk pomaga w utrzymaniu prawidłowego metabolizmu węglowodanów", "Cynk pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Cynk pomaga w prawidłowej syntezie DNA", "Cynk pomaga w utrzymaniu prawidłowej płodności i prawidłowych funkcji rozrodczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu kwasów tłuszczowych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu witaminy A", "Cynk pomaga w prawidłowej syntezie białka", "Cynk pomaga w utrzymaniu zdrowych kości", "Cynk pomaga zachować zdrowe włosy", "Cynk pomaga zachować zdrowe paznokcie", "Cynk pomaga zachować zdrową skórę", "Cynk pomaga w utrzymaniu prawidłowego poziomu testosteronu we krwi", "Cynk pomaga w utrzymaniu prawidłowego widzenia", "Cynk pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Cynk pomaga w ochronie komórek przed stresem oksydacyjnym", "Cynk bierze udział w procesie podziału komórek"], "b12": ["Witamina B12 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B12 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B12 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B12 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B12 przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina B12 odgrywa rolę w procesie podziału komórek"], "fe": ["Żelazo pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Żelazo przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Żelazo pomaga w prawidłowej produkcji czerwonych krwinek i hemoglobiny", "Żelazo pomaga w prawidłowym transporcie tlenu w organizmie", "Żelazo pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Żelazo przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Żelazo odgrywa rolę w procesie podziału komórek"], "fol": ["Foliany przyczyniają się do wzrostu tkanek matczynych w czasie ciąży", "Foliany pomagają w prawidłowej syntezie aminokwasów", "Foliany pomagają w prawidłowej produkcji krwi", "Foliany pomagają w utrzymaniu prawidłowego metabolizmu homocysteiny", "Foliany pomagają w utrzymaniu prawidłowych funkcji psychologicznych", "Foliany pomagają w prawidłowym funkcjonowaniu układu odpornościowego", "Foliany przyczyniają się do zmniejszenia uczucia zmęczenia i znużenia", "Foliany biorą udział w procesie podziału komórek"], "ca": ["Wapń przyczynia się do prawidłowego krzepnięcia krwi", "Wapń przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Wapń pomaga w prawidłowym funkcjonowaniu mięśni", "Wapń pomaga w utrzymaniu prawidłowego przekaźnictwa nerwowego", "Wapń pomaga w prawidłowym funkcjonowaniu enzymów trawiennych", "Wapń bierze udział w procesie podziału i specjalizacji komórek", "Wapń jest potrzebny do utrzymania zdrowych kości", "Wapń jest potrzebny do utrzymania zdrowych zębów"], "k": ["Witamina K przyczynia się do prawidłowego krzepnięcia krwi", "Witamina K pomaga w utrzymaniu zdrowych kości"], "se": ["Selen przyczynia się do prawidłowego przebiegu spermatogenezy", "Selen pomaga zachować zdrowe włosy", "Selen pomaga zachować zdrowe paznokcie", "Selen pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Selen pomaga w prawidłowym funkcjonowaniu tarczycy", "Selen pomaga w ochronie komórek przed stresem oksydacyjnym"], "i": ["Jod pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Jod przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Jod pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Jod pomaga zachować zdrową skórę", "Jod pomaga w prawidłowej produkcji hormonów tarczycy i w prawidłowym funkcjonowaniu tarczycy"], "om3": ["Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego funkcjonowania mózgu (warunek: 250 mg DHA dziennie)", "Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego widzenia (warunek: 250 mg DHA dziennie)", "DHA pomaga w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego ciśnienia krwi (warunek: 3 g EPA i DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g EPA i DHA dziennie)", "Kwas eikozapentaenowy (EPA) i kwas dokozaheksaenowy (DHA) przyczyniają się do prawidłowego funkcjonowania serca (warunek: 250 mg EPA i DHA dziennie)"], "bio": ["Biotyna przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Biotyna pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Biotyna przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Biotyna pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Biotyna pomaga zachować zdrowe włosy", "Biotyna pomaga w utrzymaniu prawidłowego stanu błon śluzowych", "Biotyna pomaga zachować zdrową skórę"], "pot": ["Potas pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Potas pomaga w prawidłowym funkcjonowaniu mięśni", "Potas pomaga w utrzymaniu prawidłowego ciśnienia krwi"]};
 const NUTR = {
   mg:  { name:"Magnez", sym:"Mg", unit:"mg", rws:375, ul:250,
@@ -369,7 +369,7 @@ const KEY = "wassup.v1";
 let S = load();
 function blank(){ return { v:1, profile:null, products:[], log:{}, labs:[], periods:[], prefs:{}, goals:{}, packs:[], foodMap:{}, diet:null, created:today() }; }
 function load(){ try{ const raw = localStorage.getItem(KEY); if(raw){ const s = JSON.parse(raw); if(s && s.v===1){ fill(s); return s; } } }catch(e){} return blank(); }
-function fill(s){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; s.goals=s.goals||{}; s.packs=s.packs||[]; s.foodMap=s.foodMap||{}; s.periods=s.periods||[]; labsMigrate(s); return s; }
+function fill(s){ s.prefs=s.prefs||{}; s.labs=s.labs||[]; s.goals=s.goals||{}; s.packs=s.packs||[]; s.foodMap=s.foodMap||{}; s.periods=s.periods||[]; labsMigrate(s); dosesMigrate(s); return s; }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){ toast("Nie udało się zapisać danych na tym urządzeniu"); } }
 try{ if(navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
 
@@ -394,6 +394,22 @@ function gisFor(n){
   const p=S.profile||{}, preg=p.state==="preg", lact=p.state==="lact";
   return ({ mg:400, d:p.age==="75+"?100:50, b6:6, c:1000, zn:15, b12:100, fe:preg?30:20, fol:preg?800:600, ca:1500, k:200, se:200, i:(preg||lact)?200:150, bio:null, pot:1500, om3:null })[n];
 }
+/* porcja dzienna z historią zmian: p.doses=[{since,daily}] */
+function dailyOn(p,k){ const d=p.doses; if(!d||!d.length) return p.daily; let v=d[0].daily; for(const e of d){ if(e.since<=k) v=e.daily; else break; } return v; }
+function setDaily(p,v){ v=Math.round(v*1000)/1000; if(!(v>0)||v===p.daily) return; const t=today();
+  if(!p.doses||!p.doses.length) p.doses=[{since:"0000-00-00",daily:p.daily}];
+  const last=p.doses[p.doses.length-1]; if(last.since===t) last.daily=v; else p.doses.push({since:t,daily:v});
+  if(p.doses.length>1 && p.doses[p.doses.length-2].daily===v) p.doses.pop();
+  p.daily=v; }
+function dosesMigrate(s){ // jednorazowo: odtwórz zmianę porcji z historii przyjęć (sprzed wersji 0.9.1)
+  if(s.prefs && s.prefs.dosesMigrated) return; (s.products||[]).forEach(p=>{ if(p.doses&&p.doses.length) return;
+    const days=Object.keys(s.log||{}).filter(k=>s.log[k][p.id]>0).sort(); if(!days.length) return;
+    let lastDiff=-1; days.forEach((k,i)=>{ if(s.log[k][p.id]!==p.daily) lastDiff=i; }); if(lastDiff<0) return;
+    const before=days.slice(0,lastDiff+1).map(k=>s.log[k][p.id]), cnt={}; before.forEach(v=>cnt[v]=(cnt[v]||0)+1);
+    const mode=+Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a])[0]; if(mode===p.daily) return;
+    const since=lastDiff+1<days.length?days[lastDiff+1]:null; if(!since) return;
+    p.doses=[{since:"0000-00-00",daily:mode},{since,daily:p.daily}]; });
+  if(s.prefs) s.prefs.dosesMigrated=true; }
 function live(){ return S.products.filter(p=>!p.ended); }
 function taken(k,pid){ return (S.log[k]&&S.log[k][pid])||0; }
 function totals(k){ const t={}, byType={}; for(const p of S.products){ const u=taken(k,p.id); if(!u) continue; for(const n in p.content){ const v=(p.content[n]||0)*u; if(!v) continue; t[n]=(t[n]||0)+v; byType[n]=byType[n]||{}; byType[n][p.type]=(byType[n][p.type]||0)+v; } } return {t,byType}; }
@@ -470,8 +486,8 @@ function viewWelcome(){
 function viewToday(){
   const k=DAY, isToday=k===today(), only=!!S.prefs.onlyLeft;
   const {t,byType}=totals(k), plan=planned();
-  const L=live(), done=L.filter(p=>taken(k,p.id)>=p.daily);
-  const prods=only?L.filter(p=>taken(k,p.id)<p.daily):L;
+  const L=live(), done=L.filter(p=>taken(k,p.id)>=dailyOn(p,k));
+  const prods=only?L.filter(p=>taken(k,p.id)<dailyOn(p,k)):L;
   const ns=activeNutrients().filter(n=>!only || (t[n]||0) < ((S.goals[n]!=null?S.goals[n]:plan[n])||0)-1e-9);
   const allDone=L.length && done.length===L.length;
   return `<section class="screen">
@@ -482,10 +498,10 @@ function viewToday(){
   ${L.length?`<label class="switchrow card"><span class="grow"><span class="pname">Tylko to, co zostało na dziś</span><span class="pmeta" style="display:block">Ukrywa odhaczone produkty i składniki, które osiągnęły dziś Twój cel albo zaplanowaną ilość.</span></span>
     <input type="checkbox" id="only-left" class="switch" ${only?"checked":""}></label>`:""}
   ${L.length?`<div class="section-t">Do przyjęcia · ${done.length}/${L.length}</div>
-  ${prods.length?`<div class="list">${prods.map(p=>{ const u=taken(k,p.id), on=u>=p.daily && u>0; const ro=runOut(p);
+  ${prods.length?`<div class="list">${prods.map(p=>{ const u=taken(k,p.id), dk=dailyOn(p,k), on=u>=dk && u>0; const ro=runOut(p);
     return `<div class="row">${syms(p.content)}
-      <div class="grow"><div class="pname">${esc(p.name)}</div><div class="pmeta">${fmt(p.daily)} ${unitWord(p,p.daily)} · ${doseText(p,p.daily)}${ro&&ro.days<=5?` · <b style="color:var(--warn)">zostało ${ro.left}</b>`:""}</div></div>
-      ${u && u!==p.daily?`<span class="count num">${fmt(u)}×</span>`:""}
+      <div class="grow"><div class="pname">${esc(p.name)}</div><div class="pmeta">${fmt(dk)} ${unitWord(p,dk)} · ${doseText(p,dk)}${ro&&ro.days<=5?` · <b style="color:var(--warn)">zostało ${ro.left}</b>`:""}</div></div>
+      ${u && u!==dk?`<span class="count num">${fmt(u)}×</span>`:""}
       <button class="count" data-act="qty" data-id="${p.id}" aria-label="Zmień liczbę: ${esc(p.name)}">±</button>
       <button class="check ${on?"on":""}" data-act="toggle" data-id="${p.id}" aria-pressed="${on}" aria-label="${on?"Odznacz":"Oznacz jako przyjęte"}: ${esc(p.name)}">${I.check}</button></div>`; }).join("")}</div>`
    :`<div class="card done"><span class="check on" aria-hidden="true">${I.check}</span><div><div class="pname">${allDone?"Wszystko na dziś odhaczone":"Nic więcej na dziś"}</div><div class="pmeta">Wyłącz filtr, aby zobaczyć pełną listę i bilans.</div></div></div>`}`
@@ -610,8 +626,8 @@ function histLabs(n){
       :`<div class="pmeta">Brak zapisanych wyników. Przepisz wynik z wydruku, a Wassup porówna go z zakresem z tego wydruku.</div>`}
     <div class="btns"><button class="btn sec" data-act="lab-add" data-k="${ms[0].m}">Dodaj wynik</button>${groups.length?`<button class="btn sec" data-act="go-labs">Wszystkie badania</button>`:""}</div></div>`;
 }
-function streak(){ const L=live(); if(!L.length) return 0; let k=today(); const full=x=>L.every(p=>taken(x,p.id)>=p.daily); if(!full(k)) k=addDays(k,-1); let c=0; while(full(k) && c<3650){ c++; k=addDays(k,-1); } return c; }
-function adherence(N){ let full=0,need=0,got=0,n=0; const start=S.created||today(); for(let i=0;i<N;i++){ const k=addDays(today(),-i); if(k<start) break; n++; let all=true; for(const p of live()){ need+=p.daily; got+=Math.min(taken(k,p.id),p.daily); if(taken(k,p.id)<p.daily) all=false; } if(all && live().length) full++; } return {full,n,pct:need?Math.round(got/need*100):0}; }
+function streak(){ const L=live(); if(!L.length) return 0; let k=today(); const full=x=>L.every(p=>taken(x,p.id)>=dailyOn(p,x)); if(!full(k)) k=addDays(k,-1); let c=0; while(full(k) && c<3650){ c++; k=addDays(k,-1); } return c; }
+function adherence(N){ let full=0,need=0,got=0,n=0; const start=S.created||today(); for(let i=0;i<N;i++){ const k=addDays(today(),-i); if(k<start) break; n++; let all=true; for(const p of live()){ const dk=dailyOn(p,k); need+=dk; got+=Math.min(taken(k,p.id),dk); if(taken(k,p.id)<dk) all=false; } if(all && live().length) full++; } return {full,n,pct:need?Math.round(got/need*100):0}; }
 function chartSVG(days,vals,n){
   const W=340,H=170,L=38,R=6,T=10,B=22,pw=W-L-R,ph=H-T-B, N=NUTR[n], f=N.normFactor||1, normRaw=norms()[n], norm=normRaw?normRaw/f:null;
   const max=Math.max((N.ul||0)*1.15, (gisFor(n)||0)*1.1, (norm||0)*1.1, ...vals, 1);
@@ -632,7 +648,7 @@ function calendar(){
   const t=today(), start=addDays(t,-34), offset=(parseKey(start).getDay()+6)%7;
   let cells=["pn","wt","śr","cz","pt","so","nd"].map(d=>`<span style="background:none">${d}</span>`).join("");
   for(let i=0;i<offset;i++) cells+=`<span style="background:none"></span>`;
-  for(let i=0;i<35;i++){ const k=addDays(start,i); const L=live(), sum=L.map(p=>Math.min(1,taken(k,p.id)/p.daily)).reduce((a,b)=>a+b,0);
+  for(let i=0;i<35;i++){ const k=addDays(start,i); const L=live(), sum=L.map(p=>Math.min(1,taken(k,p.id)/dailyOn(p,k))).reduce((a,b)=>a+b,0);
     const cls=k>t?"future":sum>=L.length&&L.length?"full":sum>0?"part":""; cells+=`<span class="${cls} ${k===t?"today":""} num">${parseKey(k).getDate()}</span>`; }
   return `<div class="cal">${cells}</div>`;
 }
@@ -1277,7 +1293,7 @@ const GST={ in:{c:"ok",t:"W celu"}, low:{c:"warn",t:"Poniżej celu"}, high:{c:"b
 function periodDays(P){ const end=today()<P.testDate?today():P.testDate; const out=[]; let k=P.start; while(k<=end && out.length<800){ out.push(k); k=addDays(k,1); } return out; }
 function periodStats(P){
   const days=periodDays(P), prods=P.products.map(id=>S.products.find(p=>p.id===id)).filter(Boolean);
-  const per=prods.map(p=>{ let need=0,got=0; days.forEach(k=>{ need+=p.daily; got+=Math.min(taken(k,p.id),p.daily); }); return {p,pct:need?Math.round(got/need*100):0}; });
+  const per=prods.map(p=>{ let need=0,got=0; days.forEach(k=>{ const dk=dailyOn(p,k); need+=dk; got+=Math.min(taken(k,p.id),dk); }); return {p,pct:need?Math.round(got/need*100):0}; });
   const ns=[...new Set(P.items.map(it=>(MK[it.m]||{}).n).filter(n=>n&&prods.some(p=>p.content[n])))];
   const avg={}; ns.forEach(n=>{ let s=0; days.forEach(k=>{ s+=totals(k).t[n]||0; }); avg[n]=days.length?s/days.length:0; });
   return {days:days.length,per,avg};
@@ -1441,12 +1457,14 @@ function firstLog(pid){ let f=null; for(const k in S.log){ if(S.log[k][pid] && (
 function repData(){
   const R=repRange(), days=repDays(R.start,R.end);
   const prods=S.products.map(p=>{ const fl=firstLog(p.id); if(!fl) return null; const from=fl>R.start?fl:R.start, to=p.ended&&p.ended<R.end?p.ended:R.end; if(from>to) return null;
-    let need=0,got=0,n=0; let k=from; while(k<=to){ need+=p.daily; got+=Math.min(taken(k,p.id),p.daily); n++; k=addDays(k,1); }
-    return {p,from,to,days:n,pct:need?Math.round(got/need*100):0}; }).filter(Boolean);
-  const nut={}; days.forEach(k=>{ const t=totals(k).t; for(const n in t) nut[n]=(nut[n]||0)+t[n]; });
+    let n=0,took=0,full=0,units=0; let k=from; while(k<=to){ const u=taken(k,p.id), dk=dailyOn(p,k); n++; if(u>0){ took++; units+=u; } if(u>=dk) full++; k=addDays(k,1); }
+    const changes=(p.doses||[]).filter(e=>e.since>from && e.since<=to);
+    return {p,from,to,days:n,took,full,avgU:took?units/took:0,changes,startDaily:dailyOn(p,from)}; }).filter(Boolean);
+  const first=prods.map(x=>x.from).sort()[0]||R.start, ndays=days.filter(k=>k>=first).length;
+  const nut={}; days.filter(k=>k>=first).forEach(k=>{ const t=totals(k).t; for(const n in t) nut[n]=(nut[n]||0)+t[n]; });
   const plan=planned(), nm=norms();
-  const ns=ORDER.filter(n=>nut[n]||plan[n]).map(n=>{ const N=NUTR[n]; return {n,N,avg:days.length?(nut[n]||0)/days.length:0,plan:plan[n]||0,norm:nm[n]?nm[n]/(N.normFactor||1):null,gis:gisFor(n),ul:N.ul||null}; });
-  return {R,days:days.length,prods,ns};
+  const ns=ORDER.filter(n=>nut[n]||plan[n]).map(n=>{ const N=NUTR[n]; return {n,N,avg:ndays?(nut[n]||0)/ndays:0,plan:plan[n]||0,norm:nm[n]?nm[n]/(N.normFactor||1):null,gis:gisFor(n),ul:N.ul||null}; });
+  return {R,days:days.length,ndays,prods,ns};
 }
 function plainHTML(h){ const d=document.createElement("div"); d.innerHTML=h; return d.textContent.replace(/\s+/g," ").trim(); }
 function viewReport(){
@@ -1462,7 +1480,7 @@ function viewReport(){
     <div class="seg" role="group" aria-label="Zakres raportu">${[...(hasPer?[["period","Okres"]]:[]),["30","30 dni"],["90","90 dni"]].map(([v,t])=>`<button data-act="rep-range" data-v="${v}" class="${REP.range===v?"on":""}">${t}</button>`).join("")}</div></div>
   <div class="doc">
     <div class="dochead"><div><div class="sub">Wassup · podsumowanie dla lekarza</div><h1>Suplementy i badania</h1></div></div>
-    <dl class="kv"><dt>Osoba</dt><dd>${esc(prof)}</dd><dt>Zakres</dt><dd>${esc(fullDate(R.start))} – ${esc(fullDate(R.end))} (${esc(R.label)}; ${D.days} ${plural(D.days,["dzień","dni","dni"])} od początku używania aplikacji)</dd><dt>Wygenerowano</dt><dd>${esc(fullDate(today()))}</dd></dl>
+    <dl class="kv"><dt>Osoba</dt><dd>${esc(prof)}</dd><dt>Zakres</dt><dd>${esc(fullDate(R.start))} – ${esc(fullDate(R.end))} (${esc(R.label)}; średnie z ${D.ndays} ${plural(D.ndays,["dnia","dni","dni"])} od pierwszego zapisanego przyjęcia)</dd><dt>Wygenerowano</dt><dd>${esc(fullDate(today()))}</dd></dl>
     <p class="docnote">Dane wpisane przez użytkownika w aplikacji Wassup. Aplikacja nie interpretuje wyników badań i nie zaleca dawek. Przyjęcia liczone z tego, co użytkownik odhaczył.</p>
 
     <h2>Wyniki badań</h2>
@@ -1478,12 +1496,12 @@ function viewReport(){
       </tbody></table></div>`:""}
 
     <h2>Przyjmowane produkty</h2>
-    ${D.prods.length?`<div class="tw"><table class="rt"><thead><tr><th>Produkt</th><th>Skład 1 szt.</th><th>Porcja</th><th>Regularność</th></tr></thead><tbody>
-      ${D.prods.map(x=>`<tr><td>${esc(x.p.name)}${x.p.brand?`<br><span class="docnote">${esc(x.p.brand)} · ${x.p.type==="lek"?"lek OTC":"suplement diety"}</span>`:""}</td><td>${esc(compText(x.p).replace(/^1 [^:]+: /,""))}</td><td>${fmt(x.p.daily)} ${unitWord(x.p,x.p.daily)}/dzień${x.p.producerDaily?`<br><span class="docnote">producent: ${fmt(x.p.producerDaily)}</span>`:""}${x.p.ended?`<br><span class="docnote">zakończony ${esc(fullDate(x.p.ended))}</span>`:""}</td><td class="num">${x.pct}%<br><span class="docnote">${x.days} ${plural(x.days,["dzień","dni","dni"])}</span></td></tr>`).join("")}
+    ${D.prods.length?`<div class="tw"><table class="rt"><thead><tr><th>Produkt</th><th>Skład 1 szt.</th><th>Porcja dzienna</th><th>Przyjmowanie</th></tr></thead><tbody>
+      ${D.prods.map(x=>`<tr><td>${esc(x.p.name)}${x.p.brand?`<br><span class="docnote">${esc(x.p.brand)} · ${x.p.type==="lek"?"lek OTC":"suplement diety"}</span>`:""}</td><td>${esc(compText(x.p).replace(/^1 [^:]+: /,""))}</td><td>${x.changes.length?`${fmt(x.startDaily)} ${unitWord(x.p,x.startDaily)}, ${x.changes.map(e=>`od ${esc(fullDate(e.since))}: ${fmt(e.daily)} ${unitWord(x.p,e.daily)}`).join(", ")}`:`${fmt(x.startDaily)} ${unitWord(x.p,x.startDaily)}`}${x.p.producerDaily?`<br><span class="docnote">zalecenie producenta: ${fmt(x.p.producerDaily)}</span>`:""}${x.p.ended?`<br><span class="docnote">zakończony ${esc(fullDate(x.p.ended))}</span>`:""}</td><td class="num">${x.took}/${x.days} dni${x.took?`<br><span class="docnote">śr. ${fmt(x.avgU)} ${unitWord(x.p,x.avgU)} w dniu przyjęcia</span>`:""}${x.full<x.took?`<br><span class="docnote">pełna porcja: ${x.full} dni</span>`:""}</td></tr>`).join("")}
     </tbody></table></div>`:`<p class="docnote">Brak odhaczonych przyjęć w tym zakresie.</p>`}
 
     ${D.ns.length?`<h2>Składniki z suplementów i leków</h2>
-    <div class="tw"><table class="rt"><thead><tr><th>Składnik</th><th>Średnio/dzień</th><th>Plan/dzień</th><th>Norma</th><th>Limit GIS</th><th>UL</th></tr></thead><tbody>
+    <div class="tw"><table class="rt"><thead><tr><th>Składnik</th><th>Średnio/dzień</th><th>Plan/dzień (obecnie)</th><th>Norma</th><th>Limit GIS</th><th>UL</th></tr></thead><tbody>
       ${D.ns.map(r=>{ const u=r.N.unit, over=r.ul&&(r.plan>r.ul+1e-9||r.avg>r.ul+1e-9); return `<tr${over?' class="flag"':""}><td>${esc(r.N.name)}</td><td class="num">${fmt(r.avg)} ${u}${r.n==="d"?`<br><span class="docnote">${fmt(r.avg*40,0)} IU</span>`:""}</td><td class="num">${fmt(r.plan)} ${u}</td><td class="num">${r.norm?fmt(r.norm)+" "+u:"–"}</td><td class="num">${r.gis?fmt(r.gis)+" "+u:"–"}</td><td class="num">${r.ul?fmt(r.ul)+" "+u:"–"}${r.n==="mg"?`<br><span class="docnote">tylko z suplementów</span>`:""}</td></tr>`; }).join("")}
     </tbody></table></div>`:""}
 
@@ -1570,7 +1588,7 @@ document.addEventListener("click", async e=>{
     S.products=CATALOG.filter(c=>OB.pick[c.cid]).map(c=>fromCatalog(c.cid)); save(); TAB="today"; render(); return; }
   if(act==="day-prev"){ DAY=addDays(DAY,-1); render(); return; }
   if(act==="day-next"){ if(DAY<today()) DAY=addDays(DAY,1); render(); return; }
-  if(act==="toggle"){ const p=S.products.find(x=>x.id===id); S.log[DAY]=S.log[DAY]||{}; const cur=S.log[DAY][id]||0; S.log[DAY][id]=cur>=p.daily?0:p.daily; if(!S.log[DAY][id]) delete S.log[DAY][id]; if(!Object.keys(S.log[DAY]).length) delete S.log[DAY]; save(); render(); try{ navigator.vibrate&&navigator.vibrate(10); }catch(_){} return; }
+  if(act==="toggle"){ const p=S.products.find(x=>x.id===id); S.log[DAY]=S.log[DAY]||{}; const cur=S.log[DAY][id]||0; const dd=dailyOn(p,DAY); S.log[DAY][id]=cur>=dd?0:dd; if(!S.log[DAY][id]) delete S.log[DAY][id]; if(!Object.keys(S.log[DAY]).length) delete S.log[DAY]; save(); render(); try{ navigator.vibrate&&navigator.vibrate(10); }catch(_){} return; }
   if(act==="qty"){ qtySheet(id); return; }
   if(act==="q-"||act==="q+"){ QTY.u=Math.max(0,Math.min(10,QTY.u+(act==="q+"?1:-1))); const p=S.products.find(x=>x.id===QTY.id); document.getElementById("qv").textContent=QTY.u; document.getElementById("qd").textContent=doseText(p,QTY.u)||"0"; return; }
   if(act==="q-save"){ S.log[DAY]=S.log[DAY]||{}; if(QTY.u) S.log[DAY][QTY.id]=QTY.u; else delete S.log[DAY][QTY.id]; if(!Object.keys(S.log[DAY]).length) delete S.log[DAY]; save(); closeSheet(); render(); return; }
@@ -1585,7 +1603,8 @@ document.addEventListener("click", async e=>{
     for(const r of FORM.rows){ if(!r.n) continue; let v=parseNum(r.amt); if(v==null||v<=0) continue; if(r.n==="d" && r.u==="IU") v=v/40; content[r.n]=Math.round(v*1000)/1000; }
     if(!Object.keys(content).length){ toast("Wybierz składnik i wpisz jego ilość"); return; }
     let p=id?S.products.find(x=>x.id===id):null; if(!p){ p={id:uid(),stock:null}; S.products.push(p); }
-    Object.assign(p,{ name, brand:document.getElementById("p-brand").value.trim(), type:document.getElementById("p-type").value, unit:document.getElementById("p-unit").value, content, form:document.getElementById("p-form").value.trim(), daily:num("p-daily")||1, producerDaily:num("p-prod")||null });
+    Object.assign(p,{ name, brand:document.getElementById("p-brand").value.trim(), type:document.getElementById("p-type").value, unit:document.getElementById("p-unit").value, content, form:document.getElementById("p-form").value.trim(), producerDaily:num("p-prod")||null });
+    { const nd=num("p-daily")||1; if(p.daily==null) p.daily=nd; else setDaily(p,nd); }
     const st=num("p-stock"); if(st!=null) p.stock={count:st+takenToday(p), since:today()};
     save(); closeSheet(); render(); toast("Zapisano"); return; }
   if(act==="p-del"){ S.products=S.products.filter(x=>x.id!==id); save(); closeSheet(); render(); toast("Usunięto z Apteczki"); return; }
@@ -1599,7 +1618,7 @@ document.addEventListener("click", async e=>{
   if(act==="resume"){ const p=S.products.find(x=>x.id===id); delete p.ended; save(); render(); toast("Produkt wrócił do planu. Sprawdź zapas."); return; }
   if(act==="backup-snooze"){ S.prefs.backupSnooze=today(); save(); render(); toast("Przypomnimy za tydzień"); return; }
   if(act==="snooze"){ S.prefs.snooze=S.prefs.snooze||{}; S.prefs.snooze[id]=today(); save(); render(); toast("Przypomnimy jutro"); return; }
-  if(act==="dose-"||act==="dose+"){ const p=S.products.find(x=>x.id===id); p.daily=Math.max(1,Math.min(10,(act==="dose+"?Math.floor(p.daily)+1:Math.ceil(p.daily)-1))); save(); render(); return; }
+  if(act==="dose-"||act==="dose+"){ const p=S.products.find(x=>x.id===id); setDaily(p,Math.max(1,Math.min(10,(act==="dose+"?Math.floor(p.daily)+1:Math.ceil(p.daily)-1)))); save(); render(); return; }
   if(act==="lab"||act==="lab-add"){ closeSheet(); labForm(null,a.dataset.k); return; }
   if(act==="lab-open"){ labDetail(a.dataset.k); return; }
   if(act==="lab-edit"){ closeSheet(); labForm(id); return; }
