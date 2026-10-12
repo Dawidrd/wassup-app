@@ -221,6 +221,10 @@ svg.trend{width:100%;height:auto;display:block;overflow:visible}
 .stepper.sm button{width:38px;height:38px;font-size:20px}
 .stepper.sm button:disabled{opacity:.35}
 .stepper.sm b{min-width:22px;text-align:center;font-size:18px}
+
+/* v0.7 Do normy brakuje */
+.note.ok{background:var(--ok-bg);color:var(--ink)}
+.cmp .gaprow span:last-child{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -233,7 +237,7 @@ svg.trend{width:100%;height:auto;display:block;overflow:visible}
 /* ============ Dane referencyjne (źródła: baza regulacyjna Wassup) ============
    RWS: rozp. 1169/2011 zał. XIII · normy i UL: Normy żywienia dla populacji Polski 2024 (NIZP PZH–PIB)
    limity GIS: uchwały Zespołu ds. Suplementów Diety · oświadczenia: rozp. 432/2012 */
-const APP_VERSION = "0.6.0";
+const APP_VERSION = "0.7.0";
 const CLAIMS = {"mg": ["Magnez przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Magnez pomaga w utrzymaniu równowagi elektrolitowej", "Magnez przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Magnez pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Magnez pomaga w prawidłowym funkcjonowaniu mięśni", "Magnez pomaga w prawidłowej syntezie białka", "Magnez pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Magnez pomaga w utrzymaniu zdrowych kości", "Magnez pomaga w utrzymaniu zdrowych zębów", "Magnez odgrywa rolę w procesie podziału komórek"], "d": ["Witamina D pomaga w prawidłowym wchłanianiu/wykorzystywaniu wapnia i fosforu", "Witamina D pomaga w utrzymaniu prawidłowego poziomu wapnia we krwi", "Witamina D pomaga w utrzymaniu zdrowych kości", "Witamina D pomaga w prawidłowym funkcjonowaniu mięśni", "Witamina D pomaga w utrzymaniu zdrowych zębów", "Witamina D pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina D bierze udział w procesie podziału komórek"], "b6": ["Witamina B6 pomaga w prawidłowej syntezie cysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B6 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B6 przyczynia się do utrzymania prawidłowego metabolizmu białka i glikogenu", "Witamina B6 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B6 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B6 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B6 przyczynia się zmniejszenia uczucia zmęczenia i znużenia", "Witamina B6 przyczynia się do regulacji aktywności hormonalnej"], "c": ["Witamina C pomaga w utrzymaniu prawidłowego funkcjonowania układu odpornościowego w trakcie intensywnych ćwiczeń fizycznych i po nich", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania naczyń krwionośnych", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania kości", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania chrząstki", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania dziąseł", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania skóry", "Witamina C pomaga w prawidłowej produkcji kolagenu w celu zapewnienia prawidłowego funkcjonowania zębów", "Witamina C przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina C pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina C pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina C pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina C pomaga w ochronie komórek przed stresem oksydacyjnym", "Witamina C przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina C pomaga w regeneracji zredukowanej formy witaminy E", "Witamina C zwiększa przyswajanie żelaza"], "zn": ["Cynk pomaga w utrzymaniu prawidłowej równowagi kwasowo- zasadowej", "Cynk pomaga w utrzymaniu prawidłowego metabolizmu węglowodanów", "Cynk pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Cynk pomaga w prawidłowej syntezie DNA", "Cynk pomaga w utrzymaniu prawidłowej płodności i prawidłowych funkcji rozrodczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu kwasów tłuszczowych", "Cynk przyczynia się do utrzymania prawidłowego metabolizmu witaminy A", "Cynk pomaga w prawidłowej syntezie białka", "Cynk pomaga w utrzymaniu zdrowych kości", "Cynk pomaga zachować zdrowe włosy", "Cynk pomaga zachować zdrowe paznokcie", "Cynk pomaga zachować zdrową skórę", "Cynk pomaga w utrzymaniu prawidłowego poziomu testosteronu we krwi", "Cynk pomaga w utrzymaniu prawidłowego widzenia", "Cynk pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Cynk pomaga w ochronie komórek przed stresem oksydacyjnym", "Cynk bierze udział w procesie podziału komórek"], "b12": ["Witamina B12 przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Witamina B12 pomaga w utrzymaniu prawidłowego metabolizmu homocysteiny", "Witamina B12 pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Witamina B12 pomaga w prawidłowej produkcji czerwonych krwinek", "Witamina B12 pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Witamina B12 przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Witamina B12 odgrywa rolę w procesie podziału komórek"], "fe": ["Żelazo pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Żelazo przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Żelazo pomaga w prawidłowej produkcji czerwonych krwinek i hemoglobiny", "Żelazo pomaga w prawidłowym transporcie tlenu w organizmie", "Żelazo pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Żelazo przyczynia się do zmniejszenia uczucia zmęczenia i znużenia", "Żelazo odgrywa rolę w procesie podziału komórek"], "fol": ["Foliany przyczyniają się do wzrostu tkanek matczynych w czasie ciąży", "Foliany pomagają w prawidłowej syntezie aminokwasów", "Foliany pomagają w prawidłowej produkcji krwi", "Foliany pomagają w utrzymaniu prawidłowego metabolizmu homocysteiny", "Foliany pomagają w utrzymaniu prawidłowych funkcji psychologicznych", "Foliany pomagają w prawidłowym funkcjonowaniu układu odpornościowego", "Foliany przyczyniają się do zmniejszenia uczucia zmęczenia i znużenia", "Foliany biorą udział w procesie podziału komórek"], "ca": ["Wapń przyczynia się do prawidłowego krzepnięcia krwi", "Wapń przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Wapń pomaga w prawidłowym funkcjonowaniu mięśni", "Wapń pomaga w utrzymaniu prawidłowego przekaźnictwa nerwowego", "Wapń pomaga w prawidłowym funkcjonowaniu enzymów trawiennych", "Wapń bierze udział w procesie podziału i specjalizacji komórek", "Wapń jest potrzebny do utrzymania zdrowych kości", "Wapń jest potrzebny do utrzymania zdrowych zębów"], "k": ["Witamina K przyczynia się do prawidłowego krzepnięcia krwi", "Witamina K pomaga w utrzymaniu zdrowych kości"], "se": ["Selen przyczynia się do prawidłowego przebiegu spermatogenezy", "Selen pomaga zachować zdrowe włosy", "Selen pomaga zachować zdrowe paznokcie", "Selen pomaga w prawidłowym funkcjonowaniu układu odpornościowego", "Selen pomaga w prawidłowym funkcjonowaniu tarczycy", "Selen pomaga w ochronie komórek przed stresem oksydacyjnym"], "i": ["Jod pomaga w utrzymaniu prawidłowych funkcji poznawczych", "Jod przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Jod pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Jod pomaga zachować zdrową skórę", "Jod pomaga w prawidłowej produkcji hormonów tarczycy i w prawidłowym funkcjonowaniu tarczycy"], "om3": ["Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego funkcjonowania mózgu (warunek: 250 mg DHA dziennie)", "Kwas dokozaheksaenowy (DHA) przyczynia się do utrzymania prawidłowego widzenia (warunek: 250 mg DHA dziennie)", "DHA pomaga w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego ciśnienia krwi (warunek: 3 g EPA i DHA dziennie)", "DHA i EPA pomagają w utrzymaniu prawidłowego poziomu trójglicerydów we krwi (warunek: 2 g EPA i DHA dziennie)", "Kwas eikozapentaenowy (EPA) i kwas dokozaheksaenowy (DHA) przyczyniają się do prawidłowego funkcjonowania serca (warunek: 250 mg EPA i DHA dziennie)"], "bio": ["Biotyna przyczynia się do utrzymania prawidłowego metabolizmu energetycznego", "Biotyna pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Biotyna przyczynia się do utrzymania prawidłowego metabolizmu makroskładników odżywczych", "Biotyna pomaga w utrzymaniu prawidłowych funkcji psychologicznych", "Biotyna pomaga zachować zdrowe włosy", "Biotyna pomaga w utrzymaniu prawidłowego stanu błon śluzowych", "Biotyna pomaga zachować zdrową skórę"], "pot": ["Potas pomaga w prawidłowym funkcjonowaniu układu nerwowego", "Potas pomaga w prawidłowym funkcjonowaniu mięśni", "Potas pomaga w utrzymaniu prawidłowego ciśnienia krwi"]};
 const NUTR = {
   mg:  { name:"Magnez", sym:"Mg", unit:"mg", rws:375, ul:250,
@@ -306,6 +310,7 @@ const STEPS = [
   { k:"min", t:"Minimum w suplemencie (15% RWS)", d:"Najmniejsza ilość, przy której składnik w suplemencie w ogóle się liczy. Poniżej niej producent nie może przypisywać mu żadnego działania." },
   { k:"rws", t:"Wartość z etykiety (RWS)", d:"Uśredniona wartość odniesienia dla dorosłego, używana na opakowaniach (np. „27% RWS”). Służy do porównywania produktów, nie jest Twoją normą." },
   { k:"norm", t:"Twoja norma", d:"Ile potrzebujesz dziennie ze wszystkich źródeł razem, przede wszystkim z jedzenia. Suplement tylko ją uzupełnia, więc wynik poniżej normy w aplikacji nie oznacza niedoboru." },
+  { k:"gap", t:"Do normy brakuje", d:"Twoja norma minus szacunek z diety. Pokazuje, ile według norm dla zdrowych osób nie pokrywa jedzenie. To informacja, a nie zalecana dawka: wynik z ankiety jest przybliżony (±25%), a o suplementacji decydujesz Ty, najlepiej z lekarzem lub dietetykiem. „Nic” oznacza, że z punktu widzenia normy suplement z tym składnikiem nie jest potrzebny." },
   { k:"goal", t:"Twój cel", d:"Ilość z suplementów, którą ustawiasz sam, najlepiej razem z lekarzem lub dietetykiem. Aplikacja nie pozwoli ustawić celu powyżej granicy bezpieczeństwa." },
   { k:"gis", t:"Limit GIS", d:"Najwyższa ilość w dziennej porcji jednego suplementu według Zespołu ds. Suplementów Diety przy Głównym Inspektoracie Sanitarnym. Nie dotyczy leków." },
   { k:"ul", t:"Granica bezpieczeństwa (UL)", d:"Najwyższe codzienne spożycie, przy którym nie spodziewamy się szkód dla zdrowia. To sufit, nie cel: więcej nie daje dodatkowych korzyści, a zwiększa ryzyko. Nie przekraczaj jej." }
@@ -444,6 +449,22 @@ function viewToday(){
   <p class="src" style="padding:0 4px">Liczymy tylko to, co odhaczysz w aplikacji. Resztę składników dostarcza jedzenie, więc wynik poniżej normy nie oznacza niedoboru. Wassup informuje, nie zaleca dawek.</p>
   </section>`;
 }
+function gapInfo(n){
+  const D=S.diet, N=NUTR[n], norm=norms()[n];
+  if(!DIET_NUTR.includes(n) || NOT_FROM_DIET[n] || !norm) return null;
+  if(!D) return {none:true};
+  const d=D.intake[n]||0, ffq=D.method==="ffq", f=N.normFactor||1;
+  const lo=Math.max(0,norm-d*(ffq?1.25:1))/f, hi=Math.max(0,norm-d*(ffq?0.75:1))/f;
+  const r=x=>x<10?Math.round(x*10)/10:Math.round(x);
+  return {d,norm,ffq,f,lo:r(lo),hi:r(hi),covered:r(hi)===0,unsure:n==="se"};
+}
+function gapNote(n,g,plan){
+  const N=NUTR[n], u=N.unit, src=g.ffq?"z ankiety (przybliżony)":"z jadłospisu";
+  if(g.unsure) return `<div class="note">${esc(UNSURE_NOTE.se)} Dlatego nie oceniamy, czy suplement jest potrzebny.</div>`;
+  if(g.covered) return `<div class="note ok">Według szacunku ${src} dieta pokrywa Twoją normę (ok. ${fmt(g.d,g.d<10?1:0)} z ${fmt(g.norm,g.norm<10?1:0)} ${n==="fol"?"µg DFE":u}). <b>Z punktu widzenia normy suplement z tym składnikiem nie jest potrzebny.</b> Normy dotyczą osób zdrowych: jeśli suplementację zalecił lekarz, ta informacja jej nie zmienia.</div>`;
+  return `<div class="note">Według szacunku ${src} do normy brakuje ${gapText(g,N)}${n==="fol"?" (w przeliczeniu na kwas foliowy)":""}. Twój plan z Apteczki daje ${fmt(plan)} ${u} dziennie. To informacja, nie zalecana dawka.</div>`;
+}
+function gapText(g,N){ if(g.covered) return "nic"; if(g.lo===g.hi) return `ok. ${fmt(g.hi)} ${N.unit}`; return `${fmt(g.lo)}–${fmt(g.hi)} ${N.unit}`; }
 function infoBtn(k){ return `<button class="info" data-act="info" data-k="${k}" aria-label="Co to znaczy?">i</button>`; }
 function nutrientCard(n,v,bt){
   const N=NUTR[n], nm=norms(), norm=nm[n], gis=gisFor(n), f=N.normFactor||1, goal=S.goals[n];
@@ -455,7 +476,7 @@ function nutrientCard(n,v,bt){
   const pct=x=>Math.min(100,x/max*100);
   const groups=[]; marks.slice().sort((a,b)=>a[1]-b[1]).forEach(m=>{ const g=groups.find(g=>Math.abs(g.v-m[1])<1e-9); if(g){ g.names.push(m[0]); if(m[2]) g.cls=m[2]; } else groups.push({v:m[1],names:[m[0]],cls:m[2]}); });
   const rows=[]; const labels=groups.map(g=>{ const x=pct(g.v), txt=g.names.join(" · "), w=Math.max(9,txt.length*1.9); let row=0; while((rows[row]||[]).some(o=>Math.abs(o.x-x)<(o.w+w)/2+1)) row++; (rows[row]=rows[row]||[]).push({x,w}); return {txt,cls:g.cls,x,row}; });
-  const onlyLek=bt.lek && !bt.suplement, hasProd=live().some(p=>p.content[n]);
+  const onlyLek=bt.lek && !bt.suplement, hasProd=live().some(p=>p.content[n]), gap=gapInfo(n), planN=planned()[n]||0;
   return `<div class="card">
     <div class="ntop"><div><div class="nname">${sym(n)}${N.name}</div>
       <div style="margin-top:8px" class="big num">${fmt(v)}<small>${N.unit}${goal?` / ${fmt(goal)} ${N.unit}`:""}</small></div>
@@ -469,12 +490,15 @@ function nutrientCard(n,v,bt){
     </div>
     <div class="cmp" style="margin-top:${Math.max(0,...labels.map(l=>l.row))*12}px">
       ${goal?`<div><span>Twój cel (${fmt(goal)} ${N.unit}) ${infoBtn("goal")}</span><span class="num">${fmt(v/goal*100,0)}%</span></div>`:""}
-      ${S.diet&&!NOT_FROM_DIET[n]&&S.diet.intake[n]?`<div><span>Z diety (szacunek): ok. ${fmt(S.diet.intake[n],0)} ${N.unit}</span><span class="num">${norm?fmt(S.diet.intake[n]/norm*100,0)+"% normy":""}</span></div>`:""}
+      ${S.diet&&!NOT_FROM_DIET[n]&&S.diet.intake[n]?`<div><span>Z diety (szacunek${S.diet.method==="ffq"?", ankieta":""}): ok. ${fmt(S.diet.intake[n],0)} ${n==="fol"?"µg DFE":N.unit}</span><span class="num">${norm?fmt(S.diet.intake[n]/norm*100,0)+"% normy":""}</span></div>`:""}
+      ${gap&&!gap.none?`<div class="gaprow"><span><b>Do normy brakuje</b> ${infoBtn("gap")}</span><span class="num"><b>${gapText(gap,N)}</b></span></div>`:""}
+      ${gap&&gap.none?`<div><span>Do normy brakuje ${infoBtn("gap")}</span><span><button class="link small" data-act="diet">Sprawdź dietę</button></span></div>`:""}
       ${N.rws?`<div><span>Etykieta: RWS ${fmt(N.rws)} ${N.unit} ${infoBtn("rws")}</span><span class="num">${fmt(v/N.rws*100,0)}%</span></div>`:""}
       ${norm?`<div><span>Twoja norma: ${fmt(norm)} ${n==="fol"?"µg DFE":N.unit} ${infoBtn("norm")}</span><span class="num">${fmt(v*f/norm*100,0)}%</span></div>`:""}
       ${gis?`<div><span>Limit GIS: ${fmt(gis)} ${N.unit} ${infoBtn("gis")}</span><span class="num">${v>gis+1e-9?"powyżej":"poniżej"}</span></div>`:""}
       ${N.ul?`<div class="ulrow"><span><b>Granica bezpieczeństwa: ${fmt(N.ul)} ${N.unit}</b> ${infoBtn("ul")}</span><span class="num">${v>N.ul+1e-9?"przekroczona":fmt(v/N.ul*100,0)+"%"}</span></div>`:`<div><span>Granica bezpieczeństwa ${infoBtn("ul")}</span><span>nie ustalono</span></div>`}
     </div>
+    ${gap&&!gap.none&&hasProd?gapNote(n,gap,planN):""}
     ${goal&&!hasProd?`<div class="note">Żaden produkt w Apteczce nie zawiera tego składnika. Dodaj produkt, żeby liczyć postęp do celu.</div>`:""}
     ${n==="mg"&&v?`<div class="note">${N.ulNote} Normę ${norm?fmt(norm)+" mg ":""}liczy się z dietą łącznie, więc resztę zwykle daje jedzenie.</div>`:""}
     ${n==="d"&&v>=N.ul-1e-9?`<div class="note warn">${fmt(v)} µg to ${v>N.ul?"więcej niż":"dokładnie"} granica bezpieczeństwa dla diety i suplementów razem. ${onlyLek?"Twój produkt to lek, więc limit GIS dla suplementów go nie dotyczy. ":""}O dawkę i badanie poziomu 25(OH)D zapytaj lekarza lub farmaceutę.</div>`:""}
@@ -506,6 +530,8 @@ function attention(){
     const head=ro.left<=0?`Skończył się ${esc(p.name)}`:ro.days<1?`${esc(p.name)}: zostało mniej niż na dzień`:`Kończy się ${esc(p.name)}: zostało na ${ro.days} ${plural(ro.days,["dzień","dni","dni"])}`;
     items.push(`<div class="att stock"><div><b>${head}</b> (${ro.left} ${plural(ro.left,U)}).<br>Zanim kupisz kolejne opakowanie, zastanów się, czy nadal potrzebujesz tego ${p.type==="lek"?"leku":"suplementu"}. Jeśli tak, dokup je, żeby nie zrobić przerwy.</div>
       <div class="btns"><button class="btn sec" data-act="refill" data-id="${p.id}">Mam nowe opakowanie</button><button class="btn sec" data-act="end" data-id="${p.id}">Kończę z tym</button><button class="link small" data-act="snooze" data-id="${p.id}">Przypomnij jutro</button></div></div>`); });
+  if(backupDue()) items.push(`<div class="att stock"><div><b>Zrób kopię danych.</b> ${S.prefs.lastBackup?`Ostatnia była ${daysSince(S.prefs.lastBackup)} dni temu.`:"Nie masz jeszcze żadnej kopii."} Wszystko jest zapisane tylko na tym telefonie, a kopia chroni historię i wyniki badań, gdy coś się stanie z telefonem albo przeglądarką.</div>
+    <div class="btns"><button class="btn sec" data-act="export">Zrób kopię</button><button class="link small" data-act="backup-snooze">Przypomnij za tydzień</button></div></div>`);
   if(!items.length) return "";
   return `<div class="section-t">Uwaga</div><div class="attlist">${items.join("")}</div>`;
 }
@@ -695,6 +721,7 @@ function viewMe(){
     <button class="btn sec" data-act="reminder">Dodaj do Kalendarza</button></div>
   <div class="card"><div class="pname">Twoje dane</div>
     <div class="pmeta">Wszystko jest zapisane tylko na tym telefonie (${days} ${plural(days,["dzień","dni","dni"])} historii). Zrób kopię co jakiś czas, żeby nic nie zginęło.</div>
+    <div class="pmeta"><b>Ostatnia kopia:</b> ${S.prefs.lastBackup?`${esc(fullDate(S.prefs.lastBackup))} (${daysSince(S.prefs.lastBackup)===0?"dziś":daysSince(S.prefs.lastBackup)+" "+plural(daysSince(S.prefs.lastBackup),["dzień","dni","dni"])+" temu"})`:"jeszcze nie było"}. Przypomnimy co 7 dni.</div>
     <div class="btns"><button class="btn sec" data-act="export">Eksportuj kopię</button><button class="btn sec" data-act="import">Importuj kopię</button></div>
     <input type="file" id="import-file" accept="application/json,.json" hidden>
     <button class="btn danger" data-act="wipe">Usuń wszystkie dane</button></div>
@@ -1251,6 +1278,7 @@ document.addEventListener("click", async e=>{
   if(act==="end"){ closeSheet(); endSheet(id); return; }
   if(act==="end-yes"){ const p=S.products.find(x=>x.id===id); p.ended=today(); save(); closeSheet(); render(); toast("Produkt przeniesiony do Zakończonych"); return; }
   if(act==="resume"){ const p=S.products.find(x=>x.id===id); delete p.ended; save(); render(); toast("Produkt wrócił do planu. Sprawdź zapas."); return; }
+  if(act==="backup-snooze"){ S.prefs.backupSnooze=today(); save(); render(); toast("Przypomnimy za tydzień"); return; }
   if(act==="snooze"){ S.prefs.snooze=S.prefs.snooze||{}; S.prefs.snooze[id]=today(); save(); render(); toast("Przypomnimy jutro"); return; }
   if(act==="dose-"||act==="dose+"){ const p=S.products.find(x=>x.id===id); p.daily=Math.max(1,Math.min(10,(act==="dose+"?Math.floor(p.daily)+1:Math.ceil(p.daily)-1))); save(); render(); return; }
   if(act==="lab"||act==="lab-add"){ closeSheet(); labForm(null,a.dataset.k); return; }
@@ -1267,9 +1295,12 @@ document.addEventListener("click", async e=>{
 });
 async function exportData(){
   const name=`wassup-kopia-${today()}.json`, blob=new Blob([JSON.stringify(S,null,1)],{type:"application/json"});
-  try{ const file=new File([blob],name,{type:"application/json"}); if(navigator.canShare && navigator.canShare({files:[file]})){ await navigator.share({files:[file],title:"Kopia Wassup"}); return; } }catch(e){ if(e && e.name==="AbortError") return; }
-  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);
+  try{ const file=new File([blob],name,{type:"application/json"}); if(navigator.canShare && navigator.canShare({files:[file]})){ await navigator.share({files:[file],title:"Kopia Wassup"}); backupDone(); return; } }catch(e){ if(e && e.name==="AbortError") return; }
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000); backupDone();
 }
+function backupDone(){ S.prefs.lastBackup=today(); delete S.prefs.backupSnooze; save(); render(); toast("Kopia gotowa. Zachowaj plik w bezpiecznym miejscu."); }
+function daysSince(k){ return Math.round((parseKey(today())-parseKey(k))/864e5); }
+function backupDue(){ const last=S.prefs.lastBackup, sn=S.prefs.backupSnooze; if(sn && daysSince(sn)<7) return false; if(last) return daysSince(last)>=7; return daysSince(S.created||today())>=7 && Object.keys(S.log).length>0; }
 document.addEventListener("change", e=>{
   const el=e.target;
   if(el.dataset && el.dataset.row!=null){ const r=FORM.rows[+el.dataset.row]; r[el.dataset.k]=el.value; if(el.dataset.k==="n"){ r.u=el.value?NUTR[el.value].unit:""; document.getElementById("rows").innerHTML=rowsHTML(); } return; }
