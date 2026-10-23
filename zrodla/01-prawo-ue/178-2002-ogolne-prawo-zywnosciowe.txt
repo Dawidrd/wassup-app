@@ -1,0 +1,3240 @@
+                                                                  02002R0178 — PL — 01.01.2026 — 012.001 — 1
+
+
+  Dokument ten służy wyłącznie do celów informacyjnych i nie ma mocy prawnej. Unijne instytucje nie ponoszą żadnej
+odpowiedzialno ści za jego treść. Autentyczne wersje odpowiednich aktów prawnych, włącznie z ich preambułami, zostały
+opublikowane w Dzienniku Urzędowym Unii Europejskiej i są dostępne na stronie EUR-Lex. Bezpośredni dostęp do tekstów
+                     urzędowych można uzyskać za pośrednictwem linków zawartych w dokumencie
+
+
+
+
+►B         ROZPORZĄDZENIE (WE) NR 178/2002 PARLAMENTU EUROPEJSKIEGO I RADY
+                                            z dnia 28 stycznia 2002 r.
+      ustanawiające ogólne zasady i wymagania prawa żywnościowego, powołujące Europejski Urząd
+      ds. Bezpieczeństwa Żywności oraz ustanawiające procedury w zakresie bezpieczeństwa żywności
+                                           (Dz.U. L 31 z 1.2.2002, s. 1)
+
+
+
+
+zmienione przez:
+
+                                                                                           Dziennik Urzędowy
+
+                                                                                      nr       strona       data
+►M1       Rozporządzenie (WE) nr 1642/2003 Parlamentu Europejskiego i Rady         L 245           4       29.9.2003
+          z dnia 22 lipca 2003 r.
+►M2       Rozporządzenie Komisji (WE) nr 575/2006 z dnia 7 kwietnia 2006 r.        L 100           3        8.4.2006
+►M3       Rozporządzenie Komisji (WE) nr 202/2008 z dnia 4 marca 2008 r.           L 60           17        5.3.2008
+►M4       Rozporządzenie Parlamentu Europejskiego i Rady (WE) nr 596/2009          L 188          14       18.7.2009
+          z dnia 18 czerwca 2009 r.
+►M5       Rozporządzenie Parlamentu Europejskiego i Rady (UE) nr 652/2014 z        L 189           1       27.6.2014
+          dnia 15 maja 2014 r.
+►M6       Rozporządzenie Komisji (UE) 2017/228 z dnia 9 lutego 2017 r.             L 35           10       10.2.2017
+►M7       Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2017/745 z           L 117           1        5.5.2017
+          dnia 5 kwietnia 2017 r.
+►M8       Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2019/1243 z          L 198         241       25.7.2019
+          dnia 20 czerwca 2019 r.
+►M9       Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2019/1381 z          L 231           1        6.9.2019
+          dnia 20 czerwca 2019 r.
+►M10      Rozporządzenie delegowane Komisji (UE) 2024/908 z dnia                   L 908           1       20.3.2024
+          17 stycznia 2024 r.
+►M11      Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2025/2457 z          L 2457          1      12.12.2025
+          dnia 26 listopada 2025 r.
+
+
+sprostowane przez:
+
+►C1       Sprostowanie, Dz.U. L 179 z 7.7.2007, s. 59 (178/2002)
+►C2       Sprostowanie, Dz.U. L 327 z 12.11.2014, s. 9 (178/2002)
+►C3       Sprostowanie, Dz.U. L 37 z 13.2.2015, s. 24 (178/2002)
+                                                            02002R0178 — PL — 01.01.2026 — 012.001 — 2
+
+▼B
+     ROZPORZĄDZENIE (WE) NR 178/2002                      PARLAMENTU
+                 EUROPEJSKIEGO I RADY
+                          z dnia 28 stycznia 2002 r.
+     ustanawiające ogólne zasady i wymagania prawa żywnościowego,
+     powołujące Europejski Urząd ds. Bezpieczeństwa Żywności oraz
+       ustanawiające procedury w zakresie bezpieczeństwa żywności
+
+
+                                  ROZDZIAŁ I
+
+                             ZAKRES I DEFINICJE
+
+
+                                   Artykuł 1
+                                  Cel i zakres
+
+     1.   Niniejsze rozporządzenie tworzy podstawy do zapewnienia wyso­
+     kiego poziomu ochrony zdrowia ludzkiego i interesów konsumentów
+     związanych z żywnością, ze szczególnym uwzględnieniem zróżnico­
+     wania podaży żywności, w tym produktów tradycyjnych, z jedno­
+     czesnym zapewnieniem sprawnego funkcjonowania rynku wewnętrz­
+     nego. w sprawie
+
+     Rozporządzenie określa wspólne zasady i obowiązki, środki umożliwia­
+     jące stworzenie solidnej bazy naukowej, skuteczne ustalenia i procedury
+     organizacyjne wspierające podejmowanie decyzji w sprawach bezpie­
+     czeństwa żywności i pasz.
+
+     2.   Do celów ust. 1 niniejsze rozporządzenie ustanawia ogólne zasady
+     regulujące sprawy żywności i pasz w ogólności, a bezpieczeństwo
+     żywności i pasz w szczególności, na poziomie Wspólnoty i krajowym.
+
+     Rozporządzenie ustanawia Europejski Urząd ds. Bezpieczeństwa
+     Żywności.
+
+     Rozporządzenie określa procedury w sprawach mających bezpośredni
+     lub pośredni wpływ na bezpieczeństwo żywności i pasz.
+
+     3.   Niniejsze rozporządzenie stosuje się do wszystkich etapów
+     produkcji, przetwarzania i dystrybucji żywności i pasz. Nie ma zasto­
+     sowania do produkcji podstawowej na własny użytek lub do domowego
+     przygotowania, obróbki lub przechowywania do własnego spożycia.
+
+
+                                   Artykuł 2
+                             Definicja „żywności”
+
+     Do celów niniejszego rozporządzenia „żywność” (lub „środek spożyw­
+     czy”) oznacza jakiekolwiek substancje lub produkty, przetworzone,
+     częściowo przetworzone lub nieprzetworzone, przeznaczone do
+     spożycia przez ludzi lub, których spożycia przez ludzi można się
+     spodziewać.
+
+     „Środek spożywczy” obejmuje napoje, gumę do żucia i wszelkie
+     substancje, łącznie z wodą, świadomie dodane do żywności podczas
+     jej wytwarzania, przygotowania lub obróbki. Definicja ta obejmuje
+     wodę zgodną z normami określonymi zgodnie z art. 6 dyrektywy
+     98/83/WE i bez uszczerbku dla wymogów dyrektyw 80/778/EWG
+     i 98/83/WE.
+
+     „Środek spożywczy” nie obejmuje:
+
+     a) pasz;
+                                                                 02002R0178 — PL — 01.01.2026 — 012.001 — 3
+
+▼B
+      b) zwierząt żywych, chyba że mają być one wprowadzone na rynek do
+         spożycia przez ludzi;
+
+      c) roślin przed dokonaniem zbiorów;
+
+      d) produktów leczniczych w rozumieniu dyrektyw Rady 65/65/EWG
+         (1) i 92/73/EWG (2);
+
+      e) kosmetyków w rozumieniu dyrektywy Rady 76/768/EWG (3);
+
+      f) tytoniu i wyrobów tytoniowych w rozumieniu dyrektywy Rady
+         89/622/EWG (4);
+
+      g) narkotyków lub substancji psychotropowych w rozumieniu Jedynej
+         konwencji o środkach odurzających z 1961 r. oraz Konwencji
+         o substancjach psychotropowych z 1971 r.;
+
+▼C2
+      h) pozostałości i zanieczyszcze ń;
+
+▼M7
+      i) wyrobów medycznych w rozumieniu rozporządzenia Parlamentu
+         Europejskiego i Rady (UE) 2017/745 (5).
+
+▼B
+
+                                       Artykuł 3
+                                 Pozostałe definicje
+
+      Do celów niniejszego rozporządzenia:
+
+       1. „prawo żywnościowe” oznacza przepisy ustawowe, wykonawcze
+          i administracyjne regulujące sprawy żywności w ogólności, a ich
+          bezpieczeństwo w szczególności, zarówno na poziomie Wspólnoty,
+          jak i na poziomie krajowym; definicja ta obejmuje wszystkie etapy
+          produkcji, przetwarzania i dystrybucji żywności oraz paszy produ­
+          kowanej dla zwierząt hodowlanych lub używanej do żywienia
+          zwierząt hodowlanych;
+
+       2. „przedsiębiorstwo spożywcze” oznacza przedsiębiorstwo publiczne
+          lub prywatne, typu non-profit lub nie, prowadzące jakąkolwiek
+          działalność związaną z jakimkolwiek etapem produkcji, przetwa­
+          rzania i dystrybucji żywności;
+
+       3. „►C3 podmiot prowadzący przedsiębiorstwo spożywcze ◄” ozn-
+          acza osoby fizyczne lub prawne odpowiedzialne za spełnienie
+          wymogów prawa żywnościowego w przedsiębiorstwie spożyw­
+          czym pozostającym pod ich kontrolą;
+
+       4. „pasza” (lub „materiały paszowe”) oznacza substancje lub
+          produkty, w tym dodatki, przetworzone, częściowo przetworzone
+          lub nieprzetworzone, przeznaczone do karmienia zwierząt;
+
+      (1) Dz.U. 22 z 9.2.1965, str. 369. Dyrektywa ostatnio zmieniona dyrektywą
+          93/39/EWG (Dz.U. L 214 z 24.8.1993, str. 22).
+      (2) Dz.U. L 297 z 13.10.1992, str. 8.
+      (3) Dz.U. L 262 z 27.9.1976, str. 169. Dyrektywa ostatnio zmieniona dyrektywą
+          Komisji 2000/41/WE (Dz.U. L 145 z 20.6.2000, str. 25).
+      (4) Dz.U. L 359 z 8.12.1989, str. 1. Dyrektywa ostatnio zmieniona dyrektywą
+          92/41/EWG (Dz.U. L 158 z 11.6.1992, str. 30).
+      (5) Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2017/745 z dnia
+          5 kwietnia 2017 r. w sprawie wyrobów medycznych, zmiany dyrektywy
+          2001/83/WE, rozporządzenia (WE) nr 178/2002 i rozporządzenia (WE)
+          nr 1223/2009 oraz uchylenia dyrektyw Rady 90/385/EWG i 93/42/EWG
+          (Dz.U. L 117 z 5.5.2017, s. 1).
+                                                             02002R0178 — PL — 01.01.2026 — 012.001 — 4
+
+▼B
+       5. „przedsiębiorstwo paszowe” oznacza przedsiębiorstwo publiczne
+          lub prywatne, typu non-profit lub nie, prowadzące jakiekolwiek
+          działalność związaną z produkcją, wytwarzaniem, przetwarzaniem,
+          przechowywaniem, transportem lub dystrybucją pasz, w tym
+          producentów produkujących, przetwarzających lub przechowują­
+          cych pasze w celu żywienia zwierząt będących w jego posiadaniu;
+
+       6. „podmiot działający na rynku pasz” oznacza osoby fizyczne lub
+          prawne odpowiedzialne za spełnienie wymogów prawa żywnościo­
+          wego w przedsiębiorstwie paszowym pozostającym pod ich
+          kontrolą;
+
+       7. „handel detaliczny” oznacza obsługę i/lub przetwarzanie żywności
+          i jej przechowywanie w punkcie sprzedaży lub w punkcie dostaw
+          dla konsumenta finalnego; określenie to obejmuje terminale dystry­
+          bucyjne, działalność cateringową, stołówki zakładowe, catering
+          instytucjonalny, restauracje i podobne działania związane z usłu­
+          gami żywnościowymi, sklepy, centra dystrybucji w supermarketach
+          i hurtownie;
+
+       8. „wprowadzenie na rynek” oznacza posiadanie żywności lub pasz
+          w celu sprzedaży, z uwzględnieniem oferowania do sprzedaży lub
+          innej formy dysponowania, bezpłatnego lub nie oraz sprzedaż,
+          dystrybucję i inne formy dysponowania;
+
+       9. „ryzyko” oznacza niebezpieczeństwo zaistnienia negatywnych
+          skutków dla zdrowia oraz dotkliwość takich skutków w następstwie
+          zagrożenia;
+
+      10. „analiza ryzyka” oznacza proces składający się z trzech powiąza­
+          nych elementów: oceny ryzyka, zarządzania ryzykiem i informo­
+          wania o ryzyku;
+
+      11. „ocena ryzyka” oznacza proces wsparty naukowo, składający się
+          z czterech etapów: identyfikacji zagrożenia, charakterystyki niebez­
+          pieczeństwa, oceny ekspozycji i charakterystyki ryzyka;
+
+      12. „zarządzanie ryzykiem” oznacza proces, różniący się od oceny
+          ryzyka, polegający na zbadaniu alternatywy polityki w porozu­
+          mieniu z zainteresowanymi stronami, wzięciu pod uwagę oceny
+          ryzyka i innych prawnie uzasadnionych czynników, i w razie
+          potrzeby - na wybraniu stosownych sposobów zapobiegania
+          i kontroli;
+
+▼C1
+      13. „informowanie o ryzyku” oznacza interaktywną wymianę infor­
+          macji i opinii podczas procesu analizy ryzyka, dotycząca zagrożeń
+          i ryzyka, czynników związanych z ryzykiem i postrzeganiem
+          ryzyka, między oceniającymi ryzyko, zarządzającymi ryzykiem,
+          konsumentami, przedsiębiorstwami paszowymi i spożywczymi,
+          środowiskiem naukowym i innymi zainteresowanymi stronami,
+          z uwzględnieniem wyjaśnienia wniosków z oceny ryzyka
+          i powodów decyzji w zakresie zarządzania ryzykiem;
+
+▼B
+      14. „zagrożenie” oznacza czynnik biologiczny, chemiczny lub fizyczny
+          w żywności lub paszy, bądź stan żywności lub paszy, mogący
+          powodować negatywne skutki dla zdrowia;
+
+▼C1
+      15. „możliwość śledzenia” oznacza możliwość kontrolowania prze­
+          mieszczania się żywności, paszy, zwierzęcia hodowlanego lub
+          substancji przeznaczonej do dodania, lub która może być dodana
+          do żywności lub paszy na wszystkich etapach produkcji, przetwa­
+          rzania i dystrybucji;
+                                                            02002R0178 — PL — 01.01.2026 — 012.001 — 5
+
+▼B
+      16. „etapy produkcji, przetwarzania i dystrybucji” oznacza jakikolwiek
+          etap, w tym przywóz, począwszy od produkcji podstawowej
+          żywności, aż do uwzględnienia jej przechowywania, transportu,
+          sprzedaży lub dostarczenia konsumentowi finalnemu oraz tam
+          gdzie jest to stosowne - przywóz, produkcję, wytwarzanie, składo­
+          wanie, transport, dystrybucję, sprzedaż i dostawy pasz;
+      17. „produkcja podstawowa” oznacza produkcję, uprawę lub hodowlę
+          produktów podstawowych, w tym zbiory, dojenie i hodowlę zwie­
+          rząt gospodarskich przed ubojem. Oznacza także łowiectwo i rybo­
+          łówstwo oraz zbieranie runa leśnego;
+▼C1
+      18. „konsument finalny” oznacza ostatecznego konsumenta środka
+          spożywczego, który nie wykorzystuje żywności w ramach działal­
+          ności przedsiębiorstwa spożywczego.
+▼B
+
+
+
+
+                                  ROZDZIAŁ II
+
+               PRZEPISY OGÓLNE PRAWA ŻYWNOŚCIOWEGO
+
+
+                                    Artykuł 4
+                             Zakres obowiązywania
+
+      1.    Niniejszy rozdział dotyczy wszystkich etapów produkcji, przetwa­
+      rzania i dystrybucji żywności oraz pasz produkowanych dla zwierząt
+      hodowlanych lub używanych do żywienia zwierząt hodowlanych.
+      2.   Zasady ustanowione w art. 5–10 stanowią ogólne ramy o charak­
+      terze poziomym, do których należy się stosować podczas podej­
+      mowania środków.
+      3.   Istniejące zasady i procedury prawa żywnościowego zostaną jak
+      najszybciej dostosowane, nie później jednak niż do dnia 1 stycznia
+      2007 r., aby były zgodne z przepisami art. 5–10.
+      4.    Do tego czasu oraz w drodze odstępstwa od przepisów ust. 2,
+      istniejące ustawodawstwo będzie wdrażane z uwzględnieniem zasad
+      określonych w art. 5–10.
+
+                                    SEKCJA 1
+
+                ZASADY OGÓLNE PRAWA ŻYWNOŚCIOWEGO
+
+
+                                    Artykuł 5
+                                  Cele ogólne
+
+      1.    Prawo żywnościowe ma za zadanie realizację jednego lub więcej
+      ogólnych celów dotyczących wysokiego poziomu ochrony zdrowia
+      i życia ludzi oraz ochrony interesów konsumentów, z uwzględnieniem
+      uczciwych praktyk w handlu żywnością, biorąc pod uwagę, tam gdzie
+      jest to właściwe, ochronę zdrowia i warunków życia zwierząt, zdrowia
+      roślin i środowiska naturalnego.
+      2.    Prawo żywnościowe ma na celu osiągnięcie swobodnego prze­
+      pływu we Wspólnocie żywności i pasz wyprodukowanych lub wpro­
+      wadzanych do obrotu zgodnie z ogólnymi zasadami i wymogami
+      niniejszego rozdziału.
+      3.   Jeżeli istnieją normy międzynarodowe lub, jeżeli spodziewane jest
+      ich wprowadzenie, zostaną one wzięte pod uwagę podczas opracowy­
+      wania lub dostosowywania prawa żywnościowego, z wyjątkiem sytuacji,
+      w których normy takie - lub ich część - nie stanowiłyby skutecznego
+                                                             02002R0178 — PL — 01.01.2026 — 012.001 — 6
+
+▼B
+      lub odpowiedniego środka realizacji celów prawa żywnościowego; sytua­
+      cji, w których ich niestosowanie jest uzasadnione naukowo oraz gdyby
+      miały one spowodować zmianę poziomu ochrony w stosunku do
+      poziomu określonego jako właściwy we Wspólnocie.
+
+
+                                      Artykuł 6
+                                 Analiza ryzyka
+
+      1.   W celu osiągnięcia ogólnego celu, jakim jest wysoki poziom
+      ochrony zdrowia i życia ludzkiego prawo żywnościowe powinno
+      opierać się na analizie ryzyka, z wyjątkiem sytuacji, w której nie jest
+      to właściwe ze względu na okoliczności lub charakter środka.
+      2.    Ocena ryzyka powinna opierać się na istniejących dowodach
+      naukowych i być podejmowana w sposób niezależny, obiektywny
+      i przejrzysty.
+      3.   Zarządzanie ryzykiem powinno uwzględniać wyniki oceny
+      ryzyka, w szczególności opinie Urzędu, określonego w art. 22, inne
+      czynniki właściwe dla rozważanej sprawy oraz zasadę ostrożności, gdy
+      mają znaczenie warunki określone w art. 7 ust. 1, w celu osiągnięcia
+      ogólnych celów prawa żywnościowego określonych w art. 5.
+▼M9
+      4.   Informowanie o ryzyku musi realizować cele i być zgodne z ogól­
+      nymi zasadami, które zostały określone w art. 8a i 8b.
+▼B
+
+                                      Artykuł 7
+                               Zasada ostrożności
+
+      1.   W szczególnych okolicznościach, gdy po dokonaniu oceny
+      dostępnych informacji stwierdzono niebezpieczeństwo zaistnienia
+      skutków szkodliwych dla zdrowia, ale nadal brak jest pewności nauko­
+      wej, w oczekiwaniu na dalsze informacje naukowe umożliwiające
+      bardziej wszechstronną ocenę ryzyka mogą zostać przyjęte tymczasowe
+      środki zarządzania ryzykiem konieczne do zapewnienia wysokiego
+      poziomu ochrony zdrowia określonego we Wspólnocie.
+      2.    Środki przyjęte w oparciu o przepisy ust. 1 powinny być propor­
+      cjonalne i nie bardziej restrykcyjne dla handlu niż jest to wymagane
+      w celu zapewnienia wysokiego poziomu ochrony zdrowia określonego
+      we Wspólnocie, z uwzględnieniem wykonalności technicznej i ekono­
+      micznej oraz innych czynników uznawanych za stosowne w rozważanej
+      sprawie. W odpowiednim czasie, w zależności od rodzaju stwierdzo­
+      nego ryzyka dla życia lub zdrowia oraz rodzaju informacji naukowej
+      potrzebnej do wyjaśnienia niepewności naukowej oraz przeprowadzenia
+      bardziej wszechstronnej oceny ryzyka, środki te zostaną poddane prze­
+      glądowi.
+
+
+                                      Artykuł 8
+                       Ochrona interesów konsumentów
+
+      1.   Prawo żywnościowe ma na celu ochronę interesów konsumentów
+      i powinno stanowić podstawę dokonywania przez konsumentów świa­
+      domego wyboru związanego ze spożywaną przez nich żywnością. Ma
+      na celu zapobieganie:
+      a) oszukańczym lub podstępnym praktykom;
+      b) fałszowaniu żywności, oraz
+      c) wszelkim innym praktykom mogącym wprowadzać konsumenta
+         w błąd.
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 7
+
+▼M9
+                                   SEKCJA 1a
+
+                         INFORMOWANIE O RYZYKU
+
+
+                                   Artykuł 8a
+                         Cele informowania o ryzyku
+
+      Uwzględniając odpowiednie role podmiotów oceniających ryzyko
+      i zarządzających ryzykiem, w przypadku informowania o ryzyku
+      dąży się do następujących celów:
+
+      a) szerzenia wiedzy na temat konkretnych kwestii – w tym w przypad­
+         kach występowania rozbieżności w ocenie naukowej – rozważanych
+         podczas całego procesu analizy ryzyka i ułatwiania zrozumienia
+         tych kwestii;
+
+      b) zapewniania spójności, przejrzystości i jasności przy formułowaniu
+         zaleceń i decyzji dotyczących zarządzania ryzykiem;
+
+      c) zapewniania solidnej podstawy, w tym w stosownych przypadkach
+         podstawy naukowej, do zrozumienia decyzji dotyczących zarzą­
+         dzania ryzykiem;
+
+      d) poprawy ogólnej skuteczności i wydajności analizy ryzyka;
+
+      e) zwiększania zrozumienia przez opinię publiczną analizy ryzyka,
+         w tym odpowiednich zadań i obowiązków podmiotów przeprowa­
+         dzających ocenę ryzyka i zarządzających ryzykiem, w celu zwięk­
+         szenia zaufania do jej wyników;
+
+      f) zapewniania odpowiedniego zaangażowania konsumentów, przedsię­
+         biorstw paszowych i spożywczych, środowiska naukowego oraz
+         wszystkich innych zainteresowanych stron;
+
+      g) zapewniania odpowiedniej i przejrzystej wymiany informacji z zain­
+         teresowanymi stronami w odniesieniu do ryzyka związanego z łańcu­
+         chem żywnościowym;
+
+      h) zapewniania udzielania konsumentom informacji o strategiach zapo­
+         biegania ryzyku; oraz
+
+      i) przyczyniania się do zwalczania rozpowszechniania fałszywych
+         informacji i ich źródeł.
+
+
+                                   Artykuł 8b
+                    Ogólne zasady informowania o ryzyku
+
+      Uwzględniając odpowiednie role podmiotów oceniających ryzyko
+      i zarządzających ryzykiem, w ramach informowania o ryzyku:
+
+      a) zapewnia się, by dokładne i wszystkie istotne informacje były
+         wymieniane w sposób interaktywny i terminowy ze wszystkimi
+         zainteresowanymi stronami w oparciu o zasady przejrzystości,
+         otwartości i zdolności reagowania;
+
+      b) udziela się przejrzystych informacji na każdym etapie procesu
+         analizy ryzyka, począwszy od opracowania wniosku o doradztwo
+         naukowe do przedstawienia oceny ryzyka i przyjęcia decyzji doty­
+         czącej zarządzania ryzykiem, w tym informacji, w jaki sposób
+         wypracowano decyzje dotyczące zarządzania ryzykiem oraz jakie
+         czynniki były brane pod uwagę;
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 8
+
+▼M9
+      c) uwzględnia się postrzeganie ryzyka przez wszystkie zainteresowane
+         strony;
+
+      d) ułatwia się zrozumienie i dialog między wszystkimi zainteresowa­
+         nymi stronami; oraz
+
+      e) zapewnia się jasność i dostępność informacji, również podmiotom
+         niezaangażowanym bezpośrednio w dany proces lub niemającym
+         zaplecza naukowego, przy jednoczesnym należytym poszanowaniu
+         mających zastosowanie przepisów prawnych dotyczących poufności
+         i ochrony danych osobowych.
+
+
+                                   Artykuł 8c
+                     Ogólny plan informowania o ryzyku
+
+      1.   Komisja przyjmuje, w drodze aktów wykonawczych, ogólny plan
+      informowania o ryzyku, aby osiągnąć cele określone w art. 8a, zgodnie
+      z zasadami ogólnymi określonymi w art. 8b. Komisja aktualizuje ten
+      ogólny plan, uwzględniając postęp naukowo-techniczny i zdobyte
+      doświadczenia. Te akty wykonawcze przyjmuje się zgodnie z procedurą,
+      o której mowa w art. 58 ust. 2. Przygotowując te akty wykonawcze,
+      Komisja konsultuje się z Urzędem.
+
+      2.   Ogólny plan informowania o ryzyku propaguje zintegrowane
+      ramy informowania o ryzyku, którymi – w sposób spójny i systema­
+      tyczny, zarówno na poziomie unijnym, jak i krajowym – muszą
+      kierować się zarówno podmioty oceniające ryzyko, jak i podmioty
+      zarządzające ryzykiem. Ogólny plan informowania o ryzyku:
+
+      a) określa kluczowe czynniki, które należy wziąć pod uwagę przy
+         rozważaniu rodzaju i poziomu potrzebnych działań w zakresie infor­
+         mowania o ryzyku;
+
+      b) identyfikuje poszczególne rodzaje i poziomy działań w zakresie
+         informowania o ryzyku oraz stosowne główne narzędzia i kanały,
+         które należy wykorzystywać do celów informowania o ryzyku,
+         z uwzględnieniem potrzeb odpowiednich docelowych grup odbior­
+         ców;
+
+      c) ustanawia odpowiednie mechanizmy koordynacji i współpracy, aby
+         zwiększyć spójność informowania o ryzyku wśród podmiotów
+         oceniających ryzyko i zarządzających ryzykiem; oraz
+
+      d) ustanawia odpowiednie mechanizmy służące zapewnieniu otwartego
+         dialogu między konsumentami, przedsiębiorstwami spożywczymi
+         i paszowymi, środowiskiem naukowym i wszystkimi innymi zainte­
+         resowanymi stronami, a także ich odpowiedniego zaangażowania.
+
+▼B
+
+                                   SEKCJA 2
+
+                          ZASADY PRZEJRZYSTO ŚCI
+
+
+                                   Artykuł 9
+                             Publiczne konsultacje
+
+      Podczas przygotowywania, oceny i przeglądu prawa żywnościowego -
+      z wyjątkiem przypadku, gdy pilność sprawy na to nie pozwala -
+      powinny mieć miejsce otwarte i przejrzyste konsultacje publiczne,
+      bezpośrednio lub za pośrednictwem organów przedstawicielskich.
+                                                            02002R0178 — PL — 01.01.2026 — 012.001 — 9
+
+▼B
+                                   Artykuł 10
+                             Informacje publiczne
+
+     Bez uszczerbku dla stosowania przepisów prawa wspólnotowego
+     i krajowego w sprawie dostępu do dokumentów, w sytuacjach,
+     w których istnieją uzasadnione podstawy, aby podejrzewać, że żywność
+     lub pasza może stanowić zagrożenie dla zdrowia ludzi lub zwierząt,
+     wówczas, w zależności od charakteru, powagi i rozmiaru ryzyka,
+     władze publiczne podejmą stosowne kroki w celu poinformowania
+     opinii publicznej o charakterze ryzyka dla zdrowia, określając możliwie
+     najdokładniej żywność lub paszę, bądź rodzaj żywności lub paszy,
+     ryzyko, jakie mogą one stanowić oraz środki podjęte lub, które są
+     planowane w celu zapobieżenie, zmniejszenia lub likwidacji ryzyka.
+
+
+
+                                   SEKCJA 3
+
+              OGÓLNE OBOWIĄZKI W HANDLU ŻYWNOŚCIĄ
+
+
+                                   Artykuł 11
+                 Żywność i pasze przywożone do Wspólnoty
+
+     Żywność i pasze przywożone do Wspólnoty w celu wprowadzenia na
+     rynek we Wspólnocie powinny być zgodne z wymogami prawa
+     żywnościowego lub warunkami uznanymi przez Wspólnotę za przynaj­
+     mniej im odpowiadające, bądź w przypadku gdy istnieją konkretne
+     umowy między Wspólnotą i krajem wywozu, być zgodne z wymogami
+     zawartymi w tych umowach.
+
+
+
+                                   Artykuł 12
+                  Żywność i pasze wywożone ze Wspólnoty
+
+     1.   Żywność i pasze wywożone ze Wspólnoty lub ponownie wywo­
+     żone ze Wspólnoty w celu wprowadzenia na rynek w państwie trzecim
+     powinny być zgodne z wymogami prawa żywnościowego, chyba że
+     władze kraju przywozu postanowiły inaczej lub przepisy ustawowe,
+     wykonawcze, normy, kodeksy praktyk oraz inne procedury prawne
+     i administracyjne obowiązujące w kraju przywozu stanowią inaczej.
+
+     W innych okolicznościach, z wyjątkiem przypadku, gdy żywność jest
+     szkodliwa dla zdrowia lub pasza jest niebezpieczna, żywność i pasze
+     mogą być wywożone lub ponownie wywożone tylko wówczas, jeżeli
+     właściwe władze w kraju przeznaczenia wyrażą na to jednoznaczną
+     zgodę, po otrzymaniu pełnych informacji o okolicznościach i przyczy­
+     nach, dla których żywność lub pasze nie mogą być wprowadzone na
+     rynek we Wspólnocie.
+
+     2.    Jeżeli znajdują zastosowanie postanowienia umowy dwustronnej
+     zawartej przez Wspólnotę lub jedno z Państw Członkowskich i państwo
+     trzecie, żywność i pasze wywożone ze Wspólnoty lub z danego
+     Państwa Członkowskiego do państwa trzeciego muszą być zgodne
+     z wymienionymi postanowieniami.
+
+
+
+                                   Artykuł 13
+                           Normy międzynarodowe
+
+     Bez uszczerbku dla swych praw i obowiązków Wspólnota i Państwa
+     Członkowskie:
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 10
+
+▼B
+     a) uczestniczą w opracowywaniu międzynarodowych norm technicz­
+        nych w dziedzinie żywności i pasz oraz norm sanitarnych i fitosani­
+        tarnych;
+     b) wspierać koordynację prac podejmowanych przez międzynarodowe
+        organizacje rządowe i pozarządowe w dziedzinie norm dotyczących
+        żywności i pasz;
+     c) uczestniczyć, tam gdzie jest to właściwe, w przygotowywaniu
+        umów dotyczących uznania równoważności specjalnych środków
+        dotyczących żywności i pasz;
+     d) zwracać szczególną uwagę na rozwój oraz potrzeby finansowe
+        i handlowe krajów rozwijających się, z zamiarem zapewnienia,
+        aby normy międzynarodowe nie spowodowały niepotrzebnych prze­
+        szkód w wywozie z krajów rozwijających się;
+     e) wspierać spójność międzynarodowych norm technicznych i prawa
+        żywnościowego, dbając jednocześnie o to, aby wysoki poziom
+        ochrony przyjęty we Wspólnocie nie został obniżony.
+
+
+                                   SEKCJA 4
+
+               OGÓLNE WYMOGI PRAWA ŻYWNOŚCIOWEGO
+
+
+                                  Artykuł 14
+                Wymogi w zakresie bezpieczeństwa żywności
+
+     1.   Żaden niebezpieczny środek spożywczy nie może być wprowa­
+     dzany na rynek.
+     2.    Środek spożywczy jest uznawany za niebezpieczny, jeżeli uważa
+     się, że:
+     a) jest szkodliwy dla zdrowia,
+     b) nie nadaje się do spożycia przez ludzi.
+     3.   Podczas podejmowania decyzji, że dany środek spożywczy jest
+     niebezpieczny, należy mieć na względzie:
+     a) zwykłe warunki korzystania z żywności przez konsumenta oraz
+        wykorzystywania jej na każdym etapie produkcji, przetwarzania
+        i dystrybucji, oraz
+     b) informacje przeznaczone dla konsumenta, z uwzględnieniem infor­
+        macji na etykiecie oraz inne informacje zwykle dostępne dla konsu­
+        menta dotyczące unikania konkretnych negatywnych skutków dla
+        zdrowia związanych z daną żywnością lub rodzajem żywności.
+     4.   Podczas podejmowania decyzji, że środek spożywczy jest szkod­
+     liwy dla zdrowia, należy mieć na względzie:
+     a) nie tylko prawdopodobne natychmiastowe i/lub krótkotrwałe i/lub
+        długofalowe skutki tej żywności dla zdrowia spożywającej jej
+        osoby, ale także dla następnych pokoleń;
+     b) ewentualne skutki skumulowania toksyczności;
+     c) szczególną wrażliwość zdrowotną określonej kategorii konsumen­
+        tów, jeżeli środek spożywczy jest przeznaczony dla tej kategorii
+        konsumentów.
+     5.   Podczas podejmowania decyzji, że środek spożywczy nie nadaje
+     się do spożycia przez ludzi, należy mieć na względzie, czy środek
+     spożywczy nie może być spożywany przez ludzi stosownie z jego
+     przeznaczeniem z powodu zanieczyszczenia, zarówno przez czynniki
+     obce jak i w inny sposób, czy też z powodu gnicia, psucia się lub
+     rozkładu.
+                                                             02002R0178 — PL — 01.01.2026 — 012.001 — 11
+
+▼B
+     6.     Jeżeli niebezpieczny środek spożywczy stanowi część partii,
+     transzy lub dostawy żywności należącej do tej samej klasy lub katego­
+     rii, należy założyć, że całość żywności w tej partii, transzy lub dostawie
+     jest również niebezpieczna, chyba że po dokonaniu szczegółowej oceny
+     brak jest dowodów, iż reszta partii, transzy lub dostawy jest niebez­
+     pieczna.
+
+     7.    Żywność zgodna ze szczegółowymi przepisami wspólnotowymi
+     regulującymi bezpieczeństwo żywności jest uważana za bezpieczna
+     pod względem czynników objętych szczegółowymi przepisami Wspól­
+     noty.
+
+     8.    Zgodność żywności ze szczegółowymi przepisami mającymi do
+     niego zastosowanie nie powinna powstrzymać właściwych władz przed
+     podjęciem stosownych środków w celu nałożenia ograniczeń dotyczą­
+     cych wprowadzenia jej na rynek lub zażądania wycofania go z rynku,
+     jeżeli istnieją podstawy, aby podejrzewać, iż pomimo takiej zgodności,
+     ten środek spożywczy jest niebezpieczny.
+
+     9.   Z braku szczegółowych przepisów wspólnotowych, żywność jest
+     uważana za bezpieczną, jeżeli jest zgodna ze szczegółowymi przepi­
+     sami krajowego prawa żywnościowego Państwa Członkowskiego, na
+     którego terytorium jest ona wprowadzana do obrotu, jeżeli takie prze­
+     pisy były sporządzone i stosowane bez uszczerbku dla postanowień
+     Traktatu, w szczególności jego art. 28 i 30.
+
+
+                                    Artykuł 15
+                   Wymogi w zakresie bezpieczeństwa pasz
+
+     1.   Pasza, która jest niebezpieczna nie może być wprowadzana na
+     rynek ani podawana zwierzętom hodowlanym.
+
+     2.    Pasza uznana jest za niebezpieczną do wykorzystania zgodnie
+     z jej przeznaczeniem, jeżeli uważa się, że:
+
+     — ma negatywne skutki dla zdrowia ludzi lub zwierząt,
+
+     — powoduje, iż spożywanie żywności uzyskanej ze zwierząt hodow­
+       lanych jest niebezpieczne dla ludzi.
+
+     3.   Jeżeli pasza, co, do której stwierdzono, iż nie spełnia wymogów
+     bezpieczeństwa w zakresie pasz, stanowi część partii, transzy lub
+     dostawy paszy należącej do tej samej klasy lub kategorii, należy zało­
+     żyć, że cała pasza w tej partii, transzy lub dostawie jest również
+     niebezpieczna, chyba że po dokonaniu szczegółowej oceny brak jest
+     dowodów, iż reszta partii, transzy lub dostawy nie spełnia wymogów
+     w zakresie bezpieczeństwa pasz.
+
+     4.    Pasza zgodna ze szczegółowymi przepisami wspólnotowymi regu­
+     lującymi bezpieczeństwo pasz jest uważana za bezpieczną w zakresie
+     czynników objętych szczegółowymi przepisami wspólnotowymi.
+
+     5.    Zgodność paszy ze szczegółowymi przepisami mającymi do niej
+     zastosowanie nie powinna powstrzymać właściwych władz przed
+     podjęciem stosownych środków w celu nałożenia ograniczeń dotyczą­
+     cych wprowadzenia jej na rynek lub zażądania wycofania jej z rynku,
+     jeżeli istnieją podstawy, aby podejrzewać, iż pomimo takiej zgodności,
+     pasza jest niebezpieczna.
+
+     6.    W braku szczegółowych przepisów wspólnotowych pasza jest
+     uważana za bezpieczną jeżeli jest zgodna ze szczegółowymi przepisami
+     krajowego prawa żywnościowego Państwa Członkowskiego, na którego
+     terytorium pasza jest wprowadzana do obrotu, jeżeli takie przepisy były
+     sporządzone i stosowane bez uszczerbku dla postanowień Traktatu,
+     w szczególności jego art. 28 i 30.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 12
+
+▼B
+                                  Artykuł 16
+                                 Prezentacja
+
+     Bez uszczerbku dla bardziej szczegółowych przepisów prawa
+     żywnościowego, etykietowanie, reklama i prezentacja żywności lub
+     pasz, z uwzględnieniem ich kształtu, wyglądu lub opakowania, używa­
+     nych opakowań, sposobu ułożenia i miejsca wystawienia oraz infor­
+     macji udostępnionych na ich temat w jakikolwiek sposób, nie może
+     wprowadzać konsumentów w błąd.
+
+
+                                  Artykuł 17
+                                  Obowiązki
+
+     1.    ►C3 Podmioty prowadzące przedsiębiorstwo spożywcze i pod-
+     mioty działające na rynku pasz ◄ zapewniają, na wszystkich etapach
+     produkcji, przetwarzania i dystrybucji w przedsiębiorstwach będących
+     pod ich kontrolą, zgodność tej żywności lub pasz z wymogami prawa
+     żywnościowego właściwymi dla ich działalności i kontrolowanie prze­
+     strzegania tych wymogów.
+
+     2.   ►C1 Państwa członkowskie wprowadzają w życie prawo
+     żywnościowe oraz monitorują i kontrolują przestrzeganie przez ►C3
+     podmioty prowadzące przedsiębiorstwo spożywcze i podmioty działające
+     na rynku pasz ◄ odpowiednich wymogów prawa żywnościowego na
+     wszystkich etapach produkcji, przetwarzania i dystrybucji. ◄
+
+     W tym celu Państwa Członkowskie zachowują system oficjalnych
+     kontroli i innych działań stosownych do okoliczności, z uwzględnieniem
+     informowania opinii publicznej o bezpieczeństwie i ryzyku związanym
+     z żywnością i paszami, nadzorem nad bezpieczeństwem żywności
+     i pasz oraz innych działaniach monitorujących, obejmujących wszystkie
+     etapy produkcji, przetwarzania i dystrybucji.
+
+     Państwa Członkowskie ustanawiają również zasady dotyczące środków
+     i kar mających zastosowanie w przypadku naruszenia prawa
+     żywnościowego i paszowego. Ustanowione środki i kary powinny
+     być skuteczne, proporcjonalne i odstraszające.
+
+
+                                  Artykuł 18
+                        ►C1 Możliwość śledzenia ◄
+
+     1.   ►C1 Należy zapewnić możliwość śledzenia żywności, pasz,
+     zwierząt hodowlanych oraz wszelkich substancji przeznaczonych do
+     dodania do żywności lub pasz, bądź które można do nich dodać na
+     wszystkich etapach produkcji, przetwarzania i dystrybucji. ◄
+
+     2.   ►C3 Podmioty prowadzące przedsiębiorstwo spożywcze i pod-
+     mioty działające na rynku pasz ◄ powinny móc zidentyfikowa ć każda
+     osobę, która dostarczyła im środek spożywczy, paszę, zwierzę hodow­
+     lane lub substancję przeznaczoną do dodania do żywności lub pasz,
+     bądź którą można do nich dodać.
+
+     W tym celu podmioty te powinny utworzyć systemy i procedury umoż­
+     liwiające przekazanie takich informacji na żądanie właściwych władz.
+
+     3.   ►C3 Podmioty prowadzące przedsiębiorstwo spożywcze i pod-
+     mioty działające na rynku pasz ◄ powinny utworzyć systemy i proce­
+     dury identyfikacji innych przedsiębiorstw, którym dostarczyli swoje
+     produkty. Informacje te zostaną przekazane na żądanie właściwych
+     władz.
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 13
+
+▼C1
+      4.    Żywność lub pasze wprowadzane na rynek lub, które mogą być
+      wprowadzone na ten rynek we Wspólnocie, powinny być stosownie
+      etykietowane lub oznakowane w celu ułatwienia możliwości ich śledze­
+      nia, za pomocą stosownej dokumentacji lub informacji, zgodnie
+      z odnośnymi wymogami lub bardziej szczegółowymi przepisami.
+▼B
+      5.   Zgodnie z procedurą określoną w art. 58 ust. 2 mogą zostać
+      przyjęte przepisy w celu stosowania wymogów niniejszego artykułu
+      w odniesieniu do konkretnych sektorów.
+
+                                    Artykuł 19
+      Odpowiedzialno ść w zakresie żywności: ►C3 podmioty prowa­
+                   dzące przedsiębiorstwo spożywcze ◄
+
+      1.    Jeżeli ►C3 podmiot prowadzący przedsiębiorstwo spożywcze ◄
+      uważa lub ma podstawy, aby sądzić, że środek spożywczy przez niego
+      przywożony, wyprodukowany, przetworzony, wytworzony lub rozpro­
+      wadzany nie jest zgodny z wymogami w zakresie bezpieczeństwa
+      żywności, natychmiast rozpocznie postępowanie w celu wycofania
+      danej żywności z rynku, na którym ta żywność przestała znajdować
+      się pod jego bezpośrednią kontrolą jako początkowego ►C3 podmiotu
+      prowadzącego przedsiębiorstwo spożywcze ◄ i powiadomi o tym
+      właściwe władze. W przypadku gdy produkt mógł dotrzeć już do
+      konsumenta, operator skutecznie i dokładnie poinformuje konsumentów
+      o przyczynach jego wycofania i w razie konieczności odbierze od
+      konsumentów produkty już im dostarczone, jeżeli inne środki nie
+      byłyby wystarczające do zapewnienia wysokiego poziomu ochrony
+      zdrowia.
+▼C1
+      2.    ►C3 Podmiot prowadzący przedsiębiorstwo spożywcze ◄ odpo­
+      wiedzialny za handel detaliczny lub działalność związaną z dystrybucją,
+      nie dotyczącą pakowania, etykietowania, bezpieczeństwa lub nienaru­
+      szalności żywności, rozpocznie w granicach swojej działalności postę­
+      powanie mające na celu wycofanie z rynku produktów niezgodnych
+      z wymogami w zakresie bezpieczeństwa żywności i będzie współ­
+      działał w zapewnieniu bezpieczeństwa żywności przekazując stosowne
+      informacje konieczne do śledzenia żywności, uczestnicząc w działaniach
+      podejmowanych przez producentów, przetwórców, wytwórców i/lub
+      właściwe władze.
+▼B
+      3.    Jeżeli ►C3 podmiot prowadzący przedsiębiorstwo spożywcze ◄
+      uważa, że środek spożywczy, który wprowadził na rynek może być
+      szkodliwy dla zdrowia ludzi lub ma podstawy, aby tak sądzić,
+      niezwłocznie informuje o tym właściwe władze. ►C1 Podmioty te
+      informują właściwe władze o działaniach podjętych w celu zapobieg­
+      nięcia ryzyka dla konsumenta finalnego i nie powinni uniemożliwiać
+      lub zniechęcać nikogo od współpracy, zgodnie z prawem krajowym
+      i praktyką prawną, z właściwymi władzami, jeżeli działania takie
+      mogą zapobiec, zmniejszyć lub zlikwidować ryzyko związane z tą
+      żywnością. ◄
+      4.    ►C3 Podmioty prowadzące przedsiębiorstwo spożywcze ◄ wsp-
+      ółpracują z właściwymi władzami podczas działań podejmowanych
+      w celu uniknięcia lub zmniejszenia ryzyka związanego z dostarczaną
+      lub dostarczoną przez siebie żywnością.
+
+                                    Artykuł 20
+      Odpowiedzialno ść w zakresie pasz: podmioty działające na rynku
+                                    pasz
+
+      1.   Jeżeli podmiot działający na rynku pasz uważa, że pasza przez
+      niego przywożona, wyprodukowana, przetworzona, wytworzona lub
+      rozprowadzana nie spełnia wymogów w zakresie bezpieczeństwa pasz
+      lub ma podstawy, aby tak sądzić, niezwłocznie rozpocznie postępowanie
+                                                              02002R0178 — PL — 01.01.2026 — 012.001 — 14
+
+▼B
+      w celu wycofania danej paszy z rynku i poinformuje o tym właściwe
+      władze. W takiej sytuacji lub przypadku opisanym w art. 15 ust. 3, gdy
+      partia, transza lub dostawa nie spełnia wymogów w zakresie bezpieczeń­
+      stwa pasz, pasza zostanie zniszczona, o ile właściwe władze nie posta­
+      nowią inaczej. Podmiot ten należycie i dokładnie informuje użytkow­
+      ników paszy o przyczynach jej wycofania i w razie konieczności odbierze
+      od konsumentów produkty już im dostarczone, jeżeli inne środki nie są
+      wystarczające do zapewnienia wysokiego poziomu ochrony zdrowia.
+▼C1
+      2.    Podmiot działający na rynku pasz odpowiedzialny za handel deta­
+      liczny lub dystrybucję, które nie dotyczą pakowania, etykietowania,
+      bezpieczeństwa lub nienaruszalności paszy, rozpocznie w granicach
+      swojej działalności postępowanie mające na celu wycofanie z rynku
+      produktów niezgodnych z wymogami w zakresie bezpieczeństwa pasz
+      i będzie uczestniczyć w zapewnieniu bezpieczeństwa żywności przeka­
+      zując stosowne informacje konieczne do śledzenia paszy, biorąc udział
+      w działaniach podejmowanych przez producentów, przetwórców,
+      wytwórców i/lub właściwe władze.
+▼B
+      3.   Jeżeli podmiot działający na rynku pasz uważa, że pasza, którą
+      wprowadził na rynek może nie spełniać wymogów bezpieczeństwa
+      w zakresie pasz lub ma podstawy, aby tak sądzić, niezwłocznie infor­
+      muje o tym właściwe władze. Podmioty te informują właściwe władze
+      o działaniach podjętych w celu zapobiegnięcia ryzyku związanemu ze
+      stosowaniem tej paszy i nie powinni uniemożliwiać nikomu lub znie­
+      chęcać nikogo od współpracy, zgodnie z prawem krajowym i praktyką
+      prawną, z właściwymi władzami, jeżeli działania takie mogą zapobiec,
+      zmniejszyć lub zlikwidować ryzyko związane z paszą.
+      4.    Podmioty działające na rynku pasz współpracują z właściwymi
+      władzami podczas działań podejmowanych w celu uniknięcia lub
+      zmniejszenia ryzyka związanego z dostarczaną lub dostarczoną przez
+      siebie paszą.
+
+                                     Artykuł 21
+                                 Odpowiedzialno ść
+
+      Przepisy niniejszego rozdziału pozostają bez uszczerbku dla dyrektywy
+      Rady 85/374/EWG z dnia 25 lipca 1985 r. w sprawie zbliżenia prze­
+      pisów ustawowych, wykonawczych i administracyjnych Państw Człon­
+      kowskich dotyczących odpowiedzialno ści za przedmioty wadliwe (1).
+
+                                    ROZDZIAŁ III
+
+           EUROPEJSKI URZĄD DS. BEZPIECZEŃSTWA ŻYWNOŚCI
+
+
+                                      SEKCJA 1
+
+                                 MISJA I ZADANIA
+
+
+                                     Artykuł 22
+                                   Misja Urzędu
+
+      1.  Niniejszym ustanawia się Europejski Urząd ds. Bezpieczeństwa
+      Żywności zwany dalej „Urzędem”.
+      2.   Urząd ma zapewniać doradztwo naukowe oraz wsparcie
+      naukowo-techniczne w zakresie prawodawstwa i polityki Wspólnoty,
+      we wszystkich dziedzinach, które wywierają bezpośredni lub pośredni
+
+      (1) Dz.U. L 210 z 7.8.1985, str. 29. Dyrektywa ostatnio zmieniona dyrektywą
+          1999/34/WE Parlamentu Europejskiego i Rady (Dz.U. L 141 z 4.6.1999,
+          str. 20).
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 15
+
+▼B
+      wpływ na bezpieczeństwo żywności i pasz. ►C1 Zapewnia on nieza­
+      leżną informację we wszystkich kwestiach w ramach tych dziedzin
+      i informuje o ryzyku. ◄
+      3.   Urząd przyczynia się do wysokiego poziomu ochrony życia ludz­
+      kiego i zdrowia, zdrowia zwierząt i odpowiednich warunków ich
+      hodowli, zdrowia roślin i ochrony środowiska naturalnego w kontekście
+      funkcjonowania rynku wewnętrznego.
+      4.   Urząd zbiera i analizuje dane, które umożliwiają przygotowanie
+      charakterystyk i monitorowanie zagrożeń, które wywierają bezpośredni
+      lub pośredni wpływ na bezpieczeństwo żywności i pasz.
+      5.   Urząd zapewnia również:
+      a) doradztwo naukowe i wsparcie naukowo - techniczne w zakresie
+         żywienia ludności w powiązaniu z prawodawstwem Wspólnoty,
+         a na żądanie Komisji, pomoc w zakresie komunikowania się
+         odnośnie do zagadnień odżywiania w ramach wspólnotowego
+         programu ochrony zdrowia;
+      b) opinie naukowe dotyczące innych zagadnień związanych ze zdro­
+         wiem i odpowiednimi warunkami hodowli zwierząt oraz zdrowia
+         roślin;
+      c) opinie naukowe o produktach innych niż żywność i pasze, mających
+         związek z organizmami modyfikowanymi genetycznie, zdefiniowa­
+         nymi w dyrektywie 2001/18/WE i bez uszczerbku dla procedur
+         w niej ustanowionych;
+      6.   Urząd dostarcza opinii naukowych, które stanowią podstawę
+      naukową dla przygotowania i wdrażania przedsięwzięć Wspólnoty
+      w dziedzinach objętych sferą działalności Urzędu.
+      7.    Urząd wykonuje swoje zadania na warunkach, które umożliwiają
+      mu występowanie w roli niezależnego doradcy, zapewniają naukową
+      i techniczną jakość wydawanych opinii i rozpowszechnianych informa­
+      cji, przejrzystość stosownych procedur i metod działania oraz rzetel­
+      ność realizacji powierzanych mu zadań.
+▼M9
+      Urząd ściśle współpracuje z właściwymi organami państw członkow­
+      skich, które wykonują zadania podobne do zadań Urzędu oraz –
+      w stosownych przypadkach – z odpowiednimi agencjami Unii.
+▼B
+      8.   ►C1 Urząd, Komisja i państwa członkowskie powinny współ­
+      pracować w celu wspierania skutecznego współdziałania między funk­
+      cjami oceny ryzyka, zarządzania ryzykiem i informowania o ryzyku. ◄
+      9.    Państwa Członkowskie współpracują z Urzędem, tak, aby umoż­
+      liwić wykonanie powierzonej mu misji.
+
+
+                                   Artykuł 23
+                                Zadania Urzędu
+
+      Urząd realizuje następujące zadania:
+      a) dostarcza instytucjom Wspólnoty i Państwom Członkowskim
+         możliwie najlepsze opinie naukowe we wszystkich przypadkach
+         wynikających z przepisów wspólnotowych i na każde zagadnienie,
+         które jest objęte jego misją;
+      b) wspierać i koordynować rozwój jednolitych metodologii oceny
+         ryzyka w dziedzinach objętych jego misją;
+      c) zapewniać Komisji wsparcie naukowe i techniczne w obszarach
+         objętych misją Urzędu, a na żądanie udzielać pomocy w zakresie
+         interpretacji i uznawania opinii dotyczących oceny ryzyka;
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 16
+
+▼B
+       d) zlecać badania naukowe niezbędne do wykonania powierzonej mu
+          misji;
+
+       e) poszukiwać, zbierać, zestawiać, analizować i podsumowywa ć dane
+          naukowe i techniczne w dziedzinach objętych jego misją;
+
+       f) podejmować działania zmierzające do identyfikacji i opisu wyłania­
+          jącego się ryzyka w dziedzinach objętych jego misją;
+
+       g) ustanowienie systemu sieci organizacji działających w obszarach
+          objętych misją Urzędu i ponoszenie odpowiedzialno ści za ich funk­
+          cjonowanie;
+
+       h) na żądanie Komisji, udzielać pomocy naukowej i technicznej
+          w zakresie wdrażanych przez nią procedur dotyczących bezpieczeń­
+          stwa żywności i pasz;
+
+       i)   na żądanie Komisji, udzielać pomocy naukowej i technicznej
+            w zakresie doskonalenia współpracy między Wspólnotą, krajami
+            kandydującymi, organizacjami międzynarodowymi i państwami
+            trzecimi w dziedzinach objętych misją Urzędu;
+
+       j)   zapewnić szybkie, wiarygodne, obiektywne i wyczerpujące infor­
+            mowanie społeczeństwa i zainteresowanych stron w dziedzinach
+            objętych misją Urzędu;
+
+       k) przedstawiać niezależne, własne wnioski i zalecenia w dziedzinach
+          objętych misją Urzędu;
+
+       l)   podejmować wszelkie inne zadania zlecone przez Komisję w dzie­
+            dzinach objętych misją Urzędu;
+
+▼M11
+       m) współpracuje z właściwymi organami w państwach członkowskich,
+          które wykonują zadania podobne do zadań Urzędu, oraz z innymi
+          organami naukowymi ustanowionymi na mocy prawa Unii, w szcze­
+          gólności z Europejską Agencją Chemikaliów, Europejską Agencją
+          Leków i Europejską Agencją Środowiska przy wydawaniu opinii
+          naukowych, przy wymianie danych i informacji, w tym określaniu
+          ewentualnych formatów danych i słowników kontrolowanych
+          w celu ułatwienia takiej wymiany, oraz przy opracowywaniu
+          naukowych metod oceny chemikaliów.
+
+▼B
+
+                                     SEKCJA 2
+
+                                  ORGANIZACJA
+
+
+                                    Artykuł 24
+                                 Organy Urzędu
+
+       W skład Urzędu wchodzi:
+
+       a) zarząd;
+
+       b) dyrektor zarządzający i jego personel;
+
+       c) forum doradcze;
+
+       d) komitet naukowy i panele naukowe.
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 17
+
+▼B
+                                    Artykuł 25
+                                      Zarząd
+
+▼M9
+      1.   Każde państwo członkowskie wyznacza członka i zastępcę
+      członka jako swoich przedstawicieli do zarządu. Wyznaczeni w ten
+      sposób członkowie i zastępcy członków są powoływani przez Radę
+      i mają prawo głosu.
+
+      1a.   Oprócz członków i zastępców członków, o których mowa
+      w ust. 1, w skład zarządu wchodzą:
+
+      a) dwaj członkowie i dwaj zastępcy członków powoływani przez
+         Komisję jako jej przedstawiciele, z prawem głosu;
+
+      b) dwaj członkowie powoływani przez Parlament Europejski, z prawem
+         głosu;
+
+      c) czterej członkowie i czterej zastępcy członków z prawem głosu jako
+         przedstawiciele społeczeństwa obywatelskiego i interesów związa­
+         nych z łańcuchem żywnościowym, a mianowicie: jeden członek
+         i jeden zastępca członka z organizacji konsumenckich, jeden
+         członek i jeden zastępca członka z organizacji pozarządowych zwią­
+         zanych z ochroną środowiska, jeden członek i jeden zastępca
+         członka z organizacji rolniczych i jeden członek i jeden zastępca
+         członka z organizacji branżowych.
+
+           Członków i zastępców członków, o których mowa akapicie pierw­
+           szym lit. c), powołuje Rada w konsultacji z Parlamentem Europej­
+           skim na podstawie listy sporządzanej przez Komisję i przesyłanej
+           Radzie. Lista ta zawiera liczbę kandydatów przewyższającą liczbę
+           przewidzianych do obsadzenia stanowisk. Rada przekazuje listę
+           sporządzoną przez Komisję Parlamentowi Europejskiemu wraz
+           z odpowiednimi dokumentami referencyjnymi. Tak szybko, jak to
+           jest możliwe, i nie później niż w ciągu trzech miesięcy od otrzy­
+           mania listy Parlament Europejski może przedłożyć do rozważenia
+           swoje stanowisko Radzie, która następnie powołuje tych członków.
+
+      1b.   Członkowie oraz zastępcy członków zarządu są wyznaczani
+      i powoływani na podstawie ich stosownego doświadczenia i wiedzy
+      fachowej w obszarze prawa i polityki dotyczących łańcucha żywnościo­
+      wego, w tym oceny ryzyka, przy czym jednocześnie zapewniona
+      powinna zostać stosowna wiedza fachowa w obszarze spraw dotyczy­
+      cących zarządzania, spraw administracyjnych, finansowych i prawnych.
+
+      2.    Kadencja członków oraz zastępców członków trwa cztery lata
+      z możliwością odnowienia. Jednakże kadencja członków oraz
+      zastępców członków, o których mowa w ust. 1a akapit pierwszy lit. c),
+      może zostać odnowiona tylko raz.
+
+▼B
+      3.   Zarząd przyjmuje wewnętrzne zasady Urzędu na podstawie
+      propozycji przedłożonej przez dyrektora zarządzającego. Zasady te
+      powinny zostać opublikowane.
+
+      4.   Zarząd wybiera spośród swoich członków przewodniczącego na
+      okres dwóch lat, z możliwością ponownego wyboru na to stanowisko.
+
+      5.     Zarząd uchwala swój regulamin.
+                                                              02002R0178 — PL — 01.01.2026 — 012.001 — 18
+
+▼M9
+      O ile nie określono inaczej, zarząd stanowi większością głosów swoich
+      członków. Zastępcy członków reprezentują członków podczas ich
+      nieobecności i głosują w ich imieniu.
+
+▼B
+      6.   Zarządu zbiera się na wniosek przewodniczącego lub z inicjatywy
+      przynajmniej jednej trzeciej jego członków.
+
+      7.   Zarząd zapewnia, aby Urząd wypełniał swoją misję i realizował
+      powierzone mu zadania na warunkach określonych niniejszym
+      rozporządzeniem.
+
+      8.   Do dnia 31 stycznia każdego roku, zarząd przyjmuje program
+      pracy na nadchodzący rok. Przyjmuje również możliwy do zrewido­
+      wania program wieloletni. Zarząd zapewnia, aby programy te były
+      zgodne z priorytetami ustawodawstwa i polityk Wspólnoty w obszarze
+      bezpieczeństwa żywności.
+
+      Do dnia 30 marca każdego roku, zarząd przyjmuje sprawozdanie
+      ogólne dotyczące działalności Urzędu za rok ubiegły.
+
+▼M1
+      9.    Zasady finansowe mające zastosowanie w odniesieniu do Urzędu
+      zostają przyjęte przez Zarząd po konsultacji z Komisją. Nie mogą one
+      odbiegać od rozporządzenia Komisji (WE, Euratom) nr 2343/2002
+      z dnia 19 listopada 2002 r. w sprawie ramowego rozporządzenia finan­
+      sowego dotyczącego organów określonych w art. 185 rozporządzenia
+      Rady (WE) nr 1605/2002 w sprawie rozporządzenia finansowego mają­
+      cego zastosowanie do budżetu ogólnego Wspólnot Europejskich (1),
+      chyba że takie odstępstwo jest szczególnie wymagane do celów dzia­
+      łalności Urzędu, a Komisja uprzednio wyraziła na nie zgodę.
+
+▼B
+      10.   Dyrektor zarządzający uczestniczy w zebraniach zarządu bez
+      prawa głosu oraz prowadzi sekretariat. Zarząd zaprasza do udziału
+      w zebraniu bez prawa głosu przewodniczącego komitetu naukowego.
+
+
+                                     Artykuł 26
+                              Dyrektor zarządzający
+
+      1.    Dyrektor zarządzający jest wyznaczany przez zarząd w oparciu
+      o listę kandydatów zaproponowanych przez Komisję po otwartym
+      konkursie stanowisk, który jest przeprowadzany po ogłoszeniu w Dzien­
+      niku Urzędowym Wspólnot Europejskich i innych stosownych doku­
+      mentach. Dyrektor jest wyznaczany na okres pięciu lat z możliwością
+      ponownego mianowania na to stanowisko. Kandydat nominowany
+      przez zarząd powinien przed wyznaczeniem na stanowisko być
+      bezzwłocznie wezwany przez Parlament Europejski do złożenia
+      oświadczenia i udzielenia odpowiedzi na pytania członków tej instytu­
+      cji. Dyrektor zarządzający może być usunięty ze swojego stanowiska na
+      wniosek większości członków zarządu.
+
+      2.   Dyrektor zarządzający jest przedstawicielem prawnym Urzędu
+      i odpowiada za:
+
+      a) codzienną administrację Urzędu;
+
+      b) przygotowywanie i konsultowanie z Komisją propozycji programów
+         pracy Urzędu;
+
+      (1) Dz.U. L 357 z 31.12.2002, str. 72; sprostowanie w Dz.U. L 2 z 7.1.2003,
+          str. 39.
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 19
+
+▼B
+      c) implementację programów pracy i wdrażanie decyzji zarządu;
+
+      d) zapewnienie odpowiedniego wsparcia naukowego, technicznego
+         i administracyjnego dla komitetu naukowego i paneli naukowych;
+
+      e) zapewnienie, aby Urząd realizował swoje zadania zgodnie z wymo­
+         gami użytkowników, w szczególności z uwzględnieniem adekwat­
+         ności świadczonych usług i wykorzystanego czasu;
+
+▼M1
+      f) sporządzenie projektu preliminarza budżetowego Urzędu oraz
+         oświadczenia o wykonaniu jego budżetu;
+
+▼B
+      g) wszystkie sprawy personalne;
+
+      h) rozwijanie i utrzymywanie kontaktów z Parlamentem Europejskim
+         oraz za zapewnienie stałego dialogu z jego odpowiednimi Komis­
+         jami.
+
+▼M1
+      3.   Dyrektor zarządzający przedstawia corocznie zarządowi do
+      zatwierdzenia:
+
+      a) projekt ogólnego sprawozdania obejmującego wszystkie działania
+         zarządu w poprzedzającym roku;
+
+      b) projekty programów prac.
+
+      Po przyjęciu przez zarząd dyrektor zarządzający przekazuje Parlamen­
+      towi Europejskiemu, Radzie, Komisji i Państwom Członkowskim
+      programy prac, które są następnie publikowane.
+
+      Dyrektor zarządzający, po przyjęciu przez zarząd i do dnia 15 czerwca,
+      przesyła Parlamentowi Europejskiemu, Radzie, Komisji, Trybunałowi
+      Obrachunkowemu, Komitetowi Ekonomiczno-Spo łecznemu oraz Komi­
+      tetowi Regionów ogólne sprawozdanie Urzędu, które jest następnie
+      publikowane.
+
+      Dyrektor zarządzający przesyła corocznie władzy budżetowej wszelkie
+      informacje istotne dla wyniku procedur oceny.
+
+      __________
+
+▼B
+
+                                    Artykuł 27
+                                Forum doradcze
+
+      1.   W skład forum doradczego wchodzą przedstawiciele właściwych
+      organów Państw Członkowskich, które realizują zadania zbliżone do
+      wykonywanych przez Urząd. Każde Państwo Członkowskie wyznacza
+      jednego przedstawiciela. Przedstawiciele mogą być zastępowani przez
+      zmienników wyznaczonych w tym samym czasie.
+
+      2.   Członkowie forum doradczego nie mogą być jednocześnie człon­
+      kami zarządu.
+
+      3.    Forum doradcze służy radą dyrektorowi zarządzającemu
+      w zakresie wykonywania jego obowiązków zgodnie z niniejszym
+      rozporządzeniem, w szczególności w zakresie przygotowania propo­
+      zycji programu pracy Urzędu. Dyrektor zarządzający może również
+      zwracać się do forum doradczego o porady w zakresie ustalania prio­
+      rytetów dla opinii naukowych.
+                                                            02002R0178 — PL — 01.01.2026 — 012.001 — 20
+
+▼B
+       4.   Forum doradcze ustanawia mechanizm wymiany informacji
+       o potencjalnych zagrożeniach i dzielenia się wiedzą w tym zakresie.
+       Zapewnia współpracę między Urzędem i właściwymi organami Państw
+       Członkowskich, w szczególności odnośnie do następujących zagadnień:
+
+       a) unikania dublowania badań naukowych prowadzonych przez Urząd
+          i Państwa Członkowskie, zgodnie z art. 32;
+
+▼M11
+       b) zgodnie z uwarunkowaniami określonymi w art. 30 ust. 2, w sytua­
+          cjach, w których Urząd i organy krajowe mają obowiązek współ­
+          pracy;
+
+▼B
+       c) wspierania łączenia się w sieć europejskich organizacji działających
+          w dziedzinach objętych misją Urzędu, zgodnie z art. 36 ust. 1;
+
+       d) w przypadku wykrycia przez Urząd lub Państwo Członkowskie
+          wyłaniającego się zagrożenia.
+
+       5.    Forum doradczemu przewodniczy dyrektor zarządzający. Zebrania
+       forum odbywają się na zaproszenie przewodniczącego lub na żądanie
+       przynajmniej jednej trzeciej jego członków, nie rzadziej jednak niż
+       cztery razy do roku. Procedury operacyjne forum są określone przez
+       zasady wewnętrzne Urzędu, które są podawane do publicznej wiado­
+       mości.
+
+       6.   Urząd zapewnia forum doradczemu wsparcie techniczne i logis­
+       tyczne oraz udostępnia Sekretariat na jego zebrania.
+
+       7.    W pracy forum doradczego mogą uczestniczyć przedstawiciele
+       departamentów Komisji. Dyrektor zarządzający może zapraszać do
+       udziału w jego pracach przedstawicieli Parlamentu Europejskiego
+       i innych odpowiednich organów.
+
+       Jeżeli forum doradcze omawia zagadnienia określone w art. 22 ust. 5
+       lit. b), to w pracach forum doradczego mogą uczestniczyć przedstawi­
+       ciele właściwych organów Państw Członkowskich, które realizują
+       zadania podobne do tych, które są określone w art. 22 ust. 5 lit. b),
+       przy czym każde Państwo Członkowskie wyznacza jednego przedsta­
+       wiciela.
+
+
+                                     Artykuł 28
+                       Komitet naukowy i panele naukowe
+
+       1.    Komitet naukowy i stałe panele naukowe są odpowiedzialne,
+       każdy w swoim zakresie kompetencji, za przedkładanie Urzędowi
+       opinii naukowych i w razie konieczności powinny mieć możliwość
+       organizowania przesłuchań publicznych.
+
+       2.    Komitet naukowy jest odpowiedzialny za ogólną koordynację
+       niezbędną do zapewnienia spójności proceduralnej opinii naukowych,
+       w szczególności z uwzględnieniem wdrażania procedur roboczych
+       i harmonizowania metod pracy. Komitet dostarcza opinii na temat
+       problematyki wielosektorowej objętej zakresem kompetencji więcej
+       niż jednego panelu naukowego i na temat zagadnień, które nie są objęte
+       zakresem kompetencji żadnego z paneli.
+
+       W razie konieczności, a szczególnie w przypadku tematów, które nie są
+       objęte zakresem kompetencji żadnego z paneli, komitet naukowy powo­
+       łuje grupy robocze. W takich przypadkach komitet naukowy przygoto­
+       wuje opinię naukową w oparciu o ekspertyzy tych grup roboczych.
+
+       3.    W skład komitetu naukowego wchodzą przewodniczący paneli
+       naukowych i sześciu niezależnych ekspertów naukowych, którzy nie
+       są członkami któregokolwiek z paneli naukowych.
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 21
+
+▼B
+       4.   W skład paneli naukowych wchodzą niezależni eksperci naukowi.
+       Po powołaniu Urzędu należy ustanowić następujące panele:
+▼M6
+       a) panel ds. dodatków do żywności i środków aromatyzujących;
+▼B
+       b) panel ds. dodatków i produktów lub substancji wykorzystywanych
+          w paszach;
+▼M2
+       c) panel ds. produktów ochrony roślin i ich pozostałości;
+▼B
+       d) panel ds. organizmów modyfikowanych genetycznie;
+▼M6
+       e) panel ds. żywienia, nowej żywności i alergenów pokarmowych;
+▼B
+       f) panel ds. zagrożeń biologicznych;
+▼C2
+       g) panel ds. zanieczyszcze ń w łańcuchu żywnościowym;
+▼B
+       h) panel ds. zdrowia i warunków hodowli zwierząt;
+▼M2
+       i) panel ds. zdrowia roślin;
+▼M10
+       j) panel ds. enzymów spożywczych;
+       k) panel ds. materiałów pozostających w kontakcie z żywnością.
+▼M8
+       Komisja jest uprawniona do przyjmowania, zgodnie z art. 57a i na
+       wniosek Urzędu, aktów delegowanych zmieniających akapit pierwszy
+       w zakresie liczby i nazw paneli naukowych, w świetle rozwoju nauko­
+       wego i technicznego.
+▼M9
+       5.    Po opublikowaniu w Dzienniku Urzędowym Unii Europejskiej,
+       w stosownych wiodących wydawnictwach naukowych i na stronie
+       internetowej Urzędu zaproszenia do wyrażenia zainteresowania, człon­
+       kowie komitetu naukowego, którzy nie są członkami paneli nauko­
+       wych, i członkowie paneli naukowych są powoływani przez zarząd
+       działający na wniosek dyrektora zarządzającego na okres pięciu lat
+       z możliwością odnowienia. Urząd publikuje takie zaproszenie do wyra­
+       żenia zainteresowania po poinformowaniu państw członkowskich
+       o koniecznych kryteriach i obszarach wiedzy fachowej.
+       Państwa członkowskie:
+       a) publikują zaproszenie do wyrażenia zainteresowania na stronach
+          internetowych swoich właściwych organów oraz swoich właściwych
+          podmiotów, które wykonują zadania podobne do zadań Urzędu;
+       b) informują odpowiednie organizacje naukowe znajdujące się na ich
+          terytorium;
+       c) zachęcają potencjalnych kandydatów do zgłaszania się; oraz
+       d) podejmują wszelkie stosowne środki mające na celu wspieranie
+          zaproszenia do wyrażenia zainteresowania.
+       5a.   Członkowie komitetu naukowego, którzy nie są członkami paneli
+       naukowych, oraz członkowie paneli naukowych są wybierani i powoły­
+       wani zgodnie z następującą procedurą:
+       a) na podstawie zgłoszeń otrzymanych w odpowiedzi na zaproszenie
+          do wyrażenia zainteresowania dyrektor zarządzający sporządza
+          wstępną listę odpowiednich kandydatów, na której znajduje się
+          przynajmniej dwa razy więcej kandydatów niż liczba potrzebna do
+                                                            02002R0178 — PL — 01.01.2026 — 012.001 — 22
+
+▼M9
+         obsadzenia stanowisk w komitecie naukowym i w panelach nauko­
+         wych, i przesyła tę wstępną listę zarządowi, wskazując konkretną
+         multidyscyplinarn ą wiedzę fachową niezbędną w każdym panelu
+         naukowym;
+
+      b) na podstawie tej wstępnej listy zarząd powołuje członków komitetu
+         naukowego, którzy nie są członkami paneli naukowych, oraz
+         członków paneli naukowych i sporządza listę rezerwową kandy­
+         datów do komitetu naukowego i paneli naukowych;
+
+      c) procedurę wyboru i powoływania członków komitetu naukowego,
+         którzy nie są członkami paneli naukowych, oraz członków paneli
+         naukowych przeprowadza się na podstawie następujących kryteriów:
+
+         (i)   wysoki poziom wiedzy naukowej;
+
+         (ii) niezależność i brak konfliktu interesów zgodnie z art. 37 ust. 2
+              oraz polityką Urzędu w zakresie niezależności i stosowaniem
+              tej polityki w odniesieniu do członków paneli naukowych;
+
+         (iii) spełnienie wymagań dotyczących określonej multidyscypli­
+               narnej wiedzy fachowej potrzebnej w panelu naukowym, do
+               którego dana osoba ma zostać powołana, oraz władanie odpo­
+               wiednimi językami;
+
+      d) w przypadku gdy kandydaci prezentują porównywalny poziom
+         wiedzy naukowej, przy powoływaniu członków zarząd zapewnia
+         możliwie najszerszą pod względem geograficznym reprezentację.
+
+      5b.   Jeżeli Urząd stwierdzi, że w jednym lub kilku panelach nauko­
+      wych brakuje określonej wiedzy fachowej, dyrektor zarządzający
+      wnioskuje do zarządu o powołanie dodatkowych członków do odpo­
+      wiednich paneli naukowych, zgodnie z procedurą ustanowioną w ust. 5
+      i 5a.
+
+      5c.   Zarząd przyjmuje, na podstawie wniosku dyrektora wykonaw­
+      czego, przepisy dotyczące szczegółowej organizacji i harmonogramu
+      procedur ustanowionych w ust. 5a i 5b.
+
+      5d.    Państwa członkowskie i pracodawcy członków komitetu nauko­
+      wego oraz paneli naukowych powstrzymują się od udzielania tym
+      członkom lub ekspertom zewnętrznym uczestniczącym w grupach robo­
+      czych komitetu naukowego oraz panelach naukowych jakichkolwiek
+      instrukcji sprzecznych z indywidualnymi zadaniami tych członków
+      i ekspertów lub z zadaniami, obowiązkami i niezależnością Urzędu.
+
+      5e.   Urząd wspiera zadania komitetu naukowego oraz paneli nauko­
+      wych przez organizowanie ich prac, w szczególności prac przygoto­
+      wawczych, które wykonuje personel Urzędu lub wyznaczone krajowe
+      organizacje naukowe, o których mowa w art. 36, w tym przez organi­
+      zowanie możliwości opracowania opinii naukowych, które mają zostać
+      poddane wzajemnej weryfikacji przez panele naukowe, a następnie
+      przez nie przyjęte.
+
+      5f.   W skład każdego panelu naukowego wchodzi nie więcej niż 21
+      członków.
+
+      5g.   Członkowie paneli naukowych mają dostęp do kompleksowego
+      szkolenia z oceny ryzyka.
+
+▼B
+      6.   Komitet naukowy i każdy z paneli naukowych powinny wybrać
+      spośród swoich członków przewodniczącego i po dwóch wiceprzewod­
+      niczących.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 23
+
+▼B
+      7.   Komitet naukowy i panele naukowe działają w oparciu o decyzje
+      podejmowane przez większość członków. Opinie mniejszości są proto­
+      kołowane.
+      8.   Przedstawiciele departamentów Komisji są uprawnieni do uczest­
+      niczenia w posiedzeniach komitetu naukowego, paneli naukowych i ich
+      grup roboczych. Jeżeli zostaną o to poproszeni, to mogą służyć pomocą
+      w zakresie wyjaśnień lub informowania, jednak nie powinni wpływać
+      na samą dyskusję.
+      9.   Procedury funkcjonowania i współpracy komitetu naukowego
+      i paneli naukowych określone są w zasadach wewnętrznych Urzędu.
+      Procedury te powinny w szczególności odnosić się do:
+      a) liczby następujących kolejno po sobie kadencji, podczas których
+         dowolny członek może zasiadać w komitecie naukowym lub pane­
+         lach naukowych;
+▼M9
+      b) liczby członków w każdym panelu naukowym, przy czym nie może
+         ona przekraczać maksymalnej liczby przewidzianej w ust. 5f;
+▼B
+      c) procedur zwracania wydatków ponoszonych przez członków komi­
+         tetu naukowego i paneli naukowych;
+      d) sposobu rozdziału zadań i zapotrzebowań na opinie naukowe
+         między komitet naukowy i panele naukowe;
+      e) tworzenia i organizacji grup roboczych komitetu naukowego i paneli
+         naukowych oraz możliwości włączania ekspertów zewnętrznych do
+         tych grup roboczych;
+      f) możliwości zapraszania obserwatorów do udziału w zebraniach
+         komitetu naukowego i paneli naukowych;
+      g) możliwości organizowania przesłuchań publicznych.
+
+
+                                   SEKCJA 3
+
+                              FUNKCJONOWANIE
+
+
+                                   Artykuł 29
+                                Opinie naukowe
+
+      1.   Urząd wydaje opinie naukowe:
+      a) na wniosek Komisji w odniesieniu do wszelkich zagadnień objętych
+         jej misją i we wszystkich przypadkach, w których ustawodawstwo
+         wspólnotowe wymaga konsultowania się z Urzędem;
+      b) z własnej inicjatywy, w sprawach objętych jego misją.
+      Parlament Europejski lub Państwo Członkowskie mogą zwrócić się do
+      Urzędu z wnioskiem o wydanie opinii naukowej w sprawach objętych
+      jego misją.
+      2.    Wnioskom, określonym w ust. 1 powinny towarzyszyć uzupełnia­
+      jące informacje objaśniające zagadnienie naukowe, którym należy się
+      zająć i na czym polega interes Wspólnoty.
+      3.   W przypadkach, w których ustawodawstwo wspólnotowe nie
+      określa limitów czasowych dotyczących wydawania opinii naukowych,
+      Urząd powinien je wydawać w terminach określonych we wnioskach,
+      z wyjątkiem należycie uzasadnionych okoliczności.
+      4.   Jeżeli złożono kilka różnych wniosków dotyczących tego samego
+      zagadnienia lub wniosek nie spełnia wymogów określonych w ust. 2
+      lub jest niezrozumiały, Urząd może odmówić bądź zaproponować
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 24
+
+▼B
+       poprawki do wniosku o opinię, konsultując się z instytucją lub
+       Państwem, lub Państwami Członkowskimi. Uzasadnienie odmowy
+       powinno być przekazane instytucji lub Państwu, lub Państwom Człon­
+       kowskim, które złożyły wniosek.
+
+       5.    W przypadku gdy Urząd wydał już opinię naukową na dany temat
+       zawarty we wniosku, to może on odmówić przyjęcia tego wniosku,
+       jeżeli uzna, że nie pojawiły się nowe elementy naukowe uzasadniające
+       ponowne zbadanie problemu. Uzasadnienie odmowy powinno być prze­
+       kazane instytucji lub Państwu, lub Państwom Członkowskim, które
+       złożyły wniosek.
+
+▼M8
+       6.   W celu zastosowania niniejszego artykułu Komisja, po konsultacji
+       z Urzędem, przyjmuje:
+
+       a) zgodnie z art. 57a akty delegowane w celu uzupełnienia niniejszego
+          rozporządzenia poprzez ustanowienie procedury, którą powinien
+          stosować Urząd w odniesieniu do wniosków o wydanie opinii
+          naukowej;
+
+       b) akty wykonawcze ustanawiające wytyczne odnoszące się do oceny
+          naukowej substancji, produktów lub procesów, które według usta­
+          wodawstwa Unii podlegają systemowi wydawania uprzednio zgody
+          lub wpisywania do wykazu pozytywnego, w szczególności w przy­
+          padkach, gdy ustawodawstwo Unii wymaga lub zezwala, aby wnio­
+          skodawca przedstawiał w tym celu dokumenty. Te akty wyko­
+          nawcze przyjmuje się zgodnie z procedurą, o której mowa w art.
+          58 ust. 2.
+
+▼B
+       7.   Przepisy wewnętrzne Urzędu powinny określić wymagania
+       dotyczą formatu, wyjaśnień źródłowych i publikacji opinii naukowej.
+
+▼M11
+                                    Artykuł 30
+                           Rozbieżne opinie naukowe
+
+       1.   Urząd podejmuje odpowiednie działania niezbędne do monitoro­
+       wania i wykrywania na wczesnym etapie potencjalnego źródła rozbież­
+       ności między jego własnymi opiniami naukowymi a opiniami nauko­
+       wymi wydawanymi przez inne organy realizujące podobne zadania.
+
+       2.   W przypadku gdy Urząd wykryje potencjalne źródło rozbieżności,
+       o których mowa w ust. 1, nawiązuje kontakt z innym organem celem
+       zapewnienia, że wszystkie potrzebne informacje naukowe lub tech­
+       niczne są udostępniane, i zidentyfikowania potencjalnie spornych
+       zagadnień naukowych lub technicznych.
+
+       Urząd i inny organ współpracują ze sobą nad wyjaśnieniem wszelkich
+       rozbieżności, biorąc pod uwagę cel, jakim jest wysoki poziom ochrony
+       zdrowia i środowiska. Jeżeli Urząd i inny organ nie są w stanie
+       wyjaśnić rozbieżności, sporządzają wspólne sprawozdanie. W sprawo­
+       zdaniu jasno przedstawia się sporne zagadnienia naukowe lub tech­
+       niczne, wskazuje się dane budzące wątpliwości oraz podaje się przy­
+       czyny rozbieżnych opinii, w tym przyczyny różnic w metodyce. Spra­
+       wozdanie podaje się do wiadomości publicznej.
+
+       W przypadku gdy inny organ jest agencją unijną lub komitetem nauko­
+       wym, Urząd przedstawia wspólne sprawozdanie również Komisji.
+                                                                     02002R0178 — PL — 01.01.2026 — 012.001 — 25
+
+▼M11
+       3.    W stosownych przypadkach, a także gdy rozbieżność dotyczy
+       sprzecznych opinii naukowych Urzędu i innego organu unijnego na
+       temat tego, czy substancja spełnia kryteria określone w załączniku I do
+       rozporządzenia Parlamentu Europejskiego i Rady (WE) nr 1272/2008
+       (1), Komisja może zwrócić się do Europejskiej Agencji Chemikaliów
+       o przygotowanie wniosku o zharmonizowaną klasyfikację i zharmonizo­
+       wane oznakowanie substancji oraz, w stosownych przypadkach,
+       konkretne dopuszczalne stężenia, współczynniki M lub szacunkową
+       toksyczność ostrą, lub wniosku o zmianę takiej klasyfikacji i takiego
+       oznakowania substancji oraz, w stosownych przypadkach zmianę takich
+       dopuszczalnych stężeń, współczynników lub szacunków zgodnie
+       z procedurą określoną w art. 37 rozporządzenia (WE) nr 1272/2008.
+       Przy przygotowywaniu tego wniosku Urząd i ten inny organ unijny
+       współpracują z Europejską Agencją Chemikaliów.
+▼B
+
+                                         Artykuł 31
+                              Pomoc naukowa i techniczna
+
+       1.    Urząd może być poproszony przez Komisję o udzielenie pomocy
+       naukowej lub technicznej w dowolnej dziedzinie objętej jego misją.
+       Zadania udzielania pomocy naukowej lub technicznej powinny polegać
+       na wykonywaniu prac naukowych lub technicznych obejmujących
+       stosowanie dobrze ugruntowanych zasad naukowych lub technicznych,
+       które nie wymagają oceny naukowej wykonywanej przez komitet
+       naukowy lub panel naukowy. Do zadań tych mogą być zaliczone
+       w szczególności pomoc Komisji w zakresie ustanawiania lub oceny
+       kryteriów technicznych, jak też pomoc Komisji w opracowywaniu
+       wytycznych technicznych.
+       2.   W przypadku gdy Komisja zwraca się z wnioskiem do Urzędu
+       o udzielnie pomocy naukowej lub technicznej, to powinna ona określić
+       w porozumieniu z Urzędem granice czasowe, w których zadanie musi
+       być wykonane.
+
+
+                                         Artykuł 32
+                                     Badania naukowe
+
+       1.    Korzystając z najlepszych dostępnych i niezależnych źródeł Urząd
+       zleca badania naukowe niezbędne dla wykonywania jego misji.
+       Zlecanie takich badań powinno odbywać się w otwarty i przejrzysty
+       sposób. Urząd powinien unikać dublowania programów badawczych
+       realizowanych już przez Państwo Członkowskie lub Wspólnotę
+       i sprzyjać współpracy poprzez właściwą koordynację przedsięwzięć.
+       2.  Urząd informuje Parlament Europejski, Komisję i Państwa Człon­
+       kowskie o wynikach jego badań naukowych.
+▼M9
+                                         Artykuł 32a
+       Porada na etapie poprzedzającym złożenie wniosku lub zgłoszenia
+
+       1.   W przypadku gdy prawo Unii zawiera przepisy dotyczące przed­
+       stawiania przez Urząd wyników naukowych, w tym opinii naukowej,
+       personel Urzędu, na wniosek potencjalnego wnioskodawcy lub zgłasza­
+       jącego, udziela porady na temat przepisów mających zastosowanie do
+       wniosku lub zgłoszenia oraz wymaganej treści wniosku lub zgłoszenia
+
+       (1) Rozporządzenie Parlamentu Europejskiego i Rady (WE) nr 1272/2008 z dnia
+           16 grudnia 2008 r. w sprawie klasyfikacji, oznakowania i pakowania
+           substancji i mieszanin, zmieniające i uchylające dyrektywy 67/548/EWG
+           i 1999/45/WE oraz zmieniające rozporządzenie (WE) nr 1907/2006 (Dz.
+           U. L 353 z 31.12.2008, s. 1, ELI: http://data.europa.eu/eli/reg/2008/1272/oj).
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 26
+
+▼M9
+      przed ich złożeniem. Taka porada udzielona przez personel Urzędu
+      pozostaje bez uszczerbku dla jakiejkolwiek przeprowadzanej przez
+      panele naukowe późniejszej oceny wniosków lub zgłoszeń i nie jest
+      wiążąca w kontekście takiej oceny. Personel Urzędu udzielający porady
+      nie uczestniczy w przygotowawczych pracach naukowych lub technicz­
+      nych, które są bezpośrednio lub pośrednio istotne dla wniosku lub
+      zgłoszenia stanowiących przedmiot porady.
+
+      2.   Urząd publikuje na swojej stronie internetowej ogólne wytyczne
+      dotyczące przepisów mających zastosowanie do wniosków i zgłoszeń
+      oraz wymaganej ich treści, z uwzględnieniem – w stosownych przy­
+      padkach – ogólnych wytycznych dotyczących projektu wymaganych
+      badań.
+
+
+
+                                   Artykuł 32b
+                          Powiadamianie o badaniach
+
+      1.   Urząd ustanawia i zarządza bazą danych dotyczącą badań zleco­
+      nych lub przeprowadzonych przez podmioty gospodarcze w celu
+      uzasadnienia wniosku lub zgłoszenia, w przypadku których prawo
+      Unii zawiera przepisy dotyczące przedstawiania przez Urząd wyników
+      naukowych, w tym opinii naukowej.
+
+      2.    Do celów ust. 1 podmioty gospodarcze powiadamiają
+      niezwłocznie Urząd o tytule i zakresie jakiegokolwiek badania zleco­
+      nego lub przeprowadzonego przez nie w celu uzasadnienia wniosku lub
+      zgłoszenia, jak również o przeprowadzającym to badanie laboratorium
+      lub jednostce badawczej, oraz dacie jego rozpoczęcia oraz planowanej
+      dacie zakończenia.
+
+      3.    Do celów ust. 1 laboratoria i inne jednostki badawcze znajdujące
+      się w Unii również powiadamiają niezwłocznie Urząd o tytule i zakresie
+      jakiegokolwiek badania zleconego przez podmioty gospodarcze, które
+      takie laboratoria lub inne jednostki badawcze przeprowadzają w celu
+      uzasadnienia wniosku lub zgłoszenia, o dacie jego rozpoczęcia oraz
+      planowanej dacie zakończenia, jak również o nazwie podmiotu gospo­
+      darczego, który zlecił takie badanie.
+
+      Niniejszy ustęp stosuje się również odpowiednio do laboratoriów
+      i innych jednostek badawczych znajdujących się w państwach trzecich
+      w zakresie, w jakim przewidziano to w stosownych umowach i ustale­
+      niach z tymi państwami trzecimi, w tym jak określono w art. 49.
+
+      4.    Wniosku lub zgłoszenia nie uznaje się za ważne lub dopusz­
+      czalne, w przypadku gdy na ich uzasadnienie przedstawione zostały
+      badania, o których nie powiadomiono uprzednio zgodnie z ust. 2 lub
+      3, chyba że wnioskodawca lub zgłaszający przedstawią zasadne uzasad­
+      nienie dla braku powiadomienia o tych badaniach.
+
+      W przypadku gdy nie powiadomiono uprzednio o badaniach zgodnie
+      z ust. 2 lub 3 i nie przedstawiono zasadnego uzasadnienia, wniosek lub
+      zgłoszenie mogą zostać złożone ponownie, pod warunkiem że wnio­
+      skodawca lub zgłaszający powiadomi Urząd o tych badaniach, w szcze­
+      gólności o ich tytule i ich zakresie, przeprowadzającym je laboratorium
+      lub jednostce badawczej, a także dacie ich rozpoczęcia i planowanej
+      dacie ich zakończenia.
+
+      Ocena ważności lub dopuszczalności takiego ponownie złożonego
+      wniosku lub zgłoszenia rozpoczyna się sześć miesięcy od powiado­
+      mienia o badaniach zgodnie z akapitem drugim.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 27
+
+▼M9
+      5.   Wniosku lub zgłoszenia nie uznaje się za ważne lub dopusz­
+      czalne, w przypadku gdy badania, o których powiadomiono uprzednio
+      zgodnie z ust. 2 lub 3, nie zostały uwzględnione w danym wniosku lub
+      zgłoszeniu, chyba że wnioskodawca lub zgłaszający przedstawią
+      zasadne uzasadnienie dla nieuwzględnienia tych badań.
+
+
+      W przypadku gdy badania, o których powiadomiono uprzednio zgodnie
+      z ust. 2 lub 3, nie zostały uwzględnione w danym wniosku lub zgło­
+      szeniu, i nie przedstawiono zasadnego uzasadnienia, wniosek lub zgło­
+      szenie mogą zostać złożone ponownie, pod warunkiem że wniosko­
+      dawca lub zgłaszający przedłoży wszystkie badania, o których powia­
+      domiono zgodnie z ust. 2 lub 3.
+
+
+      Ocena ważności lub dopuszczalności takiego ponownie złożonego
+      wniosku lub zgłoszenia rozpoczyna się sześć miesięcy od przedłożenia
+      badań zgodnie z akapitem drugim.
+
+
+      6.    W przypadku gdy w trakcie oceny ryzyka Urząd stwierdzi, że
+      badania, o których powiadomiono zgodnie z ust. 2 lub 3, nie zostały
+      w pełni uwzględnione w odnośnym wniosku lub zgłoszeniu, oraz
+      w przypadku braku zasadnego uzasadnienia wnioskodawcy lub zgła­
+      szającego w tym zakresie terminy, w których Urząd jest zobowiązany
+      przedstawić swoje wyniki naukowe, ulegają zawieszeniu. Zawieszenie
+      to ustaje po upływie sześciu miesięcy od przedłożenia wszystkich
+      danych z tych badań.
+
+
+      7.   Urząd podaje do wiadomości publicznej informacje będące przed­
+      miotem powiadomienia wyłącznie po otrzymaniu odnośnego wniosku
+      lub zgłoszenia i po podjęciu przez Urząd decyzji o ujawnieniu załą­
+      czonych badań zgodnie z art. 38–39e.
+
+
+      8.    Urząd ustanawia praktyczne ustalenia dotyczące wykonywania
+      przepisów niniejszego artykułu, w tym ustalenia dotyczące zwracania
+      się o zasadne uzasadnienie i podawania do wiadomości publicznej
+      takiego uzasadnienia w przypadkach, o których mowa w ust. 4, 5
+      i 6. Ustalenia te muszą być zgodne z niniejszym rozporządzeniem
+      i innymi odpowiednimi przepisami prawa Unii.
+
+
+
+                                  Artykuł 32c
+                        Konsultacje z osobami trzecimi
+
+      1.    W przypadku gdy stosowne przepisy prawa Unii przewidują, że
+      zatwierdzenie lub zezwolenie, w tym w drodze zgłoszenia, mogą być
+      odnowione, potencjalny wnioskodawca lub zgłaszający ubiegający się
+      o odnowienie powiadamia Urząd o badaniach, jakie planuje w tym celu
+      przeprowadzić, z uwzględnieniem informacji na temat tego, jak
+      poszczególne badania będą przeprowadzane, aby zapewnić zgodność
+      z wymogami regulacyjnymi. Po otrzymaniu takiego powiadomienia
+      o badaniach Urząd rozpoczyna konsultacje z zainteresowanymi stro­
+      nami i opinią publiczną dotyczące planowanych badań do celów odno­
+      wienia, z uwzględnieniem proponowanego projektu badań. Uwzględ­
+      niając uwagi otrzymane od zainteresowanych stron i opinii publicznej,
+      które są istotne dla oceny ryzyka planowanego odnowienia, Urząd
+      udziela porady odnośnie do treści planowanego wniosku lub zgłoszenia
+      dotyczącego odnowienia, a także projektu badań. Porada udzielona
+      przez Urząd pozostaje bez uszczerbku dla późniejszej przeprowadzanej
+      przez panele naukowe oceny wniosków lub zgłoszeń dotyczących
+      odnowienia i nie jest wiążąca w kontekście takiej oceny.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 28
+
+▼M9
+      2.    Urząd konsultuje się z zainteresowanymi stronami i z opinią
+      publiczną na podstawie jawnej wersji wniosku lub zgłoszenia podanej
+      do wiadomości publicznej przez Urząd zgodnie z art. 38–39e,
+      niezwłocznie po takim upublicznieniu, w celu ustalenia, czy dostępne
+      są inne istotne dane naukowe lub badania w kwestii będącej przed­
+      miotem wniosku lub zgłoszenia. W należycie uzasadnionych przypad­
+      kach, gdy zachodzi ryzyko, że wyników konsultacji publicznych prze­
+      prowadzonych zgodnie z niniejszym ustępem nie można będzie w nale­
+      żytym stopniu uwzględnić ze względu na obowiązujące terminy,
+      w których Urząd jest zobowiązany przedstawić swoje wyniki naukowe,
+      terminy te mogą zostać przedłużone maksymalnie o siedem tygodni.
+      Niniejszy ustęp pozostaje bez uszczerbku dla obowiązków Urzędu
+      wynikających z art. 33 i nie ma zastosowania do przedkładania przez
+      wnioskodawców lub zgłaszających jakichkolwiek informacji uzupełnia­
+      jących w trakcie procesu oceny ryzyka.
+      3.    Urząd ustanawia praktyczne ustalenia dotyczące wdrażania proce­
+      dur, o których mowa w niniejszym artykule i w art. 32a.
+
+
+                                  Artykuł 32d
+                             Badania weryfikujące
+
+      Bez uszczerbku dla obowiązku wnioskodawców polegającego na wyka­
+      zaniu bezpieczeństwa przedmiotu przedłożonego w celu objęcia
+      systemem zezwoleń, Komisja może, w wyjątkowych okolicznościach
+      występowania poważnych kontrowersji lub sprzeczności wyników,
+      zwrócić się do Urzędu o zlecenie badań naukowych w celu weryfikacji
+      dowodów wykorzystanych w procesie oceny ryzyka. Zlecone badania
+      mogą mieć szerszy zakres niż dowody będące przedmiotem weryfika­
+      cji.
+▼B
+
+                                   Artykuł 33
+                               Zbieranie danych
+
+      1.   Urząd poszukuje, zbiera, zestawia, analizuje i sumuje odpo­
+      wiednie dane naukowe i techniczne w dziedzinach objętych jego misją.
+      W szczególności powinny być zbierane dane dotyczące:
+      a) konsumpcji żywności i podatności osób na zagrożenia związane ze
+         spożywaniem żywności;
+      b) zasięgu i rozpowszechnienia zagrożeń biologicznych;
+▼C2
+      c) zanieczyszcze ń żywności i pasz;
+▼B
+      d) pozostałości.
+      2.   Do celów określonych w ust. 1, Urząd powinien pracować
+      w ścisłym współdziałaniu ze wszystkimi organizacjami działającymi
+      w dziedzinie zbierania danych, włącznie z organizacjami krajów kandy­
+      dujących, państw trzecich lub organów międzynarodowych.
+      3.   Państwa Członkowskie podejmują niezbędne środki, aby umoż­
+      liwić przekazywanie Urzędowi zbieranych przez te państwa danych
+      w dziedzinach określonych w ust. 1 i 2.
+      4.    Urząd przekazuje Państwom Członkowskim oraz Komisji odpo­
+      wiednie rekomendacje, które mogą poprawić techniczną porównywal­
+      ność otrzymywanych danych i analiz w celu uproszczenia ich konsoli­
+      dacji na szczeblu Wspólnoty.
+      5.   W okresie jednego roku po wejściu w życie niniejszego rozporzą­
+      dzenia Komisja powinna opublikować spis systemów zbierania danych
+      na szczeblu Wspólnoty, w dziedzinach objętych misją Urzędu.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 29
+
+▼B
+     Sprawozdanie, któremu powinny towarzyszyć, tam gdzie ma to zasto­
+     sowanie propozycje, powinno w szczególności wskazywać:
+
+     a) rolę, która powinna być przydzielona Urzędowi w odniesieniu do
+        każdego systemu oraz wszelkie modyfikacje i usprawnienia, które
+        mogą być wymagane w celu umożliwienia Urzędowi we współpracy
+        z Państwami Członkowskimi wykonywania jego misji;
+
+     b) niedostatki, którym należy zaradzić w celu umożliwienia Urzędowi
+        zbierania i podsumowywania na szczeblu Wspólnoty odpowiednich
+        danych naukowych i technicznych w dziedzinach objętych misją
+        Urzędu.
+
+     6.    Urząd powinien przekazywać wyniki swojej pracy w dziedzinie
+     zbierania danych Parlamentowi Europejskiemu, Komisji i Państwom
+     Członkowskim.
+
+
+                                  Artykuł 34
+                  Rozpoznawanie wyłaniającego się ryzyka
+
+     1.    Urząd ustanawia procedury systematycznego poszukiwania, zbie­
+     rania, zestawiania i analizowania informacji oraz danych pod kątem
+     rozpoznawania wyłaniającego się ryzyka w dziedzinach objętych
+     misją Urzędu.
+
+     2.   W przypadku gdy Urząd posiada informacje powodujące
+     powstanie podejrzeń o wyłonienie się poważnego ryzyka, zwraca się
+     do Państw Członkowskich, innych agencji Wspólnoty i Komisji o prze­
+     kazanie dodatkowych informacji. Państwa Członkowskie, agencje
+     Wspólnoty, o których mowa, i Komisja powinny traktować takie
+     prośby jako pilne i przekazać wszelkie stosowne informacje będące
+     w ich posiadaniu.
+
+     3.   Urząd korzysta ze wszelkich informacji, które otrzymuje w trakcie
+     wykonywania swojej misji do zidentyfikowania wyłaniającego się
+     ryzyka.
+
+     4.   Urząd przekazuje ocenę i zebrane informacje na temat wyłania­
+     jącego się ryzyka Parlamentowi Europejskiemu, Komisji i Państwom
+     Członkowskim.
+
+
+                                  Artykuł 35
+                        System wczesnego ostrzegania
+
+     W celu stworzenia warunków dla możliwie najefektywniejszego wyko­
+     nywania przez Urząd zadań monitorowania zdrowia oraz zagrożeń
+     związanych z żywieniem i żywnością, Urząd powinien otrzymywać
+     wszelkie wiadomości poprzez system wczesnego ostrzegania. Urząd
+     analizuje treść tych wiadomości tak, aby dostarczyć Komisji i Państwom
+     Członkowskim wszelkich wymaganych informacji niezbędnych do
+     celów analizy ryzyka.
+
+
+                                  Artykuł 36
+     Łączenie w sieci organizacji działających w dziedzinach objętych
+                              misją Urzędu
+
+     1.    Urząd wspiera łączenie w system sieci organizacji działających
+     w dziedzinach objętych jego misją. Celem takiego łączenia w sieć jest
+     w szczególności ułatwienie współpracy naukowej poprzez koordynację
+     działań, wymianę informacji, rozwijanie i implementację wspólnych
+     projektów, wymianę doświadczeń i praktyk w dziedzinach objętych
+     misją Urzędu.
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 30
+
+▼B
+      2.    Zarząd działając w oparciu o wniosek dyrektora zarządzającego
+      przygotowuje wykaz właściwych organów wskazanych przez Państwa
+      Członkowskie, które mogą wspierać indywidualnie lub w sieci Urząd
+      w wykonywaniu jego misji. Wykaz taki należy podać do wiadomości
+      publicznej. Urząd może powierzyć tym organizacjom realizację
+      pewnych zadań, w szczególności wykonanie prac przygotowawczych
+      do opinii naukowych, pomocy naukowej i technicznej, zbierania
+      danych i identyfikowania wyłaniającego się ryzyka. Na wykonanie
+      niektórych z tych zadań można uzyskać wsparcie finansowe.
+
+▼M4
+      3.    ►M8 Komisja jest uprawniona do przyjmowania, zgodnie z art.
+      57a, aktów delegowanych w celu uzupełnienia niniejszego rozporzą­
+      dzenia poprzez ustanowienie kryteriów włączania instytutów do
+      wykazu właściwych organizacji wskazanych przez państwa członkow­
+      skie, ustaleń dotyczących określania zharmonizowanych wymagań
+      jakościowych i przepisów finansowych regulujących wsparcie
+      finansowe. ◄
+
+      Inne przepisy wykonawcze do ust. 1 i 2 są ustanawiane przez Komisję
+      po skonsultowaniu się z Urzędem, zgodnie z procedurą regulacyjną,
+      o której mowa w art. 58 ust. 2.
+
+▼B
+      4.     W okresie jednego roku po wejściu w życie niniejszego rozporzą­
+      dzenia Komisja powinna opublikować spis systemów zbierania danych
+      Wspólnoty funkcjonujących w dziedzinach objętych misją Urzędu,
+      która przewiduje wykonywanie przez Państwa Członkowskie pewnych
+      zadań w dziedzinie oceny naukowej, w szczególności sprawdzania
+      dokumentacji autoryzacyjnej. Sprawozdanie, któremu powinny towa­
+      rzyszyć tam, gdzie ma to zastosowanie propozycje, w szczególności
+      winno wskazywać dla każdego systemu wszelkie modyfikacje i uspraw­
+      nienia, które mogą być wymagane w celu umożliwienia Urzędowi
+      wykonywania we współdziałaniu z Państwami Członkowskimi jego
+      misji.
+
+
+
+                                    SEKCJA 4
+
+      NIEZAWISŁOŚĆ, PRZEJRZYSTO ŚĆ, POUFNOŚĆ I INFORMOWANIE
+
+
+                                    Artykuł 37
+                                  Niezawisłość
+
+      1.   Członkowie zarządu, członkowie forum doradczego i dyrektor
+      zarządzający są zobowiązani działać w interesie publicznym, w sposób
+      niezawisły.
+
+      W tym celu, składają oni deklaracje finansowe i deklaracje o udziałach,
+      wskazujące zarówno na brak jakichkolwiek interesów, które mogłyby
+      być uważane za podważające ich niezawisłość, jak również na jakie­
+      kolwiek bezpośrednie lub pośrednie interesy, które mogłyby być
+      uważane za szkodliwe dla ich niezawisłości. Deklaracje te składane
+      są corocznie na piśmie.
+
+      2.   Członkowie komitetu naukowego i paneli naukowych zobowią­
+      zują się działać niezależnie od jakiegokolwiek wpływu zewnętrznego.
+
+      W tym celu, składają oni deklaracje finansowe i deklaracje o udziałach,
+      wskazujące zarówno na brak jakichkolwiek interesów, które mogłyby
+      być uważane za podważające ich niezależność, jak również na
+      jakiekolwiek bezpośrednie lub pośrednie interesy, które mogłyby być
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 31
+
+▼B
+      uważane za szkodliwe dla ich niezawisłości. Deklaracje te składane są
+      corocznie na piśmie.
+
+
+      3.   Członkowie zarządu, dyrektor zarządzający, członkowie forum
+      doradczego, członkowie komitetu naukowego i paneli naukowych, jak
+      również eksperci zewnętrzni uczestniczący w grupach roboczych na
+      każdym posiedzeniu składają oświadczenie o wszelkich interesach,
+      które mogłyby być uważane za szkodliwe dla ich niezawisłości,
+      w odniesieniu do punktów porządku dziennego.
+
+
+
+                                   Artykuł 38
+                                 Przejrzystość
+
+▼M9
+      1.    Urząd wykonuje swoje działania przy wysokim stopniu przejrzys­
+      tości. W szczególności podaje do wiadomości publicznej:
+
+
+      a) porządki dzienne, listy uczestników i protokoły posiedzeń zarządu,
+         forum doradczego, komitetu naukowego i paneli naukowych oraz
+         ich grup roboczych;
+
+
+      b) wszystkie swoje wyniki naukowe, w tym opinie komitetu nauko­
+         wego i paneli naukowych po ich przyjęciu, przy czym zawsze
+         załącza się opinie mniejszości i wyniki konsultacji przeprowadzo­
+         nych podczas procesu oceny ryzyka;
+
+
+      c) dane naukowe, badania i inne informacje na uzasadnienie wnios­
+         ków, w tym informacje uzupełniające dostarczone przez wniosko­
+         dawców, jak również inne dane naukowe i informacje na uzasad­
+         nienie wniosków o przedstawienie wyników naukowych, w tym
+         opinii naukowej, złożonych przez Parlament Europejski, Komisję
+         i państwa członkowskie, z uwzględnieniem ochrony informacji
+         poufnych i ochrony danych osobowych zgodnie z art. 39–39e;
+
+
+      d) informacje, na których opierają się jego wyniki naukowe, w tym
+         opinie naukowe, z uwzględnieniem ochrony informacji poufnych
+         i ochrony danych osobowych zgodnie z art. 39–39e;
+
+
+      e) coroczne deklaracje interesów składane przez członków zarządu,
+         dyrektora zarządzającego oraz członków forum doradczego, komi­
+         tetu naukowego i paneli naukowych, jak również członków ich grup
+         roboczych oraz deklaracje interesów składane w odniesieniu do
+         punktów porządku dziennego posiedzeń;
+
+
+      f) swoje badania naukowe zgodnie z art. 32 i 32d;
+
+
+      g) coroczne sprawozdanie ze swojej działalności;
+
+
+      h) wnioski kierowane przez Parlament Europejski, Komisję lub
+         państwo członkowskie o opinie naukowe, które zostały odrzucone
+         lub zmodyfikowane, i uzasadnienia dotyczące odrzucenia lub mody­
+         fikacji;
+
+
+      i) streszczenie porad udzielonych potencjalnym wnioskodawcom na
+         etapie poprzedzającym złożenie wniosku lub zgłoszenia zgodnie
+         z art. 32a i 32c.
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 32
+
+▼M9
+      Informacje, o których mowa w akapicie pierwszym, są podawane do
+      wiadomości publicznej niezwłocznie, z wyjątkiem informacji, o których
+      mowa w lit. c) tego akapitu, w zakresie w jakim dotyczą one wnios­
+      ków, oraz informacji, o których mowa w lit. i) tego akapitu, które
+      podaje się do wiadomości publicznej niezwłocznie po uznaniu wniosku
+      za ważny lub dopuszczalny.
+
+      Informacje, o których mowa w akapicie drugim, są podawane do
+      wiadomości publicznej w poświęconej temu części strony internetowej
+      Urzędu. Taka poświęcona temu część jest publicznie i łatwo dostępna.
+      Informacje te udostępnia się w formacie elektronicznym do pobrania,
+      drukowania i wyszukiwania.
+
+      1a.     Ujawnienie informacji, o których mowa w ust. 1 akapit pierwszy
+      lit. c), d) i i), pozostaje bez uszczerbku dla:
+
+      a) istniejących przepisów dotyczących praw własności intelektualnej,
+         które wprowadzają ograniczenia dotyczące niektórych sposobów
+         korzystania z ujawnionych dokumentów lub ich treści; oraz
+
+      b) przepisów prawa Unii chroniących inwestycje dokonywane przez
+         innowatorów w zakresie gromadzenia informacji i danych będących
+         uzasadnieniem odpowiednich wniosków o udzielenie zezwolenia
+         („przepisy dotyczące wyłączności danych”).
+
+      Ujawnienie informacji, o których mowa w ust. 1 akapit pierwszy lit. c),
+      nie jest uznawane za wyraźne ani dorozumiane zezwolenie lub licencję
+      na użycie, odtworzenie lub wykorzystanie w inny sposób odnośnych
+      danych i informacji oraz ich treści z naruszeniem prawa własności
+      intelektualnej lub przepisów dotyczących wyłączności danych, a Unia
+      nie jest odpowiedzialna za ich użycie przez osoby trzecie. Urząd
+      zapewnia, by osoby uzyskujące dostęp do odpowiednich informacji
+      przedstawiały w tym zakresie, przed ich ujawnieniem, jasne zobowią­
+      zanie lub podpisane oświadczenie.
+
+▼B
+      2.    Posiedzenia zarządu są jawne, chyba że, działając na podstawie
+      wniosku dyrektora zarządzającego, zarząd postanowi inaczej w stosunku
+      do określonych punktów administracyjnych swego porządku dziennego
+      i może upoważnić przedstawicieli konsumentów lub inne zaintereso­
+      wane strony do obserwowania postępowania w zakresie niektórych
+      działań Urzędu.
+
+▼M9
+      3.    Urząd ustanawia praktyczne ustalenia dotyczące wykonywania
+      przepisów dotyczących przejrzystości, o których mowa w ust. 1, 1a
+      i 2 niniejszego artykułu, z uwzględnieniem art. 39–39 g i 41.
+
+                                    Artykuł 39
+                                    Poufność
+
+      1.   Na zasadzie odstępstwa od art. 38 Urząd nie podaje do wiado­
+      mości publicznej informacji, w przypadku których otrzymał wniosek
+      o zachowanie poufności zgodnie z warunkami określonymi w niniej­
+      szym artykule.
+
+      2.   Na wniosek wnioskodawcy, Urząd może zgodzić się na zacho­
+      wanie poufności jedynie w odniesieniu do następujących informacji,
+      w przypadku gdy wnioskodawca wykaże, że ujawnienie takich infor­
+      macji może w znaczącym stopniu zaszkodzić jego interesom:
+
+      a) procesu produkcji lub wytwarzania, w tym metody oraz aspektów
+         decydujących o jej innowacyjności, a także innych specyfikacji
+         technicznych i przemysłowych swoistych dla tego procesu lub
+         metody, z wyjątkiem informacji, które mają znaczenie dla oceny
+         bezpieczeństwa;
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 33
+
+▼M9
+      b) powiązań handlowych pomiędzy, w stosownych przypadkach,
+         producentem lub importerem a wnioskodawcą lub posiadaczem
+         zezwolenia;
+
+      c) informacji handlowych ujawniających źródła zaopatrzenia, udział
+         w rynku lub strategię biznesową wnioskodawcy; oraz
+
+      d) składu ilościowego przedmiotu wniosku o zachowanie poufności,
+         z wyjątkiem informacji, które mają znaczenie dla oceny bezpieczeń­
+         stwa.
+
+      3.   Wykaz informacji, o których mowa w ust. 2, pozostaje bez
+      uszczerbku dla sektorowych przepisów prawa Unii.
+
+      4.   Niezależnie od ust. 2 i 3:
+
+      a) w przypadku gdy niezbędne są pilne działania, aby chronić zdrowie
+         ludzi, zdrowie zwierząt lub środowisko, na przykład w sytuacjach
+         nadzwyczajnych, Urząd może ujawnić informacje, o których mowa
+         w ust. 2 i 3;
+
+      b) do wiadomości publicznej podaje się jednak informacje stanowiące
+         część wniosków z wyników naukowych, w tym opinii naukowych,
+         przedstawionych przez Urząd, a odnoszące się do przewidywalnych
+         skutków dla zdrowia ludzi, zdrowia zwierząt lub dla środowiska.
+
+
+                                   Artykuł 39a
+                       Wniosek o zachowanie poufności
+
+      1.    Składając wniosek, dane naukowe będące uzasadnieniem tego
+      wniosku oraz inne informacje uzupełniające zgodnie z przepisami
+      prawa Unii, wnioskodawca może wystąpić z wnioskiem o zachowanie
+      poufności niektórych części przedłożonych informacji zgodnie z art. 39
+      ust. 2 i 3. Do takiego wniosku dołącza się możliwe do zweryfikowania
+      uzasadnienie wskazujące, w jaki sposób podanie do wiadomości
+      publicznej odnośnych informacji znacząco szkodzi odnośnym interesom
+      zgodnie z art. 39 ust. 2 i 3.
+
+      2.    Jeżeli wnioskodawca składa wniosek o zachowanie poufności,
+      dostarcza wersję jawną i wersję poufną przedłożonych informacji
+      zgodnie ze standardowymi formatami danych, jeżeli takie ustanowiono,
+      na podstawie art. 39f. Wersja jawna nie może zawierać informacji,
+      które wnioskodawca na podstawie art. 39 ust. 2 i 3 uznał za poufne;
+      wskazane są w niej miejsca, z których takie informacje zostały
+      usunięte. Wersja poufna zawiera wszystkie przedłożone informacje,
+      w tym również informacje uznane przez wnioskodawcę za poufne.
+      Informacje, co do których wniesiono o zachowanie poufności, są
+      w wersji poufnej wyraźnie oznaczone. Wnioskodawca wskazuje
+      wyraźnie powody, dla których wnioskuje o zachowanie poufności
+      w odniesieniu do poszczególnych informacji.
+
+
+
+                                   Artykuł 39b
+                    Decyzja w sprawie zachowania poufności
+
+      1.   Urząd:
+
+      a) podaje do wiadomości publicznej jawną wersję wniosku złożonego
+         przez wnioskodawcę niezwłocznie po uznaniu wniosku za ważny
+         lub dopuszczalny;
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 34
+
+▼M9
+      b) niezwłocznie przystępuje do konkretnego i indywidualnego rozpat­
+         rzenia wniosku o zachowanie poufności zgodnie z niniejszym arty­
+         kułem;
+
+
+      c) zanim formalnie podejmie decyzję w sprawie wniosku o zachowanie
+         poufności, informuje wnioskodawcę na piśmie o swoim zamiarze
+         ujawnienia informacji i go uzasadnia. Jeżeli wnioskodawca nie
+         zgadza się z oceną Urzędu, może wyrazić opinię lub cofnąć wniosek
+         w terminie dwóch tygodni od dnia, w którym powiadomiono go
+         o stanowisku Urzędu;
+
+
+      d) wydaje uzasadnioną decyzję w sprawie wniosku o zachowanie pouf­
+         ności, biorąc pod uwagę stanowisko wnioskodawcy, w terminie 10
+         tygodni od dnia otrzymania wniosku o zachowanie poufności
+         w odniesieniu do wniosków i niezwłocznie w przypadku uzupełnia­
+         jących danych i informacji, powiadamia wnioskodawcę o swojej
+         decyzji i przekazuje informacje o prawie do złożenia ponownego
+         wniosku zgodnie z ust. 2; w stosownych przypadkach informuje
+         Komisję i państwa członkowskie o swojej decyzji; oraz
+
+
+      e) podaje do wiadomości publicznej wszelkie dodatkowe dane i infor­
+         macje, w odniesieniu do których wniosek o zachowanie poufności
+         nie został uznany za uzasadniony, najwcześniej dwa tygodnie po
+         powiadomieniu wnioskodawcy o swojej decyzji, zgodnie z lit. d).
+
+
+      2.    W ciągu dwóch tygodni od powiadomienia wnioskodawcy
+      zgodnie z ust. 1 o decyzji Urzędu w sprawie wniosku o zachowanie
+      poufności, wnioskodawca może złożyć ponowny wniosek, zwracając
+      się do Urzędu o ponowne rozważenie swojej decyzji. Ponowny
+      wniosek ma skutek zawieszający. Urząd bada podstawy ponownego
+      wniosku i przyjmuje w jego sprawie uzasadnioną decyzję. Powiadamia
+      on wnioskodawcę o tej decyzji w ciągu trzech tygodni od złożenia
+      ponownego wniosku oraz zamieszcza w tym powiadomieniu informację
+      o dostępnych środkach odwoławczych, a mianowicie o skardze do
+      Trybunału Sprawiedliwości Unii Europejskiej (zwanego dalej „Trybu­
+      nałem Sprawiedliwości“) przeciwko Urzędowi zgodnie z ust. 3. Urząd
+      podaje do wiadomości publicznej wszelkie dodatkowe dane i informa­
+      cje, w odniesieniu do których wniosek o zachowanie poufności nie
+      został uznany przez Urząd za uzasadniony, najwcześniej dwa tygodnie
+      po przekazaniu wnioskodawcy przez Urząd uzasadnionej decyzji doty­
+      czącej ponownego wniosku.
+
+
+      3.    Decyzje przyjęte przez Urząd na podstawie niniejszego artykułu
+      mogą stanowić przedmiot skarg wnoszonych do Trybunału Sprawiedli­
+      wości na warunkach określonych odpowiednio w art. 263 i 278 Trak­
+      tatu o funkcjonowaniu Unii Europejskiej (TFUE).
+
+
+
+
+                                  Artykuł 39c
+                            Weryfikacja poufności
+
+      Przed wydaniem wyników naukowych, w tym opinii naukowych,
+      Urząd sprawdza, czy informacje, w przypadku których wydano wcześ­
+      niej zgodę na zachowanie poufności, mogą mimo to zostać podane do
+      wiadomości publicznej zgodnie z art. 39 ust. 4 lit. b). W takim przy­
+      padku Urząd postępuje zgodnie z procedurą określoną w art. 39b, którą
+      stosuje się odpowiednio.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 35
+
+▼M9
+                                  Artykuł 39d
+                    Obowiązki w odniesieniu do poufności
+
+      1.    Urząd udostępnia Komisji i państwom członkowskim, na ich
+      wniosek, wszystkie znajdujące się w jego posiadaniu informacje doty­
+      czące wniosku lub wniosku Parlamentu Europejskiego, Komisji lub
+      państw członkowskich o przedstawienie wyników naukowych, w tym
+      opinii naukowej, chyba że prawo Unii stanowi inaczej.
+
+
+      2.    Komisja i państwa członkowskie wprowadzają niezbędne środki,
+      aby informacje otrzymane przez nie na podstawie prawa Unii, w odnie­
+      sieniu do których wnioskowano o zachowanie poufności, nie zostały
+      podane do wiadomości publicznej, dopóki Urząd nie podejmie decyzji
+      w sprawie wniosku o zachowanie poufności i dopóki decyzja ta nie
+      stanie się ostateczna. Komisja i państwa członkowskie wprowadzają
+      również niezbędne środki, aby informacje, w przypadku których
+      Urząd zgodził się na zachowanie poufności, nie zostały podane do
+      wiadomości publicznej.
+
+
+      3.   W przypadku gdy wnioskodawca cofa lub cofnął wniosek, Urząd,
+      Komisja i państwa członkowskie przestrzegają poufności informacji
+      w zakresie, w jakim Urząd wyraził zgodę na zachowanie poufności
+      zgodnie z art. 39–39e. Wniosek uznaje się za cofnięty z chwilą otrzy­
+      mania pisemnego żądania w tym zakresie przez właściwy organ, który
+      otrzymał pierwotny wniosek. W przypadku gdy cofnięcie wniosku ma
+      miejsce przed wydaniem przez Urząd ostatecznej decyzji w sprawie
+      wniosku o zachowanie poufności na podstawie – w stosownych przy­
+      padkach – art. 39b ust. 1 lub 2, Komisja, państwa członkowskie
+      i Urząd nie podają do wiadomości publicznej informacji, w przypadku
+      których wniesiono o zachowanie poufności.
+
+
+      4.   Członkowie zarządu, dyrektor zarządzający, członkowie komitetu
+      naukowego i paneli naukowych, jak również zewnętrzni eksperci
+      uczestniczący w ich grupach roboczych, członkowie forum doradczego
+      oraz członkowie personelu Urzędu, nawet po zaprzestaniu wykony­
+      wania obowiązków, podlegają wymaganiom zachowania tajemnicy
+      zawodowej na podstawie art. 339 TFUE.
+
+
+      5.    Urząd ustanawia w konsultacji z Komisją praktyczne ustalenia
+      dotyczące wdrożenia zasad poufności określonych w art. 39, 39a,
+      39b, 39e i w niniejszym artykule, w tym ustalenia dotyczące składania
+      i rozpatrywania wniosków o zachowanie poufności w odniesieniu do
+      informacji, które mają zostać podane do wiadomości publicznej na
+      podstawie art. 38, z uwzględnieniem art. 39f i 39 g. W odniesieniu
+      do art. 39b ust. 2 Urząd zapewnia, by przy rozpatrywaniu ponownych
+      wniosków stosowane było odpowiednie rozdzielenie zadań.
+
+
+
+                                  Artykuł 39e
+                         Ochrona danych osobowych
+
+      1.   W odniesieniu do wniosków o przedstawienie wyników nauko­
+      wych, w tym opinii naukowych, na podstawie prawa Unii Urząd
+      zawsze podaje do wiadomości publicznej:
+
+
+      a) imię i nazwisko lub nazwę i adres wnioskodawcy;
+
+
+      b) imiona i nazwiska autorów opublikowanych lub publicznie dostęp­
+         nych badań będących uzasadnieniem takich wniosków; oraz
+                                                              02002R0178 — PL — 01.01.2026 — 012.001 — 36
+
+▼M9
+      c) imiona i nazwiska wszystkich uczestników i obserwatorów posie­
+         dzeń komitetu naukowego i paneli naukowych, ich grup roboczych
+         oraz wszelkich innych grup ad hoc w danej kwestii.
+
+
+      2.    Niezależnie od ust. 1 ujawnienie imion, nazwisk i adresów osób
+      fizycznych zaangażowanych w badania na kręgowcach lub w uzyskanie
+      informacji toksykologicznych uważa się za znacząco szkodliwe dla
+      prywatności i integralności tych osób fizycznych i dane te nie są poda­
+      wane do wiadomości publicznej, chyba że rozporządzenia Parlamentu
+      Europejskiego i Rady (UE) 2016/679 (1) i (UE) 2018/1725 (2) stanowią
+      inaczej.
+
+
+      3.    Rozporządzenia (UE) 2016/679 i (UE) 2018/1725 stosuje się do
+      przetwarzania danych osobowych na podstawie niniejszego rozporzą­
+      dzenia. Wszelkie dane osobowe podawane do wiadomości publicznej
+      na podstawie art. 38 niniejszego rozporządzenia i niniejszego artykułu
+      wykorzystuje się wyłącznie w celu zapewnienia przejrzystości oceny
+      ryzyka na podstawie niniejszego rozporządzenia i nie mogą być one
+      dalej przetwarzane w sposób niezgodny z tym celem, zgodnie z art. 5
+      ust. 1 lit. b) rozporządzenia (UE) 2016/679 i art. 4 ust. 1 lit. b)
+      rozporządzenia (UE) 2018/1725, w zależności od przypadku.
+
+
+
+
+                                     Artykuł 39f
+                          Standardowe formaty danych
+
+      1.    Do celów art. 38 ust. 1 lit. c) oraz w celu zapewnienia efektyw­
+      nego przetwarzania skierowanych do Urzędu wniosków o przedsta­
+      wienie wyników naukowych przyjmuje się zgodnie z ust. 2 niniejszego
+      artykułu standardowe formaty danych umożliwiające przedkładanie,
+      wyszukiwanie, kopiowanie i drukowanie dokumentów, przy zapew­
+      nieniu zgodności z wymogami regulacyjnymi określonymi w prawie
+      Unii. Te standardowe formaty danych:
+
+
+      a) nie mogą być oparte na standardach zastrzeżonych;
+
+
+      b) w zakresie, w jakim to możliwe, zapewniają interoperacyjno ść
+         z istniejącymi metodami przekazywania danych;
+
+
+      c) są łatwe w użyciu i dostosowane do wykorzystywania przez małe
+         i średnie przedsiębiorstwa.
+
+
+      2.   Przyjmowanie standardowych formatów danych, o których mowa
+      w ust. 1, odbywa się zgodnie z następującą procedurą:
+
+      (1) Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia
+          27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z prze­
+          twarzaniem danych osobowych i w sprawie swobodnego przepływu takich
+          danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie
+          o ochronie danych) (Dz.U. L 119 z 4.5.2016, s. 1).
+      (2) Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2018/1725 z dnia
+          23 października 2018 r. w sprawie ochrony osób fizycznych w związku
+          z przetwarzaniem danych osobowych przez instytucje, organy i jednostki
+          organizacyjne Unii i swobodnego przepływu takich danych oraz uchylenia
+          rozporządzenia (WE) nr 45/2001 i decyzji nr 1247/2002/WE (Dz.U. L 295
+          z 21.11.2018, s. 39).
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 37
+
+▼M9
+      a) Urząd opracowuje projekty standardowych formatów danych do
+         celów poszczególnych procedur udzielania zezwoleń oraz stosow­
+         nych wniosków o przedstawienie wyników naukowych składanych
+         przez Parlament Europejski, Komisję i państwa członkowskie;
+
+
+      b) Komisja przyjmuje, w drodze aktów wykonawczych, standardowe
+         formaty danych, uwzględniając obowiązujące wymogi w poszczegól­
+         nych procedurach udzielania zezwoleń i w innych ramach prawnych
+         oraz po wszelkich niezbędnych dostosowaniach. Takie akty wyko­
+         nawcze przyjmuje się zgodnie procedurą, o której mowa w art. 58
+         ust. 2;
+
+
+      c) Urząd udostępnia przyjęte standardowe formaty danych na swojej
+         stronie internetowej;
+
+
+      d) w przypadku gdy standardowe formaty danych zostały przyjęte na
+         podstawie niniejszego artykułu, wnioski oraz wnioski o przedsta­
+         wienie wyników naukowych, w tym opinii naukowej, składane
+         przez Parlament Europejski, Komisję i państwa członkowskie,
+         składa się wyłącznie zgodnie z tymi standardowymi formatami
+         danych.
+
+
+
+                                  Artykuł 39g
+                            Systemy informatyczne
+
+      Systemy informatyczne używane przez Urząd do przechowywania
+      danych, w tym danych o charakterze poufnym i danych osobowych,
+      są zaprojektowane w sposób, który gwarantuje pełną możliwość audytu
+      każdorazowego dostępu do tych danych i gwarantuje osiągnięcie
+      najwyższych standardów w zakresie poziomu bezpieczeństwa odpo­
+      wiedniego dla danego ryzyka, z uwzględnieniem art. 39–39f.
+
+
+▼B
+
+                                   Artykuł 40
+                      Udzielanie informacji przez Urząd
+
+      1.    Urząd udziela informacji z własnej inicjatywy, w obszarach
+      mieszczących się w ramach jej misji, bez uszczerbku dla kompetencji
+      Komisji, co do ogłaszania jej decyzji dotyczących zarządzania ryzy­
+      kiem.
+
+
+      2.    Urząd powinien zapewnić, aby opinia publiczna i wszystkie zain­
+      teresowane strony szybko otrzymały rzeczową, rzetelną i łatwo
+      dostępną informację, w szczególności w odniesieniu do wyników jej
+      pracy. Aby osiągnąć te cele, Urząd opracowuje i rozpowszechnia mate­
+      riały informacyjne dla ogółu społeczeństwa.
+
+
+      3.   Urząd działa w ścisłej współpracy z Komisją i Państwami Człon­
+      kowskimi, aby wspierać niezbędną spójność w procesie informowania
+      o ryzyku.
+
+
+▼M9
+      Urząd podaje do wiadomości publicznej wszystkie wyniki naukowe,
+      w tym wydane przez siebie opinie naukowe oraz dane naukowe będące
+      ich uzasadnieniem i inne informacje zgodnie z art. 38–39e.
+                                                               02002R0178 — PL — 01.01.2026 — 012.001 — 38
+
+▼B
+      4.  Urząd zapewnia właściwą współpracę z właściwymi organami
+      w Państwach Członkowskich i innymi zainteresowanymi stronami
+      w odniesieniu do publicznych kampanii informacyjnych.
+
+
+
+▼M1
+                                      Artykuł 41
+                              Dostęp do dokumentów
+
+▼M9
+      1.    Niezależnie od przepisów dotyczących poufności przewidzianych
+      w art. 39–39d niniejszego rozporządzenia do dokumentów znajdujących
+      się w posiadaniu Urzędu stosuje się rozporządzenie (WE) nr 1049/2001
+      Parlamentu Europejskiego i Rady (1).
+
+
+
+      W przypadku informacji dotyczących środowiska stosuje się również
+      rozporządzenie (WE) nr 1367/2006 Parlamentu Europejskiego i
+      Rady (2). Dyrektywę 2003/4/WE Parlamentu Europejskiego i Rady (3)
+      stosuje się do informacji dotyczących środowiska znajdujących się
+      w posiadaniu państw członkowskich, niezależnie od przepisów doty­
+      czących poufności ustanowionych w art. 39–39d niniejszego rozporzą­
+      dzenia.
+
+
+
+      2.    Zarząd przyjmuje praktyczne ustalenia dotyczące wykonania
+      rozporządzenia (WE) nr 1049/2001 oraz art. 6 i 7 rozporządzenia
+      (WE) nr 1367/2006 do dnia 27 marca 2020 r., zapewniając jak
+      najszerszy dostęp do dokumentów znajdujących się w jego posiadaniu.
+
+
+
+▼M1
+      3.   Decyzje podejmowane przez Urząd na podstawie art. 8 rozporzą­
+      dzenia (WE) nr 1049/2001 mogą stanowić przedmiot skargi złożonej do
+      Rzecznika Praw Obywatelskich lub skargi przed Trybunałem Sprawie­
+      dliwości, na warunkach określonych, odpowiednio, w art. 195 i 230
+      Traktatu WE.
+
+
+
+▼B
+
+                                      Artykuł 42
+             Konsumenci, producenci i inne zainteresowane strony
+
+      Urząd rozwija efektywne kontakty z przedstawicielami konsumentów,
+      przedstawicielami producentów, przetwórców i innych zainteresowa­
+      nych stron.
+
+      (1) Rozporządzenie (WE) nr 1049/2001 Parlamentu Europejskiego i Rady z dnia
+          30 maja 2001 r. w sprawie publicznego dostępu do dokumentów Parlamentu
+          Europejskiego, Rady i Komisji (Dz.U. L 145 z 31.5.2001, s. 43).
+      (2) Rozporządzenie (WE) nr 1367/2006 Parlamentu Europejskiego i Rady z dnia
+          6 września 2006 r. w sprawie zastosowania postanowień Konwencji z Aarhus
+          o dostępie do informacji, udziale społeczeństwa w podejmowaniu decyzji
+          oraz dostępie do sprawiedliwości w sprawach dotyczących środowiska do
+          instytucji i organów Wspólnoty (Dz.U. L 264 z 25.9.2006, s. 13).
+      (3) Dyrektywa 2003/4/WE Parlamentu Europejskiego i Rady z dnia 28 stycznia
+          2003 r. w sprawie publicznego dostępu do informacji dotyczących środo­
+          wiska i uchylająca dyrektywę Rady 90/313/EWG (Dz.U. L 41 z 14.2.2003,
+          s. 26).
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 39
+
+▼B
+                                    SEKCJA 5
+
+                            PRZEPISY FINANSOWE
+
+
+                                   Artykuł 43
+                           Przyjęcie budżetu Urzędu
+
+      1.   Dochody Urzędu składają się z wkładu Wspólnoty i każdego
+      państwa, z którym Wspólnota zawarła umowy, określone w art. 49,
+      należności za publikacje, konferencje, szkolenia i wszelkie inne
+      podobne działania prowadzone przez Urząd.
+
+
+      2.    Do wydatków Urzędu wlicza się personel, administrację, infra­
+      strukturę i koszty bieżące oraz wydatki wynikające z kontraktów
+      zawartych z osobami trzecimi, albo wynikające ze wsparcia finanso­
+      wego, określonego w art. 36.
+
+
+▼M1
+      3.   Dyrektor zarządzający opracowuje, w odpowiednim czasie przed
+      upływem daty określonej w ust. 5, projekt preliminarza budżetowego
+      Urzędu na następny rok budżetowy i przesyła ją zarządowi wraz
+      z wykazem etatów.
+
+
+      4.   Dochody i wydatki równoważą się.
+
+
+      5.   Zarząd, na podstawie projektu preliminarza budżetowego,
+      sporządza corocznie preliminarz dochodów i wydatków Urzędu na
+      następny rok budżetowy. Preliminarz ten, łącznie z projektem wykazu
+      etatów i tymczasowym programem prac, najpóźniej do dnia 31 marca,
+      zarząd przekazuje Komisji oraz krajom, z którymi Wspólnota zawarła
+      umowy zgodnie z art. 49.
+
+
+      6.   Komisja przekazuje preliminarz Parlamentowi Europejskiemu
+      i Radzie (zwanym dalej władzami budżetowymi), wraz ze wstępnym
+      projektem budżetu ogólnego Unii Europejskiej.
+
+
+      7.   Na podstawie tego preliminarza Komisja wprowadza do wstęp­
+      nego projektu budżetu ogólnego Unii Europejskiej oszacowania, które
+      uzna za niezbędne w wykazie etatów, oraz kwotę subsydium, która ma
+      zostać pokryta z budżetu ogólnego; oszacowania te Komisja przed­
+      stawia władzy budżetowej zgodnie z art. 272 Traktatu.
+
+
+      8.   Władza budżetowa przyznaje Urzędowi środki na pokrycie
+      subsydium.
+
+
+      Władza budżetowa przyjmuje wykaz etatów dla Urzędu.
+
+
+      9.    Budżet zostaje przyjęty przez zarząd. Staje się on ostateczny po
+      ostatecznym przyjęciu budżetu ogólnego Unii Europejskiej. Tam, gdzie
+      jest to właściwe, zostaje odpowiednio dostosowany.
+
+
+      10.   Zarząd jak najszybciej powiadamia władzę budżetową o swoim
+      zamiarze wprowadzenia w życie wszelkich projektów, które mogą mieć
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 40
+
+▼M1
+      znaczące następstwa finansowe dla finansowania budżetu, w szczegól­
+      ności wszelkich projektów odnoszących się do własności, takich jak
+      wynajem lub kupno budynków. Zarząd powiadamia o tym Komisję.
+
+      W przypadku gdy oddział władzy budżetowej powiadomił o swoim
+      zamiarze wydania opinii, przesyła on swoją opinię zarządowi
+      w ciągu sześciu miesięcy od daty powiadomienia o projekcie.
+
+                                   Artykuł 44
+                          Wykonanie budżetu Urzędu
+
+      1.   Dyrektor zarządzający jest odpowiedzialny za wykonanie budżetu
+      Urzędu.
+
+      2.   Najpóźniej do dnia 1 marca po zakończeniu każdego roku budże­
+      towego księgowy Urzędu przekazuje tymczasowe zestawienie rachun­
+      kowe księgowemu Komisji, wraz ze sprawozdaniem z zarządzania
+      budżetem i finansami na ten rok budżetowy. Księgowy Komisji łączy
+      tymczasowe zestawienia rachunkowe instytucji i organów zdecentrali­
+      zowanych, zgodnie z art. 128 ogólnego rozporządzenia finansowego.
+
+      3.   Najpóźniej do dnia 31 marca po zakończeniu każdego roku
+      budżetowego księgowy Urzędu przekazuje tymczasowe zestawienie
+      rachunkowe księgowemu Trybunału Obrachunkowego wraz ze sprawo­
+      zdaniem z zarządzania budżetem i finansami na ten rok budżetowy.
+      Sprawozdanie z zarządzania budżetem i finansami na ten rok budże­
+      towy zostaje także przekazane Parlamentowi Europejskiemu i Radzie.
+
+      4.    Po otrzymaniu uwag Trybunału Obrachunkowego na temat
+      tymczasowego zestawienia rachunkowego na podstawie art. 129 ogól­
+      nego rozporządzenia finansowego, dyrektor zarządzający opracowuje
+      ostateczne zestawienie rachunkowe Urzędu na własną odpowiedzial­
+      ność i przedstawia je zarządowi w celu wydania opinii.
+
+      5.  Zarząd wydaje opinię w sprawie ostatecznego zestawienia rachun­
+      kowego Urzędu.
+
+      6.   Dyrektor zarządzający, najpóźniej do dnia 1 lipca po zakończeniu
+      każdego roku budżetowego, przesyła ostateczne zestawienie rachun­
+      kowe Parlamentowi Europejskiemu, Radzie, Komisji i Trybunałowi
+      Obrachunkowemu, wraz z opinią zarządu.
+
+      7.   Ostateczne zestawienie rachunkowe zostaje opublikowane.
+
+      8.    Dyrektor zarządzający przesyła Trybunałowi Obrachunkowemu
+      odpowiedź na jego uwagi najpóźniej do dnia 30 września. Odpowiedź
+      tę przesyła także zarządowi.
+
+      9.    Dyrektor zarządzający przedstawia Parlamentowi Europejskiemu,
+      na jego żądanie, wszelkie informacje niezbędne do sprawnego zastoso­
+      wania procedury udzielania absolutorium na dany rok budżetowy, jak
+      określa art. 146 ust. 3 ogólnego rozporządzenia finansowego.
+
+      10.   Parlament Europejski, zgodnie z zaleceniem Rady, stanowiąc
+      większością kwalifikowaną, do dnia 30 kwietnia roku N + 2, udziela
+      dyrektorowi zarządzającemu absolutorium w zakresie wykonania
+      budżetu na rok N.
+
+▼B
+
+                                   Artykuł 45
+                      Opłaty otrzymywane przez Urząd
+
+      W ciągu trzech lat od daty wejścia w życie niniejszego rozporządzenia
+      oraz po skonsultowaniu się z Urzędem, Państwami Członkowskimi
+      i zainteresowanymi stronami, Komisja opublikuje sprawozdanie na
+                                                         02002R0178 — PL — 01.01.2026 — 012.001 — 41
+
+▼B
+     temat wykonalności i celowości przedstawienia propozycji aktu praw­
+     nego według procedury współdecydowania i zgodnie z Traktatem oraz
+     za inne usługi świadczone przez Urząd.
+
+
+                                  SEKCJA 6
+
+                             PRZEPISY OGÓLNE
+
+
+                                  Artykuł 46
+                       Osobowość prawna i przywileje
+
+     1.   Urząd posiada osobowość prawną. We wszystkich Państwach
+     Członkowskich korzysta z najszerszych uprawnień, jakie prawo przy­
+     znaje osobom prawnym. W szczególności Urząd może nabywać
+     i zbywać mienie ruchome i nieruchome oraz posiada zdolność do
+     czynności procesowych.
+     2.    Protokół o przywilejach i immunitetach Wspólnot Europejskich
+     stosuje się do Urzędu.
+
+
+                                  Artykuł 47
+                              Odpowiedzialno ść
+
+     1.    Odpowiedzialno ść umowna Urzędu za zobowiązania regulowana
+     jest przez prawo właściwe dla danej umowy. Trybunał Sprawiedliwości
+     Wspólnot Europejskich jest właściwy do orzekania w stosunku do
+     każdej klauzuli arbitrażowej zamieszczonej w umowie zawartej przez
+     Urząd.
+     2.   W zakresie odpowiedzialno ści pozaumownej, zgodnie z ogólnymi
+     zasadami wspólnymi dla wszystkich Państw Członkowskich, Urząd
+     naprawia szkody wyrządzone przez siebie lub swoich pracowników
+     podczas wykonywania przez nich obowiązków służbowych. Trybunał
+     Sprawiedliwości jest właściwy do orzekania w każdym sporze zwią­
+     zanym z odszkodowaniem za taką szkodę.
+     3.   Odpowiedzialno ść osobista pracowników Urzędu w stosunku do
+     niego jest regulowana odpowiednimi przepisami mającymi zastoso­
+     wanie do personelu Urzędu.
+
+
+                                  Artykuł 48
+                                   Personel
+
+     1.  Personel Urzędu podlega przepisom i zasadom stosowanym
+     wobec urzędników i innego personelu Wspólnot Europejskich.
+     2.   W odniesieniu do swego personelu, Urząd korzysta z pełnomoc­
+     nictw, które zostały udzielone wyznaczonemu organowi.
+
+
+                                  Artykuł 49
+                           Udział państw trzecich
+
+     Urząd jest otwarty na udział państw, które zawarły umowy ze Wspól­
+     notą Europejską, na mocy, których przyjęły one i stosują ustawodaw­
+     stwo wspólnotowe w obszarze objętym niniejszym rozporządzeniem.
+     Na podstawie stosownych postanowień wymienionych umów, zawiera
+     się porozumienia określające w szczególności naturę, zakres i sposób,
+     w jaki państwa te będą uczestniczyć w pracy Urzędu, włączając w to
+     przepisy odnoszące się do: udziału w sieciach prowadzonych przez
+     Urząd, umieszczenia na wykazie właściwych organów, którym pewne
+     zadania mogą być powierzane, udziałów finansowych i personelu.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 42
+
+▼B
+                                 ROZDZIAŁ IV
+
+     SYSTEM        WCZESNEGO     OSTRZEGANIA,    ZARZĄDZANIE
+                   KRYZYSAMI I SYTUACJE ZAGROŻENIA
+
+
+                                   SEKCJA 1
+
+                    SYSTEM WCZESNEGO OSTRZEGANIA
+
+
+                                   Artykuł 50
+                        System wczesnego ostrzegania
+
+     1.   Niniejszym ustanawia się jako sieć system wczesnego ostrzegania
+     dla powiadamiania o bezpośrednim lub pośrednim niebezpieczeństwie
+     grożącym zdrowiu ludzkiemu, pochodzącym z żywności lub pokarmu.
+     System obejmuje Państwa Członkowskie, Komisję i Urząd. Każde
+     Państwo Członkowskie, Komisja i Urząd wyznaczą punkt kontaktowy,
+     który będzie członkiem sieci. Komisja jest odpowiedzialna za zarzą­
+     dzanie siecią.
+     2.    Jeżeli członek sieci posiada jakąkolwiek informację związaną
+     z istnieniem bezpośredniego lub pośredniego niebezpieczeństwa grożą­
+     cego zdrowiu ludzkiemu, pochodzącego z żywności lub pokarmu, to
+     o takiej informacji natychmiast powiadamia Komisję w ramach
+     systemu wczesnego ostrzegania. Komisja niezwłocznie przekazuje tę
+     informację członkom sieci.
+     Urząd może uzupełnić powiadomienie poprzez wszelką naukową lub
+     techniczną informację, która będzie ułatwiać szybkie, stosowne dzia­
+     łania zarządzające ryzykiem podejmowane przez Państwo Członkow­
+     skie.
+     3.   Bez uszczerbku dla pozostałego ustawodawstwa wspólnotowego,
+     Państwa Członkowskie niezwłocznie powiadamiają Komisję, w ramach
+     systemu wczesnego ostrzegania, o:
+     a) każdym przyjętym przez nie środku, którego celem jest ograniczenie
+        wprowadzania na rynek lub zmuszenie do wycofania z rynku, albo
+        wycofanie żywności lub pasz dla ochrony zdrowia ludzkiego
+        i wymagającym szybkiego działania;
+     b) każdym zaleceniu lub uzgodnieniu z profesjonalnymi podmiotami,
+        których celem jest, na podstawie fakultatywnej lub obowiązkowej,
+        ochrona, ograniczenie lub wprowadzenie specyficznych warunków
+        co do wprowadzania na rynek lub ostatecznego spożycia żywności
+        lub pasz, ze względu na poważne ryzyko dla zdrowia ludzkiego,
+        wymagające szybkiego działania;
+     c) każdym odrzuceniu, związanym z bezpośrednim lub pośrednim
+        ryzykiem dla zdrowia ludzkiego, partii, kontenera, albo ładunku
+        żywności lub pasz przez właściwy organ na posterunku granicznym
+        Unii Europejskiej.
+     Powiadomieniu towarzyszy szczegółowe wyjaśnienie o powodach dzia­
+     łania podjętego przez właściwe władze Państwa Członkowskiego,
+     z którego powiadomienie zostało wysłane. W ślad za tym, we
+     właściwym czasie, przekazuje się uzupełniające informacje, w szczegól­
+     ności, gdy środki, na których oparte jest powiadomienie, są modyfiko­
+     wane lub wycofywane.
+     Komisja niezwłocznie przekazuje członkom sieci powiadomienie i infor­
+     macje uzupełniające, otrzymane zgodnie z akapitem pierwszym
+     i drugim.
+     Jeżeli partia, kontener lub ładunek jest odrzucony przez właściwy organ
+     na posterunku granicznym w Unii Europejskiej, Komisja niezwłocznie
+     powiadamia wszystkie posterunki graniczne w Unii Europejskiej, jak
+     również państwo trzecie pochodzenia towaru.
+                                                            02002R0178 — PL — 01.01.2026 — 012.001 — 43
+
+▼B
+     4.   Jeżeli środek spożywczy lub pasza, które stały się przedmiotem
+     powiadomienia w systemie wczesnego ostrzegania, zostały wysłane do
+     państwa trzeciego, Komisja zapewnia przekazanie właściwych informa­
+     cji.
+
+
+
+     5.   Państwa Członkowskie niezwłocznie informują Komisję o wdro­
+     żonym działaniu lub środkach podjętych w następstwie otrzymania
+     powiadomień i uzupełniających informacji, przekazanych w ramach
+     systemu wczesnego ostrzegania. Komisja niezwłocznie przekazuje te
+     informacje członkom sieci.
+
+
+
+     6.   Uczestnictwo w systemie wczesnego ostrzegania może być
+     otwarte dla krajów kandydujących, państw trzecich lub organizacji
+     międzynarodowych na podstawie umów zawartych między Wspólnotą
+     a tymi państwami lub międzynarodowymi organizacjami, zgodnie
+     z procedurami określonymi w tych umowach. Będzie to oparte na
+     zasadzie wzajemności i obejmie środki poufności równoważne
+     z tymi, które są stosowane we Wspólnocie.
+
+
+
+
+                                    Artykuł 51
+                              Stosowanie środków
+
+     Środki mające na celu realizację art. 50 zostaną przyjęte przez Komisję
+     po konsultacji z Urzędem, zgodnie z procedurą, określoną w art. 58 ust.
+     2. Środki te określą w szczególności specyficzne warunki i procedury
+     właściwe dla przekazywania powiadomień i informacji uzupełniają­
+     cych.
+
+
+
+
+                                    Artykuł 52
+            Reguły poufności dla systemu wczesnego ostrzegania
+
+     1.   Informacje dostępne dla członków sieci, odnoszące się do ryzyka
+     grożącego zdrowiu ludzkiemu z powodu żywności lub pasz, generalnie
+     są dostępne do wiadomości publicznej, zgodnie z zasadą informowania
+     zawartą w art. 10. W ogólności społeczeństwo posiada dostęp do infor­
+     macji na temat identyfikacji produktu, natury ryzyka i podjętym środku.
+
+
+
+     Jednakże członkowie sieci podejmują kroki, aby zagwarantować, że
+     członkowie ich personelu nie ujawnią informacji uzyskanych do
+     ujętych celów niniejszej sekcji, które ze swej natury są objęte tajemnicą
+     zawodową we właściwie uzasadnionych przypadkach, z wyjątkiem
+     informacji, które muszą być ogłoszone, jeżeli wymagają tego okolicz­
+     ności, w celu ochrony zdrowia ludzkiego.
+
+
+
+     2.   Ochrona tajemnicy zawodowej nie zapobiega przekazywaniu
+     właściwym władzom informacji odnoszących się do efektywności
+     rozpoznania rynku i wzmocnienia działań na polu żywności i pasz.
+     Urząd ten, otrzymując informacje objęte tajemnicą zawodową,
+     zapewnia ich ochronę zgodnie z ust. 1.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 44
+
+▼B
+                                   SEKCJA 2
+
+                          SYTUACJE ZAGROŻENIA
+
+
+                                  Artykuł 53
+     Środki nadzwyczajne dla żywności i pasz pochodzących ze
+            Wspólnoty lub przywożonych z państwa trzeciego
+
+     1.   Jeżeli jest ewidentne, że żywność lub pasze, które pochodzą ze
+     Wspólnoty lub są przywożone z państwa trzeciego, prawdopodobnie
+     stworzą poważne ryzyko dla zdrowia ludzkiego, zdrowia zwierząt lub
+     środowiska oraz, że takie ryzyko nie może być wystarczająco objęte za
+     pomocą środków podjętych przez dane Państwo lub Państwa Człon­
+     kowskie, to Komisja, działając w zgodzie z procedurą określoną
+     w art. 58 ust. 2, z własnej inicjatywy lub na wniosek Państwa Człon­
+     kowskiego, niezwłocznie przyjmie jeden lub więcej z następujących
+     środków, w zależności od powagi sytuacji:
+     a) w przypadku żywności lub pasz, które pochodzą ze Wspólnoty:
+         i) zawieszenie wprowadzania na rynek lub spożywania danej
+            żywności;
+        ii) zawieszenie wprowadzania na rynek lub spożywania danej
+            paszy;
+        iii) ustanowienie specjalnych warunków dla danej żywności lub
+             pasz;
+        iv) każdy inny stosowny środek tymczasowy;
+     b) w przypadku żywności lub pasz, które pochodzą z państwa trze­
+        ciego:
+         i) zawieszenie przywozu żywności lub pokarmu, o których mowa,
+            z całego lub części danego państwa trzeciego, a gdy jest to
+            możliwe do zastosowania, z państwa trzeciego tranzytowego;
+        ii) ustanowienie specjalnych warunków dla żywności lub pasz,
+            o których mowa, w całym danym państwie trzecim lub jego
+            części;
+        iii) każdy inny stosowny środek tymczasowy.
+     2.   Jednakże w sytuacjach zagrożenia, Komisja może tymczasowo
+     przyjąć środki, określone w ust. 1, po konsultacji z danym Państwem
+     lub Państwami Członkowskimi i poinformowaniu innych Państw
+     Członkowskich.
+     Możliwie jak najwcześniej, a najdalej w ciągu 10 dni roboczych,
+     podjęte środki powinny być potwierdzone, poprawione, odwołane lub
+     rozszerzone, zgodnie z procedurą, określoną w art. 58 ust. 2, a powody
+     decyzji Komisji powinny być niezwłocznie ogłoszone.
+
+
+                                  Artykuł 54
+                          Inne środki nadzwyczajne
+
+     1.   Jeżeli Państwo Członkowskie oficjalnie poinformuje Komisję
+     o potrzebie podjęcia środków nadzwyczajnych oraz gdy Komisja nie
+     podjęła działań zgodnie z art. 53, Państwo Członkowskie może przyjąć
+     tymczasowe środki ochronne. W takim przypadku Państwo to
+     niezwłocznie informuje inne Państwa Członkowskie i Komisję.
+     2.   W ciągu 10 dni roboczych Komisja przedstawia sprawę Komite­
+     towi, określonemu w art. 58 ust. 1, zgodnie z procedurą określoną
+     w art. 58 ust. 2, w celu rozszerzenia, poprawienia lub odwołania
+     tymczasowych krajowych środków ochronnych.
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 45
+
+▼B
+     3.    Państwo Członkowskie może utrzymać swoje tymczasowe
+     krajowe środki ochronne, dopóki nie zostaną przyjęte środki Wspól­
+     noty.
+
+
+
+                                   SEKCJA 3
+
+                         ZARZĄDZANIE KRYZYSAMI
+
+
+                                  Artykuł 55
+                     Plan ogólny zarządzania kryzysami
+
+     1.   Komisja opracowuje, w ścisłej współpracy z Urzędem i Państwami
+     Członkowskimi, plan ogólny zarządzania kryzysami (zwany dalej
+     „planem ogólnym”), w obszarze bezpieczeństwa żywności i pasz.
+
+     2.    Plan ogólny określa typy sytuacji obejmujące bezpośrednie lub
+     pośrednie ryzyko dla zdrowia ludzkiego, pochodzące z żywności
+     i pasz, a których prawdopodobnie nie można zapobiec, wyeliminować
+     lub zredukować do akceptowanego poziomu w drodze odpowiednich
+     przepisów, albo, które nie mogą być adekwatnie uregulowane
+     wyłącznie w drodze stosowania art. 53 i 54.
+
+     Plan ogólny określa również praktyczne procedury niezbędne do zarzą­
+     dzania kryzysami, wliczając w to zasady przejrzystości, które mają być
+     stosowane oraz strategię informowania.
+
+
+
+                                  Artykuł 56
+                            Jednostka kryzysowa
+
+     1.   Bez uszczerbku dla swej roli zapewniania stosowania prawa
+     wspólnotowego, w przypadku gdy Komisja zidentyfikuje sytuację obej­
+     mującą poważne bezpośrednie lub pośrednie ryzyko dla zdrowia ludz­
+     kiego, pochodzące z żywności i pasz, a ryzyku nie można zapobiec,
+     wyeliminować lub zredukować poprzez obowiązujące przepisy, lub
+     ryzyko nie może być adekwatnie uregulowane wyłącznie w drodze
+     stosowania art. 53 i 54, to Komisja powiadamia niezwłocznie Państwa
+     Członkowskie i Urząd.
+
+     2.    Komisja niezwłocznie powołuje jednostkę kryzysową, w której
+     uczestniczy Urząd oraz zabezpiecza naukową i techniczną pomoc,
+     jeżeli jest to konieczne.
+
+
+
+                                  Artykuł 57
+                        Zadania jednostki kryzysowej
+
+     1.    Jednostka kryzysowa odpowiada za zbieranie i ocenianie wszyst­
+     kich stosownych informacji oraz identyfikowanie dostępnych opcji, aby
+     zapobiec, wyeliminować lub zredukować do akceptowalnego poziomu
+     ryzyka dla zdrowia ludzkiego, w sposób możliwie jak najbardziej efek­
+     tywny i szybki.
+
+     2.    Jednostka kryzysowa może żądać pomocy od każdej osoby
+     publicznej lub prywatnej, której ekspertyzę uważa się za niezbędną
+     do efektywnego zarządzania w sytuacji kryzysu.
+
+     3.  Jednostka kryzysowa informuje na bieżąco opinię publiczną
+     o występującym ryzyku i podjętych środkach.
+                                                             02002R0178 — PL — 01.01.2026 — 012.001 — 46
+
+▼B
+                                     ROZDZIAŁ V
+
+                       PROCEDURY I PRZEPISY KOŃCOWE
+
+
+▼M8
+                                       SEKCJA 1
+      WYKONYWANIE PRZEKAZANYCH UPRAWNIEŃ, PROCEDURA
+           KOMITETOWA ORAZ PROCEDURA MEDIACYJNA
+
+                                      Artykuł 57a
+                     Wykonywanie przekazanych uprawnień
+
+      1.  Powierzenie Komisji uprawnień do przyjmowania aktów delego­
+      wanych podlega warunkom określonym w niniejszym artykule.
+
+
+
+
+      2.    Uprawnienia do przyjmowania aktów delegowanych, o których
+      mowa w art. 28 ust. 4, art. 29 ust. 6 i art. 36 ust. 3, powierza się
+      Komisji na okres pięciu lat od dnia 26 lipca 2019 r. Komisja sporządza
+      sprawozdanie dotyczące przekazania uprawnień nie później niż dzie­
+      więć miesięcy przed końcem okresu pięciu lat. Przekazanie uprawnień
+      zostaje automatycznie przedłużone na takie same okresy, chyba że
+      Parlament Europejski lub Rada sprzeciwią się takiemu przedłużeniu
+      nie później niż trzy miesiące przed końcem każdego okresu.
+
+
+
+
+      3.    Przekazanie uprawnień, o którym mowa w art. 28 ust. 4, art. 29
+      ust. 6 i art. 36 ust. 3, może zostać w dowolnym momencie odwołane
+      przez Parlament Europejski lub przez Radę. Decyzja o odwołaniu
+      kończy przekazanie określonych w niej uprawnień. Decyzja o odwo­
+      łaniu staje się skuteczna następnego dnia po jej opublikowaniu w Dzien­
+      niku Urzędowym Unii Europejskiej lub w późniejszym terminie okreś­
+      lonym w tej decyzji. Nie wpływa ona na ważność już obowiązujących
+      aktów delegowanych.
+
+
+
+
+      4.   Przed przyjęciem aktu delegowanego Komisja konsultuje się
+      z ekspertami wyznaczonymi przez każde państwo członkowskie
+      zgodnie z zasadami określonymi w Porozumieniu międzyinstytucjo­
+      nalnym z dnia 13 kwietnia 2016 r. w sprawie lepszego stanowienia
+      prawa (1).
+
+
+
+
+      5.   Niezwłocznie po przyjęciu aktu delegowanego Komisja przeka­
+      zuje go równocześnie Parlamentowi Europejskiemu i Radzie.
+
+
+
+
+      6.    Akt delegowany przyjęty na podstawie art. 28 ust. 4, art. 29 ust. 6
+      i art. 36 ust. 3 wchodzi w życie tylko wówczas, gdy ani Parlament
+      Europejski, ani Rada nie wyraziły sprzeciwu w terminie dwóch
+      miesięcy od przekazania tego aktu Parlamentowi Europejskiemu
+      i Radzie, lub gdy, przed upływem tego terminu, zarówno Parlament
+      Europejski, jak i Rada poinformowały Komisję, że nie wniosą sprze­
+      ciwu. Termin ten przedłuża się o dwa miesiące z inicjatywy Parlamentu
+      Europejskiego lub Rady.
+
+      (1) Dz.U. L 123 z 12.5.2016, s. 1.
+                                                               02002R0178 — PL — 01.01.2026 — 012.001 — 47
+
+▼B
+                                      Artykuł 58
+                                       Komitet
+
+▼M5
+      1.    Komisję wspiera Stały Komitet ds. Roślin, Zwierząt, Żywności
+      i Pasz, zwany dalej „Komitetem”. Komitet ten jest komitetem w rozu­
+      mieniu rozporządzenia Parlamentu Europejskiego i Rady (UE)
+      nr 182/2011 (1). Komitet organizuje się w sekcje do zajmowania się
+      wszystkimi stosownymi sprawami.
+
+
+      Wszelkie odesłania w prawie Unii do Stałego Komitetu ds. Łańcucha
+      Żywnościowego i Zdrowia Zwierząt należy odczytywać jako odesłania
+      do komitetu, o którym mowa w akapicie pierwszym.
+
+
+▼M4
+      2.   W przypadku odesłania do niniejszego ustępu, stosuje się art. 5
+      i 7 decyzji 1999/468/WE, z uwzględnieniem jej art. 8.
+
+
+      Termin określony w art. 5 ust. 6 decyzji 1999/468/WE wynosi trzy
+      miesiące.
+
+
+▼M8
+      __________
+
+
+▼B
+                                      Artykuł 59
+                         Funkcje wyznaczone Komitetowi
+
+      Komitet wykonuje funkcje wyznaczone przez niniejsze rozporządzenie
+      i inne odpowiednie przepisy prawa wspólnotowego, w przypadkach
+      i warunkach przewidzianych w tych przepisach. Komitet może również
+      badać każdą kwestię podlegającą tym przepisom, zarówno z inicjatywy
+      przewodniczącego, jak i na pisemny wniosek jednego ze swych człon­
+      ków.
+
+
+
+                                      Artykuł 60
+                               Procedura mediacyjna
+
+      1.    Bez uszczerbku dla stosowania innych przepisów Wspólnoty,
+      jeżeli w opinii Państwa Członkowskiego środek podjęty przez inne
+      Państwo Członkowskie w obszarze bezpieczeństwa żywności jest
+      niezgodny z niniejszym rozporządzeniem lub prawdopodobnie wpłynie
+      na funkcjonowanie rynku wewnętrznego, to sprawę przedstawia się
+      Komisji, która niezwłocznie poinformuje inne zainteresowane Państwo
+      Członkowskie.
+
+
+      2.   Dwa zainteresowane Państwa Członkowskie wraz z Komisją
+      podejmą wszelkie wysiłki, aby rozwiązać problem. Jeżeli porozumienie
+      nie może być osiągnięte, Komisja może wnioskować o wydanie przez
+      Urząd opinii na temat każdej odnośnej spornej kwestii naukowej.
+      Warunki wniosku i limit czasu, w ciągu którego Urząd jest proszona
+      o wydanie swej opinii, ustala się w drodze wzajemnego porozumienia
+      między Komisją a Urzędem, po konsultacji z dwoma zainteresowanymi
+      Państwami Członkowskimi.
+
+      (1) Rozporządzenie Parlamentu Europejskiego i Rady (UE) nr 182/2011 z dnia
+          16 lutego 2011 r. ustanawiające przepisy i zasady ogólne dotyczące trybu
+          kontroli przez państwa członkowskie wykonywania uprawnień wykonaw­
+          czych przez Komisję (Dz.U. L 55 z 28.2.2011, s. 13).
+                                                           02002R0178 — PL — 01.01.2026 — 012.001 — 48
+
+▼B
+                                    SEKCJA 2
+                             PRZEPISY KOŃCOWE
+▼M9
+                                    Artykuł 61
+                             Klauzula przeglądowa
+
+      1.   Komisja zapewnia regularny przegląd stosowania niniejszego
+      rozporządzenia.
+
+
+
+
+      2.   Do dnia 28 marca 2026 r., a następnie co pięć lat, Komisja
+      przeprowadza ocenę wyników działalności Urzędu pod kątem realizacji
+      jego celów, mandatu, zadań, procedur, a także pod kątem lokalizacji,
+      zgodnie z wytycznymi Komisji. Ocena ta obejmuje również skutki
+      art. 32a dla funkcjonowania Urzędu, ze zwróceniem szczególnej
+      uwagi na stopień obciążenia pracą i stan zaangażowania pracowników,
+      a także na ewentualne zmiany w przydziale środków na rzecz Urzędu,
+      które mogły mieć miejsce, kosztem działań w interesie publicznym.
+      W trakcie oceny badana jest ewentualna potrzeba zmiany mandatu
+      Urzędu oraz skutki finansowe takiej zmiany.
+
+
+
+
+      3.    W trakcie oceny, o której mowa w ust. 2, Komisja ocenia
+      również, czy należy dodatkowo zaktualizować ramy organizacyjne
+      Urzędu, wziąwszy pod uwagę decyzje w sprawie wniosków o zacho­
+      wanie poufności oraz ponownych wniosków, poprzez ustanowienie
+      specjalnej rady odwoławczej lub za pomocą innych odpowiednich środ­
+      ków.
+
+
+
+
+      4.   Jeśli Komisja uzna, że dalsze działanie Urzędu w odniesieniu do
+      powierzonych mu celów, mandatu i zadań nie jest już uzasadnione,
+      może wnioskować o odpowiednią zmianę lub uchylenie odpowiednich
+      przepisów niniejszego rozporządzenia.
+
+
+
+
+      5.   Komisja przekazuje Parlamentowi Europejskiemu, Radzie i zarzą­
+      dowi ustalenia ze swoich przeglądów i ocen przeprowadzonych na
+      podstawie niniejszego artykułu. Ustalenia te podawane są do wiado­
+      mości publicznej.
+
+
+
+
+                                   Artykuł 61a
+                               Misje informacyjne
+
+      Eksperci Komisji przeprowadzają misje informacyjne w państwach
+      członkowskich, aby ocenić stosowanie przez laboratoria i inne jednostki
+      badawcze odpowiednich norm przeprowadzania testów i badań przed­
+      łożonych Urzędowi jako część wniosku, a także przestrzeganie
+      obowiązków w zakresie powiadamiania określonych w art. 32b ust. 3
+      do dnia 28 marca 2025 r. Do tego dnia eksperci Komisji przeprowa­
+      dzają również misje informacyjne, aby ocenić stosowanie tych norm
+      przez laboratoria i inne jednostki badawcze znajdujące się w państwach
+      trzecich w zakresie, w jakim przewidziano to w stosownych umowach
+      i ustaleniach z tymi państwami trzecimi, w tym jak określono w art. 49.
+                                                             02002R0178 — PL — 01.01.2026 — 012.001 — 49
+
+▼M9
+      Na przypadki niezgodności stwierdzone w trakcie tych misji informa­
+      cyjnych zwraca się uwagę Komisji, państw członkowskich, Urzędu, jak
+      również ocenianych laboratoriów i innych jednostek badawczych.
+      Komisja, Urząd i państwa członkowskie zapewniają odpowiednie dzia­
+      łania następcze odnośnie do takich stwierdzonych przypadków niezgod­
+      ności.
+
+
+      Wyniki tych misji informacyjnych przedstawia się w sprawozdaniu
+      ogólnym. Na podstawie tego sprawozdania Komisja przedkłada
+      w stosownych przypadkach wniosek ustawodawczy dotyczący w szcze­
+      gólności wszelkich koniecznych procedur kontrolnych, w tym audytów.
+
+
+▼B
+
+                                     Artykuł 62
+      Odesłania do Europejskiego Urzędu ds. Bezpieczeństwa Żywności
+      i do Stałego Komitetu ds. ►C1 Żywnościowego ◄ i Zdrowia
+                                 Zwierząt
+
+      1.    Każde odesłanie w ustawodawstwie wspólnotowym do: Komitetu
+      Naukowego ds. Żywności, Komitetu Naukowego ds. Żywienia Zwie­
+      rząt, Naukowego Komitetu Weterynaryjnego, Komitetu Naukowego ds.
+      Pestycydów, Komitetu Naukowego ds. Roślin, Naukowego Komitetu
+      Sterowania, zastępuje się odesłaniem do Europejskiego Urzędu ds.
+      Bezpieczeństwa Żywności.
+
+
+      2.    Każde odesłanie w ustawodawstwie wspólnotowym do: Stałego
+      Komitetu ds. Żywności, Stałego Komitetu ds. Materiałów Paszowych
+      i Stałego Komitetu Weterynaryjnego zastępuje się odesłaniem do
+      Stałego Komitetu ds. Łańcucha ►C1 Żywnościowego ◄ i Zdrowia
+      Zwierząt.
+
+
+      Każde odesłanie do Stałego Komitetu ds. Zdrowia Roślin w ustawodaw­
+      stwie wspólnotowym, oparte na i obejmujące dyrektywy 76/895/EWG,
+      86/362/EWG, 86/363/EWG, 90/642/EWG i 91/414/EWG, związane
+      z produktami ochrony roślin i ustalające maksymalne poziomy pozos­
+      tałości, zastępuje się odesłaniem do Stałego Komitetu ds. Łańcucha
+      ►C1 Żywnościowego ◄ i Zdrowia Zwierząt.
+
+
+      3.   Do celów ust. 1 i 2 „ustawodawstwo wspólnotowe” oznacza
+      wszystkie rozporządzenia, dyrektywy i decyzje Wspólnoty.
+
+
+      4.    Niniejszym decyzje 68/361/EWG, 69/414/EWG i 70/372/EWG
+      tracą moc.
+
+
+
+                                     Artykuł 63
+      Kompetencje      Europejskiej Agencji ds.          Oceny     Produktów
+                                  Leczniczych
+
+      Niniejsze rozporządzenie pozostaje bez uszczerbku dla kompetencji
+      Europejskiej Agencji ds. Oceny Produktów Leczniczych przyznanych
+      przez rozporządzenie (EWG) nr 2309/93, rozporządzenie (EWG) nr
+      2377/90, dyrektywę Rady 75/319/EWG (1) i dyrektywę Rady
+      81/851/EWG (2).
+
+      (1) Dz.U. L 147 z 9.6.1975, str. 13. Dyrektywa zmieniona dyrektywą
+          2001/83/WE Parlamentu Europejskiego i Rady (Dz.U. L 311 z 28.11.2001,
+          str. 67).
+      (2) Dz.U. L 317 z 6.11.1981, str. 1. Dyrektywa zmieniona dyrektywą
+          2001/82/WE Parlamentu Europejskiego i Rady (Dz.U. L 311 z 28.11.2001,
+          str. 1).
+                                                          02002R0178 — PL — 01.01.2026 — 012.001 — 50
+
+▼B
+                                  Artykuł 64
+                        Rozpoczęcie działania Urzędu
+
+     Urząd rozpoczyna swoje działanie dnia 1 stycznia 2002 r.
+
+
+                                  Artykuł 65
+                               Wejście w życie
+
+     Niniejsze rozporządzenie wchodzi w życie dwudziestego dnia po jego
+     opublikowaniu w Dzienniku Urzędowym Wspólnot Europejskich.
+     Przepisy art. 11 i 12 oraz art. 14–20 stosuje się od dnia 1 stycznia
+     2005 r.
+     Przepisy art. 29, 56, 57 i 60 oraz art. 62 ust. 1 stosuje się od daty
+     wyznaczenia członków komitetu naukowego i paneli naukowych, co
+     zostanie ogłoszone za pomocą obwieszczenia w serii „C” Dziennika
+     Urzędowego.
+     Niniejsze rozporządzenie wiąże w całości i jest bezpośrednio stosowane
+     we wszystkich Państwach Członkowskich.
+
